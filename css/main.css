@@ -1,43 +1,44 @@
-body{width: 100%; background-color: lightgray;}
+body { width: 100%; background-color: lightgray; } 
 
-.wrap{width: 100%; margin: auto; text-align: center;}
+.wrap { width: 100%; margin: auto; text-align: center; } 
 
 /* header */
-.header{width: 100%; height: 12rem; background-color:bisque;}
+.header { width: 100%; height: 12rem; background-color: bisque; } 
 
 /* main */
-.banner{ width: 100%; height: 61rem; background-color:lightblue;}
-.nav_1{width: 100%; height: 4.2rem; background-color:bisque;}
-.nav_2{width: 100%; height: 24rem; background-color:darkkhaki;}
-.content_1{width: 100%; height: 58rem; background-color:lightblue;}
-.content_2{width: 100%; height: 66rem; background-color:darkkhaki;}
-.content_3{width: 100%; height: 46rem; background-color:aquamarine;}
-.nav_3{width: 100%; height: 14rem; background-color:bisque;}
-.info_1{width: 100%; height: 45rem; background-color:darkkhaki;}
-.info_2{width: 100%; height: 40rem; background-color:lightblue;}
+.banner { width: 100%; height: 61rem; background-color: lightblue; } 
+
+.nav_1 { width: 100%; height: 4.2rem; background-color: bisque; } 
+
+.nav_2 { width: 100%; height: 24rem; background-color: darkkhaki; } 
+
+.content_1 { width: 100%; height: 58rem; background-color: lightblue; } 
+
+.content_2 { width: 100%; height: 66rem; background-color: darkkhaki; } 
+
+.news { width: 100%; height: 46rem; background-color: aquamarine; } 
+
+.menu { width: 100%; height: 14rem; background-color: bisque; } 
+
+.info_1 { width: 100%; height: 45rem; background-color: darkkhaki; } 
+
+.info_2 { width: 100%; height: 40rem; background-color: lightblue; } 
 
 /* footer */
-.footer_1{width: 100%; height: 24rem; background-color:bisque;}
-.footer_2{width: 100%; height: 10rem; background-color:darkkhaki;}
-.footer_3{width: 100%; height: 22rem; background-color:lightblue;}
+.footer_1 { width: 100%; height: 24rem; background-color: bisque; } 
+
+.footer_2 { width: 100%; height: 10rem; background-color: darkkhaki; } 
+
+.footer_3 { width: 100%; height: 22rem; background-color: lightblue; } 
+
 /* //box */
 
 
 /* container */
-/* header */
-.header .container1{width: 100%; max-width: 110rem; margin: auto;  background-color: rgba(0, 0, 0, 0.5); height: inherit;}
-/* main */
-.banner .container2{width: 100%; margin: auto;  background-color: rgba(0, 0, 0, 0.5); height: inherit;}
-.nav_1 .container3{width: 100%; max-width: 128rem; margin: auto; background-color: rgba(0, 0, 0, 0.53); height: inherit;}
-.nav_2 .container4{width: 100%; max-width: 108rem; margin: auto; background-color: rgba(0, 0, 0, 0.5); height: inherit;}
-.content_1 .container5{width: 100%; max-width: 112.4rem; margin: auto; background-color: rgba(0, 0, 0, 0.5); height: inherit;}
-.content_2 .container6{width: 100%; margin: auto; background-color: rgba(0, 0, 0, 0.5); height: inherit;}
-.content_3 .container7{width: 100%; margin: auto; background-color: rgba(0, 0, 0, 0.5); height: inherit;}
-.nav_3 .container8{width: 100%; margin: auto; background-color: rgba(0, 0, 0, 0.5); height: inherit;}
-.info_1 .container9{width: 100%; margin: auto; background-color: rgba(0, 0, 0, 0.5); height: inherit;}
-.info_2 .container10{width: 100%; max-width: 128rem; margin: auto; background-color: rgba(0, 0, 0, 0.5); height: inherit;}
-/* footer */
-.footer_1 .container11{width: 100%; max-width: 118rem; margin: auto; background-color: rgba(0, 0, 0, 0.5); height: inherit;}
-.footer_2 .container12{width: 100%; max-width: 118rem; margin: auto; background-color: rgba(0, 0, 0, 0.5); height: inherit;}
-.footer_3 .container13{width: 100%; max-width: 118rem; margin: auto; background-color: rgba(0, 0, 0, 0.5); height: inherit;}
+.container { width: 100%; max-width: 80%; height: inherit; background-color: rgba(0,0,0,.4); margin: auto;} 
+
 /* //css */
+
+
+
+/* 이너 클래스 통일시키고, 이너의 값을 80%로 맞추자. 1200px가 있기는 했다. */
