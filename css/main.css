@@ -1,4 +1,4 @@
-body { width: 100%; background-color: lightgray; } 
+body { width: 100%;} 
 
 .wrap { width: 100%; margin: auto; text-align: center; } 
 
@@ -11,22 +11,33 @@ header{ width: 100%; height: 12rem; background: var(--secondary1);}
 .header .main_nav .sub_gnb_nav{display: flex; height: 6rem; gap: 3rem;}
 
 
-
-
-
-
 /* main */
-.banner { width: 100%; height: 61rem; background-color: lightblue; } 
+/* banner */
+.banner { width: 100%; height: 61rem;}
+.banner img{ width: 100%; height: 61rem;}
 
-.nav_1 { width: 100%; height: 4.2rem; background-color: bisque; } 
+/* nav */
+.nav_1 { width: 100%; height: 4.2rem; margin: auto;}
+.nav_1 .container {display: flex;}
+.nav_1 .nav_1-1 {width: 55%; background-color: black;}
+.nav_1 .nav_1-2 {width: 45%; background-color: white;}
 
-.nav_2 { width: 100%; height: 24rem; background-color: darkkhaki; } 
+.nav_2 { width: 100%; height: 24rem; background-color: var(--primary);} 
+.nav_2 .container{ width: 60%; height: 24rem; background-color: var(--primary);}
+.nav_2 p:nth-child(1) {display: flex;}
 
-.content_1 { width: 100%; height: 58rem; background-color: lightblue; } 
+/* content */
+.content_1 { width: 100%; height: 58rem; display: flex;}
+.content_1 .content_1_1 { width: 50%; height: 58rem; background-color: aqua;}
+.content_1 .content_1_2 { width: 50%; height: 58rem; background-color: aquamarine;}
 
-.content_2 { width: 100%; height: 66rem; background-color: darkkhaki; } 
+.content_2 { width: 100%; height: 66rem;  background-image: url(../img/summer2_pick_bg.jpg);} 
+.content_2 .container { width: 80%; display: flex;}
+.content_2 .content_2_1  {width: 30%; background-color: cadetblue;}
+.content_2 .content_2_2  {width: 70%; background-color: burlywood;}
 
-.news { width: 100%; height: 46rem; background-color: aquamarine; } 
+/* news */
+.news { width: 100%; height: 46rem;}
 
 .menu { width: 100%; height: 14rem; background-color: bisque; } 
 
@@ -45,6 +56,6 @@ header{ width: 100%; height: 12rem; background: var(--secondary1);}
 
 
 /* container */
-.container { width: 100%; max-width: 80%; height: inherit; background-color: rgba(0,0,0,.4); margin: auto;} 
+.container { width: 100%; height: inherit; background-color: rgba(0,0,0,.4); margin: auto;} 
 
 /* //css */

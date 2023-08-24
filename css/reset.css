@@ -124,7 +124,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 html { overflow-y: scroll; font-size: 62.5%; /* 기본 폰트 10px/ rem을 쓸 것임. */
   font-weight: 400; } 
 
-body { font-family: 'NotoSansKR', 'Noto_Sans_KR', sans-serif; color: var(--text1); font-size: 1.6rem; line-height: 1.333; } 
+body { font-family: 'nbg', 'Avenir', 'Aria', sans-serif; color: var(--text1); font-size: 1.6rem; line-height: 1.333; } 
 
 /* var : 변수 */
 
@@ -135,16 +135,25 @@ a{text-decoration: none;}
 a:hover { text-decoration: underline; } 
 
 h1,
-.h1 { font-size: 3.1rem; font-weight: 700; } 
+.h1 { font-size: 9.6rem; font-family: 'NanumBarunGothic'; } 
 
-h2,
-.h2 { font-size: 2.5rem; font-weight: 600; } 
+h2, .h2 { font-size: 6.7rem; font-family: 'NanumBarunGothic'; } 
 
-h3,
-.h3 { font-size: 2rem; font-weight: 500; } 
+.title_1 { font-size: 5.1rem; font-family: 'NanumBarunGothic'; } 
 
-.body { font-size: 1.6rem; font-weight: 400; } 
+.title_2 { font-size: 3.8rem; font-family: 'NanumBarunGothic'; } 
 
-.link { font-size: 1.6rem; font-weight: 500; } 
+.main_1 { font-size: 2.8rem; font-family: 'NanumBarunGothic'; } 
 
-.caption { font-size: 0.3rem; font-weight: 400; } 
+.main_2 { font-size: 2.1rem; font-family: 'NanumBarunGothic'; } 
+
+.body, .main_3 { font-size: 1.6rem; font-family: 'NanumBarunGothic'; } 
+
+.link, info_1 { font-size: 1.2rem; font-family: 'NanumBarunGothic'; } 
+
+.caption, info_2 { font-size: 0.9rem; font-family: 'NanumBarunGothic'; } 
+
+/* font-family: 'NanumBarunGothicExtraLight';
+font-family: 'NanumBarunGothicLight';
+font-family: 'NanumBarunGothic';
+font-family: 'NanumBarunGothicBold'; */
