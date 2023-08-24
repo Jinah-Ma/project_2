@@ -1,6 +1,6 @@
 body { width: 100%;} 
 
-.wrap { width: 100%; margin: auto; text-align: center; } 
+.wrap { width: 100%;} 
 
 /* header */
 header{ width: 100%; height: 12rem; background: var(--secondary1);}
@@ -37,11 +37,21 @@ header{ width: 100%; height: 12rem; background: var(--secondary1);}
 .content_2 .content_2_2  {width: 70%; background-color: burlywood;}
 
 /* news */
-.news { width: 100%; height: 46rem;}
+.news { width:200%; height: 46rem;}
+.news h2{text-align: left; background-color: aliceblue;}
+.news .container {overflow: hidden;}
+.news .block{ display: flex; width: 400px; height: 315px; background-color: rgb(134, 134, 134);}
+.news .slide {margin-top:50px; display: flex; flex-wrap: wrap; gap: 3rem; transition: 0.5s ease-in-out;}
 
-.menu { width: 100%; height: 14rem; background-color: bisque; } 
+/* memu */
+.menu { width: 100%; height: 12rem; background-color: bisque;}
+.menu .container{ max-width: 80%; background-color: bisque;}
+.menu .container span:not(:last-child){display: inline-block; background: white; margin-top: 4rem; position: relative; left: 20%;}
+.menu .container span:last-child{display: inline-block; background: white; margin-top: 4rem; position: relative; left: 80%;}
 
-.info_1 { width: 100%; height: 45rem; background-color: darkkhaki; } 
+/* info */
+.info_1 { width: 100%; height: 45rem; background:url(../img/reserve_bg_pc.png) no-repeat center; background-position-y: 10rem;} 
+.info_1 .container{ max-width: 80% } 
 
 .info_2 { width: 100%; height: 40rem; background-color: lightblue; } 
 
@@ -56,6 +66,6 @@ header{ width: 100%; height: 12rem; background: var(--secondary1);}
 
 
 /* container */
-.container { width: 100%; height: inherit; background-color: rgba(0,0,0,.4); margin: auto;} 
+.container { width: 100%; height: inherit; margin: auto;} 
 
 /* //css */

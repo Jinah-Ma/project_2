@@ -121,7 +121,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 /* 최상위 콘텐츠 선택자/ 이것만 바꾸고 아래 변수로 적용하면 언제든 쉽게 바꿀 수 있다. */
 
-html { overflow-y: scroll; font-size: 62.5%; /* 기본 폰트 10px/ rem을 쓸 것임. */
+html { overflow-y: scroll;  overflow-x: hidden; font-size: 62.5%; /* 기본 폰트 10px/ rem을 쓸 것임. */
   font-weight: 400; } 
 
 body { font-family: 'nbg', 'Avenir', 'Aria', sans-serif; color: var(--text1); font-size: 1.6rem; line-height: 1.333; } 
