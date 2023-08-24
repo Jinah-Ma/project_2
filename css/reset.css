@@ -1,8 +1,7 @@
 @charset "utf-8";
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+ v2.0 | 20110126
+ License: none (public domain)
 */
 
 html,
@@ -85,14 +84,7 @@ summary,
 time,
 mark,
 audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
+video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } 
 
 /* HTML5 display-role reset for older browsers */
 article,
@@ -105,82 +97,54 @@ header,
 hgroup,
 menu,
 nav,
-section {
-    display: block;
-}
+section { display: block; } 
 
-body {
-    line-height: 1;
-}
+body { line-height: 1; } 
 
 ol,
-ul {
-    list-style: none;
-}
+ul { list-style: none; } 
 
 blockquote,
-q {
-    quotes: none;
-}
+q { quotes: none; } 
 
 blockquote:before,
 blockquote:after,
 q:before,
-q:after {
-    content: '';
-    content: none;
-}
+q:after { content: ''; content: none; } 
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+table { border-collapse: collapse; border-spacing: 0; } 
 
 /* 추가 */
-* {
-    box-sizing: border-box;
-}
+* { box-sizing: border-box;} 
 
-:root {
-    --primary: #1d1d1b;
-    --secondary1: #0c2d69;
-    --secondary2: #56246F;
-    --text1: #1d1d1b;
-    --text2: #8b9091;
-    --background: #fff;
-    --pointcolor1: #8b734b; 
-    --pointcolor2: #00a4b7;
-    --pointcolor3: #E9536C;
-}
+:root { --primary: #056342; --secondary1: #F6F5F0; --secondary2: #56246F; --text1: #2C2A29; --text2: #8b9091; --background: #fff; --pointcolor1: #8b734b; --pointcolor2: #00a4b7; --pointcolor3: #E9536C; } 
 
 /* 최상위 콘텐츠 선택자/ 이것만 바꾸고 아래 변수로 적용하면 언제든 쉽게 바꿀 수 있다. */
 
-html {
-    overflow-y: scroll;
-    font-size: 62.5%;
-    /* 기본 폰트 10px/ rem을 쓸 것임. */
-    line-height: 1.75;
-    font-weight: 400;
-}
+html { overflow-y: scroll; font-size: 62.5%; /* 기본 폰트 10px/ rem을 쓸 것임. */
+  font-weight: 400; } 
 
-body {
-    font-family: 'NotoSansKR', 'Noto_Sans_KR', sans-serif;
-    color: var(--text1);
-    font-size: 1.6rem;
-}
+body { font-family: 'NotoSansKR', 'Noto_Sans_KR', sans-serif; color: var(--text1); font-size: 1.6rem; line-height: 1.333; } 
 
 /* var : 변수 */
 
-a {
-    text-decoration: none; color: var(--text1);
-}
+a { color: var(--text1); } 
 
-a:hover{text-decoration: underline; }
+a{text-decoration: none;}
 
-h1,.h1{font-size: 3.1rem; font-weight: 700;}
-h2,.h2{font-size: 2.5rem; font-weight: 600;}
-h3,.h3{font-size: 2rem; font-weight: 500;}
-.body{font-size: 1.6rem; font-weight: 400;}
-.link{font-size: 1.6rem; font-weight: 500;}
-.caption{font-size: 0.3rem; font-weight: 400;}
+a:hover { text-decoration: underline; } 
 
+h1,
+.h1 { font-size: 3.1rem; font-weight: 700; } 
+
+h2,
+.h2 { font-size: 2.5rem; font-weight: 600; } 
+
+h3,
+.h3 { font-size: 2rem; font-weight: 500; } 
+
+.body { font-size: 1.6rem; font-weight: 400; } 
+
+.link { font-size: 1.6rem; font-weight: 500; } 
+
+.caption { font-size: 0.3rem; font-weight: 400; } 
