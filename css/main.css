@@ -12,7 +12,13 @@ header .container{width: 100%; max-width: 1300px; position: relative; margin: au
 header .container h2{position: absolute; left: 15%; top: 2rem;}
 header .container .main_menu{position: absolute; top: 0; right: 10rem; height: 12rem;}
 header .container .main_menu .util_nav{display: flex; height: 6rem; justify-content: flex-end; gap: 3rem;}
-header .container .main_menu .sub_gnb_nav{display: flex; height: 6rem; gap: 3rem;}
+header .container .main_menu .sub_gnb_nav{display: flex; height: 6rem; gap: 1rem;}
+
+/* menu css */
+
+
+
+
 
 /* Sticky */
 .wrap>img{width: 166px; height: 116px;  position: sticky; top: 150px; left: 160rem; z-index: 9999;} 

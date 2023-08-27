@@ -142,23 +142,23 @@ a{text-decoration: none;}
 a:hover { text-decoration: underline; } 
 
 h1,
-.h1 { font-size: 9.6rem; font-family: 'NanumBarunGothic'; } 
+--h1 { font-size: 9.6rem; font-family: 'NanumBarunGothic'; } 
 
-h2, .h2 { font-size: 6.7rem; font-family: 'NanumBarunGothic'; } 
+h2, --h2 { font-size: 6.7rem; font-family: 'NanumBarunGothic'; } 
 
-.title_1 { font-size: 5.1rem; font-family: 'NanumBarunGothic'; } 
+--title_1 { font-size: 5.1rem; font-family: 'NanumBarunGothic'; } 
 
-.title_2 { font-size: 3.8rem; font-family: 'NanumBarunGothic'; } 
+--title_2 { font-size: 3.8rem; font-family: 'NanumBarunGothic'; } 
 
-.main_1 { font-size: 2.8rem; font-family: 'NanumBarunGothic'; } 
+--main_1 { font-size: 2.8rem; font-family: 'NanumBarunGothic'; } 
 
-.main_2 { font-size: 2.1rem; font-family: 'NanumBarunGothic'; } 
+--main_2 { font-size: 2.1rem; font-family: 'NanumBarunGothic'; } 
 
-.body, .main_3 { font-size: 1.6rem; font-family: 'NanumBarunGothic'; } 
+.body, --main_3 { font-size: 1.6rem; font-family: 'NanumBarunGothic'; } 
 
-.link, info_1 { font-size: 1.2rem; font-family: 'NanumBarunGothic'; } 
+.link, --info_1 { font-size: 1.2rem; font-family: 'NanumBarunGothic'; } 
 
-.caption, info_2 { font-size: 0.9rem; font-family: 'NanumBarunGothic'; } 
+.caption, --info_2 { font-size: 0.9rem; font-family: 'NanumBarunGothic'; } 
 
 /* font-family: 'NanumBarunGothicExtraLight';
 font-family: 'NanumBarunGothicLight';
