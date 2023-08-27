@@ -18,16 +18,16 @@
 <body>
     <div class="wrap">
         <header>
-            <div class="header">
+            <div class="container">
                 <h2><img src="./img/logo.png" alt="logo"></h2>
-                <div class="main_nav">
-                    <ul class="util_nav">
+                <div class="main_menu">
+                    <ul class="container util_nav">
                         <li><a href="#">Sign In</a></li>
                         <li><a href="#">My Starbucks</a></li>
                         <li><a href="#">Customer Service & Ideas</a></li>
                         <li><a href="#">Find a Store</a></li>
                     </ul>
-                    <ul class="sub_gnb_nav">
+                    <ul class="container sub_gnb_nav">
                         <li><a href="#">COFFEE</a></li>
                         <li><a href="#">MENU</a></li>
                         <li><a href="#">STORE</a></li>
@@ -43,28 +43,32 @@
         <!-- //header -->
 
         <main>
-            <div class="banner">
+            <div class="main_banner">
                 <div class="container">
-                    <p><img src="./img/promotion_top_pc_bg_1.jpg" alt="summer promotion"></p>
                 </div>
             </div>
             <!-- //banner -->
-            
+
             <div class="nav_1">
-                <div class="container">
-                    <div class="nav_1-1"><a href="#"></a></div>
-                    <ul class="nav_1-2"></ul>
-                </div>
+                <ul class="flex">
+                    <li class="notice"><a href="#"></a></li>
+                    <li class="promotion"></li>
+                </ul>
             </div>
             <!-- //nav_1 -->
 
             <div class="nav_2">
                 <div class="container">
-                    <p><img src="./img/rewards-logo.png" alt="rewards-logo"></p>
-                    <div class="nav2_2">
-                        <p></p>
-                        <p></p>
-                    </div>
+                    <div><img src="./img/rewards-logo.png" alt="rewards-logo"></div>
+                    <ul class="link">
+                        <li>
+                            <ul class="container">
+                                <li><a href="#">회원가입</a></li>
+                                <li><a href="#">로그인</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">e-Gift Card 선물하기</a></li>
+                    </ul>
                 </div>
             </div>
             <!-- //nav_2 -->
@@ -81,22 +85,22 @@
             </div>
             <!-- //content -->
 
-            <div class="news">
-                <div class="container">
-                    <h2 class="title_2">news</h2>
-                    <div class="slide">
-                        <div class="block"></div>
-                        <div class="block"></div>
-                        <div class="block"></div>
-                        <div class="block"></div>
-                        <div class="block"></div>
-                        <div class="block"></div>
-                    </div>
-                </div>
+            <div class="store_slide">
+                <section class="container">
+                    <h2 class="title_2">Stabucks®Online Store</h2>
+                    <ul class="card">
+                        <li class="block"><a href="#"></a></li>
+                        <li class="block"><a href="#"></a></li>
+                        <li class="block"><a href="#"></a></li>
+                        <li class="block"><a href="#"></a></li>
+                        <li class="block"><a href="#"></a></li>
+                        <li class="block"><a href="#"></a></li>
+                    </ul>
+                </section>
             </div>
-            <!-- //news -->
+            <!-- //store_slide -->
 
-            <div class="menu">
+            <div class="gnb_nav">
                 <div class="container">
                     <span><img src="./img/icon/blog.png" alt="naver blog"></span>
                     <span><img src="./img/icon/facebook.png" alt="facebook"></span>
@@ -107,15 +111,42 @@
             <!-- //menu -->
 
             <div class="info_1">
-                <div class="container">
-                    <div class="icon"></div>
-                    <div class="img"><img src="./img/reserve_visual_pc.png" alt=""></div>
-                    <div class="botton"></div>
-                </div>
+                <ul class="container">
+                    <li class="icon"><img src="./img/reserve_text_pc.png" alt="리저브"></li>
+                    <li>
+                        <ul class="text_inner">
+                            <li class="txet">자세히 보기</li>
+                            <li class="txet">자세히 보기</li>
+                            <li class="botton">자세히 보기</li>
+                        </ul>
+                    </li>
+                    <li class="img"></li>
+                </ul>
+
             </div>
             <div class="info_2">
-                <div class="container">
-                    <h2>info_2</h2>
+                <div class="container group">
+                    <div class="inner">
+                        <div class="img1"><img src="./img/221212_main_story_1.png" alt="스타벅스 매장"></div>
+                        <div class="img2"><img src="./img/221212_main_story_2.png" alt="드라이브 스루"></div>
+                    </div>
+                    <div class="inner info_text">
+                        <ul class="text_1">
+                            <li>전국 어디에서나 스타벅스와 함께!</li>
+                            <li>스타벅스와 함께 커피 한잔의 여유를 가져보세요.</li>
+                        </ul>
+                        <ul class="text_2">
+                            <li>나의 취향이 머무는 곳, 스타벅스 리저브 매장</li>
+                            <li>더욱 편리하게 스타벅스를 만나보는 드라이브 스루 매장</li>
+                            <li>함께해서 더 따뜻한 지역사회 소통 공간, 커뮤니티 스토어까지.</li>
+                            <br>
+                            <li>다양한 스타벅스 매장이 여러분을 기다립니다.</li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">매장 찾기</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- //info -->
@@ -125,20 +156,40 @@
         <footer>
             <div class="footer_1">
                 <div class="container">
-                    <h2>footer_1</h2>
+                    <nav>
+                        <ul class="dep_1">
+                            <li>COMPANY
+                                <ul class="dep_2">
+                                    <li><a href="#">투뎁스</a></li>
+                                    <li><a href="#">투뎁스</a></li>
+                                    <li><a href="#">투뎁스</a></li>
+                                    <li><a href="#">투뎁스</a></li>
+                                    <li><a href="#">투뎁스</a></li>
+                                    <li><a href="#">투뎁스</a></li>
+                                    <li><a href="#">투뎁스</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">CORPORATE SALES</a></li>
+                            <li>PARTNERSHIP</li>
+                            <li>ONLINE COMMUNITY</li>
+                            <li>RECRUIT</li>
+                        </ul> <!-- depth1 -->
+                        <div class="footer_logo"><img src="./img/footer_logo.png" alt="starbucks"></div>
+                    </nav>
                 </div>
-            </div>
+            </div> <!-- //footer1 -->
             <div class="footer_2">
                 <div class="container">
                     <h2>footer_2</h2>
                 </div>
-            </div>
+            </div> <!-- //footer2 -->
             <div class="footer_3">
                 <div class="container ">
                     <h2>footer_3</h2>
                 </div>
-            </div>
+            </div> <!-- //footer3 -->
         </footer>
+        <!-- //footer -->
     </div>
 </body>
 

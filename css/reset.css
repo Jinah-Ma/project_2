@@ -115,7 +115,12 @@ q:after { content: ''; content: none; }
 table { border-collapse: collapse; border-spacing: 0; } 
 
 /* 추가 */
-* { box-sizing: border-box;} 
+* { box-sizing: border-box;}
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul,li,lo,dt,dd,dl{list-style: none;}
+a{ color: #333; font-size: 1.6rem;}
+a:link, a:visited{color: #333;}
+img{border: 0; vertical-align: top;}
 
 :root { --primary: #056342; --secondary1: #F6F5F0; --secondary2: #56246F; --text1: #2C2A29; --text2: #8b9091; --background: #fff; --pointcolor1: #8b734b; --pointcolor2: #00a4b7; --pointcolor3: #E9536C; } 
 
@@ -124,7 +129,9 @@ table { border-collapse: collapse; border-spacing: 0; }
 html { overflow-y: scroll;  overflow-x: hidden; font-size: 62.5%; /* 기본 폰트 10px/ rem을 쓸 것임. */
   font-weight: 400; } 
 
-body { font-family: 'nbg', 'Avenir', 'Aria', sans-serif; color: var(--text1); font-size: 1.6rem; line-height: 1.333; } 
+body { font-family: 'nbg', 'Avenir', 'Aria', sans-serif; color: var(--text1); font-size: 1.6rem; line-height: 1.75; } 
+
+.inner,.container{max-width: 80%; margin: 0 auto;}
 
 /* var : 변수 */
 
