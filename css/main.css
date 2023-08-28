@@ -5,31 +5,70 @@ body { width: 100%;}
 
 /* header */
 header{ width: 100%; position: fixed; z-index: 11;}
-nav{width: 100%; height: 12rem; background: var(--secondary1);}
-.w100{width: 100%; background-color: var(--text1);}
 
-.container{width: 100%; max-width: 1300px; margin: auto;}
+/* 공통 */
+.container{max-width: 1300px; margin: auto;}
+.w100{width: 100%; background: var(--text1);}
+
+/* 댑스 기본 레이아웃 */
+nav{position: relative; width: 100%; height: 120px; background-color: var(--secondary1);}
+nav .gnb,.sub_gnb_nav,.dep2>li>a{display: flex;}
+nav .gnb a{display: block;}
+ul.gnb li{height: 100%;}
+
+nav .w100{overflow: hidden; height: 0;}
+.gnb .dep1:hover .w100{height: 30rem;}
+
+/* 투댑스 내려오게 하기 */
+nav{position: relative;}
+nav .w100 {position:absolute; top:120px; left: 0;}
 
 
+/* 댑스 레이아웃 세부 */
+.gnb h2{margin-left: 10rem; margin-top: 2rem;}
+.main_menu{max-width: 1300px; margin:auto;}
+.main_menu .util_nav{display: flex; justify-content: end; margin-left: 30rem;}
+.main_menu .util_nav li a{font-size: 1.4rem; padding-left: 2rem;}
+.main_menu .util_nav li:not(:last-child){display: inline-block; height: 13px; border-right: 1px solid #e0e0e0; padding-right: 1.2rem;}
+
+.main_menu .sub_gnb_nav{margin-left: 20rem;}
+.main_menu .sub_gnb_nav .dep1>a{ font-family: 'NanumBarunGothic'; margin-left: 2.5rem;}
+
+.dep1>a:hover{display: block; width: 100%; text-align: center; height: 56px; line-height: 20px; padding-top: 10px; background-color: var(--text1); color: var(--pointcolor3);}
+/* 제이쿼리 인가? */
+
+
+
+.dep2>li>a{color: var(--secondary1);}
+
+.container .dep3{display: flex; flex-direction: column; width: 100%; justify-content: space-around;}
+.dep3 a{color: var(--text3); font-weight: NanumBarunGothicExtraLight; font-size: 1.5rem; line-height: 1.75rem;}
+
+
+
+
+
+
+
+
+/* 
 .gnb{position: relative;}
-header .container h2{position: absolute; left: 15%; top: 2rem;}
+header h2{position: absolute; left: 15%; top: 2rem;}
 header .container .main_menu{position: absolute; top: 0; right: 10rem; height: 12rem;}
 header .container .main_menu .util_nav{display: flex; height: 6rem; justify-content: flex-end; gap: 3rem;}
 header .container .main_menu .sub_gnb_nav{display: flex; height: 6rem; gap: 2rem; }
 
 .sub_gnb_nav li a{display: block;}
-
+.sub_gnb_nav li {height: 100%;}
 
 .sub_gnb_nav .dep2,.dep2 li a{display: flex; color: var(--secondary1); margin: 1rem 3rem; width: 100%;}
 .sub_gnb_nav .dep2>li>a {font-family: 'NanumBarunGothic';}
 .sub_gnb_nav .dep3>li>a {font-size: 1.4rem; width:20rem;}
 
-/* hover */
-nav{position: relative;}
-.w100{position: absolute; left: 0; top: 12rem;}
-.sub_gnb_nav .w100{height: 0; overflow: hidden;}
-.sub_gnb_nav>li:hover .w100 {height: auto; padding-right: 5rem; padding-bottom: 2rem;}
+/* hover
+nav .w100{position: absolute; left: 0; top: 12rem; padding: 0 0; transition: all 0.5s; height: 0; overflow: hidden;}
 
+.dep1:hover .w100 {padding:2rem 0; height: auto;} */
 
 /* Sticky */
 .wrap>img{width: 166px; height: 116px;  position: sticky; top: 150px; left: 160rem; z-index: 111;} 
