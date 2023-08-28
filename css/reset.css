@@ -1,5 +1,4 @@
-@charset "utf-8";
-/* http://meyerweb.com/eric/tools/css/reset/ 
+@charset "utf-8";/* http://meyerweb.com/eric/tools/css/reset/ 
  v2.0 | 20110126
  License: none (public domain)
 */
@@ -115,36 +114,54 @@ q:after { content: ''; content: none; }
 table { border-collapse: collapse; border-spacing: 0; } 
 
 /* 추가 */
-* { box-sizing: border-box;}
-*{margin: 0; padding: 0; box-sizing: border-box;}
-ul,li,lo,dt,dd,dl{list-style: none;}
-a{ color: #333; font-size: 1.6rem;}
-a:link, a:visited{color: #333;}
-img{border: 0; vertical-align: top;}
+* { box-sizing: border-box; } 
+
+* { margin: 0; padding: 0; box-sizing: border-box; } 
+
+ul,
+li,
+lo,
+dt,
+dd,
+dl { list-style: none; } 
+
+a { color: #333; font-size: 1.6rem; } 
+
+a:link,
+a:visited { color: #333; } 
+
+img { border: 0; vertical-align: top; } 
 
 :root { --primary: #056342; --secondary1: #F6F5F0; --secondary2: #56246F; --text1: #2C2A29; --text2: #8b9091; --background: #fff; --pointcolor1: #8b734b; --pointcolor2: #00a4b7; --pointcolor3: #E9536C; } 
 
 /* 최상위 콘텐츠 선택자/ 이것만 바꾸고 아래 변수로 적용하면 언제든 쉽게 바꿀 수 있다. */
 
-html { overflow-y: scroll;  overflow-x: hidden; font-size: 62.5%; /* 기본 폰트 10px/ rem을 쓸 것임. */
-  font-weight: 400; } 
+html { overflow-y: scroll; overflow-x: hidden; font-size: 62.5%; /* 기본 폰트 10px/ rem을 쓸 것임. */
+ font-weight: 400; } 
 
-body { font-family: 'nbg', 'Avenir', 'Aria', sans-serif; color: var(--text1); font-size: 1.6rem; line-height: 1.75; } 
+/* 폰트 */
+body { /* font-family: 'NanumBarunGothicExtraLight'; */
+ font-family: 'NanumBarunGothicLight'; /* font-family: 'NanumBarunGothic'; */
+ /* font-family: 'NanumBarunGothicBold'; */ font-size: 1.6rem;}
 
-.inner,.container{max-width: 80%; margin: 0 auto;}
+/* body { font-family: 'nbg', 'Avenir', 'Aria', sans-serif; color: var(--text1); font-size: 1.6rem; line-height: 1.75; } */
+
+.inner,
+.container { max-width: 80%; margin: 0 auto; } 
 
 /* var : 변수 */
 
 a { color: var(--text1); } 
 
-a{text-decoration: none;}
+a { text-decoration: none; } 
 
 a:hover { text-decoration: underline; } 
 
-h1,
+/* h1,
 --h1 { font-size: 9.6rem; font-family: 'NanumBarunGothic'; } 
 
-h2, --h2 { font-size: 6.7rem; font-family: 'NanumBarunGothic'; } 
+h2,
+--h2 { font-size: 6.7rem; font-family: 'NanumBarunGothic'; } 
 
 --title_1 { font-size: 5.1rem; font-family: 'NanumBarunGothic'; } 
 
@@ -154,13 +171,11 @@ h2, --h2 { font-size: 6.7rem; font-family: 'NanumBarunGothic'; }
 
 --main_2 { font-size: 2.1rem; font-family: 'NanumBarunGothic'; } 
 
-.body, --main_3 { font-size: 1.6rem; font-family: 'NanumBarunGothic'; } 
+.body,
+--main_3 { font-size: 1.6rem; font-family: 'NanumBarunGothic'; } 
 
-.link, --info_1 { font-size: 1.2rem; font-family: 'NanumBarunGothic'; } 
+.link,
+--info_1 { font-size: 1.4rem; font-family: 'NanumBarunGothic'; } 
 
-.caption, --info_2 { font-size: 0.9rem; font-family: 'NanumBarunGothic'; } 
-
-/* font-family: 'NanumBarunGothicExtraLight';
-font-family: 'NanumBarunGothicLight';
-font-family: 'NanumBarunGothic';
-font-family: 'NanumBarunGothicBold'; */
+.caption,
+--info_2 { font-size: 0.9rem; font-family: 'NanumBarunGothic'; }  */

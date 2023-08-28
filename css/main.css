@@ -3,19 +3,31 @@ body { width: 100%;}
 .wrap { width: 100%;}
 
 /* header */
-header{ width: 100%; height: 12rem; background: var(--secondary1); position: fixed; z-index: 999;}
+header{ width: 100%; height: 12rem; background: var(--secondary1); position: fixed; z-index: 11;}
+.w100{width: 100%; background-color: var(--text1);}
 header .container{width: 100%; max-width: 1300px; position: relative; margin: auto;}
 header .container h2{position: absolute; left: 15%; top: 2rem;}
 header .container .main_menu{position: absolute; top: 0; right: 10rem; height: 12rem;}
 header .container .main_menu .util_nav{display: flex; height: 6rem; justify-content: flex-end; gap: 3rem;}
-header .container .main_menu .sub_gnb_nav{display: flex; height: 6rem; gap: 1rem;}
+header .container .main_menu .sub_gnb_nav{display: flex; height: 6rem; gap: 2rem; }
 
-/* menu css */
-.dep2 {height: 0; overflow: hidden;}
 
+.sub_gnb_nav li{display: block;}
+
+
+.sub_gnb_nav .dep2,.dep2 li a{display: flex; color: var(--secondary1);}
+.sub_gnb_nav .dep2>li>a {font-family: 'NanumBarunGothic';}
+.sub_gnb_nav .dep3>li>a {font-size: 1.4rem;}
+
+/* hover */
+.sub_gnb_nav .w100{height: 0; overflow: hidden;}
+.sub_gnb_nav>li:hover .w100 {height: auto;}
+
+nav{position: relative;}
+.w100{position: absolute; left: 0;}
 
 /* Sticky */
-.wrap>img{width: 166px; height: 116px;  position: sticky; top: 150px; left: 160rem; z-index: 9999;} 
+.wrap>img{width: 166px; height: 116px;  position: sticky; top: 150px; left: 160rem; z-index: 111;} 
 
 
 /* main */
