@@ -2,33 +2,46 @@ body { width: 100%;}
 
 .wrap { width: 100%;}
 
+
 /* header */
-header{ width: 100%; height: 12rem; background: var(--secondary1); position: fixed; z-index: 11;}
+header{ width: 100%; position: fixed; z-index: 11;}
+
+.container{width: 100%; max-width: 1300px; margin: auto;}
 .w100{width: 100%; background-color: var(--text1);}
-header .container{width: 100%; max-width: 1300px; position: relative; margin: auto;}
+
+nav{width: 100%; height: 12rem; background: var(--secondary1);}
+
+.gnb{position: relative;}
 header .container h2{position: absolute; left: 15%; top: 2rem;}
 header .container .main_menu{position: absolute; top: 0; right: 10rem; height: 12rem;}
 header .container .main_menu .util_nav{display: flex; height: 6rem; justify-content: flex-end; gap: 3rem;}
 header .container .main_menu .sub_gnb_nav{display: flex; height: 6rem; gap: 2rem; }
 
+.sub_gnb_nav li a{display: block;}
 
-.sub_gnb_nav li{display: block;}
 
-
-.sub_gnb_nav .dep2,.dep2 li a{display: flex; color: var(--secondary1);}
+.sub_gnb_nav .dep2,.dep2 li a{display: flex; color: var(--secondary1); margin: 1rem 3rem; width: 100%;}
 .sub_gnb_nav .dep2>li>a {font-family: 'NanumBarunGothic';}
-.sub_gnb_nav .dep3>li>a {font-size: 1.4rem;}
+.sub_gnb_nav .dep3>li>a {font-size: 1.4rem; width:20rem;}
 
 /* hover */
-.sub_gnb_nav .w100{height: 0; overflow: hidden;}
-.sub_gnb_nav>li:hover .w100 {height: auto;}
-
 nav{position: relative;}
-.w100{position: absolute; left: 0;}
+.w100{position: absolute; left: 0; top: 12rem;}
+.sub_gnb_nav .w100{height: 0; overflow: hidden;}
+.sub_gnb_nav>li:hover .w100 {height: auto; padding-right: 5rem; padding-bottom: 2rem;}
+
 
 /* Sticky */
 .wrap>img{width: 166px; height: 116px;  position: sticky; top: 150px; left: 160rem; z-index: 111;} 
 
+/* popup */
+.popup {position: fixed; z-index: 999; width: 50rem; height: 20rem; background: rgba(255,255,255, .8); top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%);}
+.popup .textbox{width: 100%; height: 20rem; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; line-height: 1.75;}
+.popup a{display: block;}
+.popup .close {position: absolute; top: 2rem; right: 2rem;}
+
+
+/* .popup .close{} */
 
 /* main */
 /* banner */
