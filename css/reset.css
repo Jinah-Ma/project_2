@@ -140,7 +140,7 @@ html { overflow-y: scroll; overflow-x: hidden; font-size: 62.5%; /* 기본 폰�
  font-weight: 400; } 
 
 /* 폰트 */
-body { /* font-family: 'NanumBarunGothicExtraLight'; */
+body,a,input,table { /* font-family: 'NanumBarunGothicExtraLight'; */
  font-family: 'NanumBarunGothicLight'; /* font-family: 'NanumBarunGothic'; */
  /* font-family: 'NanumBarunGothicBold'; */ font-size: 1.6rem;}
 
