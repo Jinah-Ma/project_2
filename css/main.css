@@ -92,26 +92,22 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 .nav_1 .flex { display: flex;} 
 
 /* notion */
-.nav_1 div.notice { width: 55%; height: 5rem; background-color: black; display: flex;}
+.nav_1 div.notice { width: 55%; height: 5rem; background-color: black; display: flex; overflow: hidden;}
 .notice p{color: #fff; font-family: 'NanumBarunGothic'; line-height: 5rem; font-size: 1.8rem; width: 10rem; margin-left: 40%;}
 .notice li a{color: #fff; line-height: 5rem; font-size: 1.4rem;}
 
-.notice .btn_plus img{width: 3.6rem; margin-top: 1rem; margin-right: 2rem;}
+.notice .btn_plus img{ margin-top: 0.6rem; margin-right: 2rem;}
 
 /* promotion */
-.nav_1 div.promotion { width: 45%; height: 4.2rem; background-color: white; } 
-
-
-
-
-
-
+.nav_1 div.promotion ul{ width: 45%; height: 5rem; background-color: var(--background); display: flex;}
+.promotion_list>li>a {display: block; font-family: 'NanumBarunGothic'; width: 25rem; line-height: 5rem; font-size: 1.8rem; text-decoration: none; text-align: center; margin-left: 20rem;}
+.promotion_list:last-child img{ margin-top: 0.6rem; margin-left: -60rem;}
 
 
 /* hidden */
-.nav_1_pr { height: 0; overflow: hidden; } 
+/* .nav_1_pr { height: 0; overflow: hidden; }  */
 
-.nav_1_pr .hidden { width: 100%; height: 66rem; background-color: rgb(255, 206, 206); } 
+.nav_1_pr .hidden { width: 100%; height: 66rem; background-color: var(--background); } 
 
 .hidden .flex { display: flex; padding-top: 5rem; gap: 2rem; } 
 
