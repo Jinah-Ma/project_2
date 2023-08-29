@@ -48,11 +48,11 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 .dep1>a:hover { display: block; width: 100%; text-align: center; height: 56px; background-color: var(--text1); color: var(--pointcolor3); border-bottom: none; } 
 
 
-/* Sticky */
+/* === Sticky === */
 .wrap>img { width: 166px; height: 116px; position: sticky; top: 150px; left: 160rem; z-index: 111; } 
 
 
-/* popup */
+/* === popup === */
 .popup { position: fixed; z-index: 999; width: 50rem; height: 20rem; background: rgba(255, 255, 255, .8); top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); } 
 
 .popup .textbox { width: 100%; height: 20rem; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; line-height: 1.75; } 
@@ -61,23 +61,52 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 .popup .close { position: absolute; top: 2rem; right: 2rem; } 
 
 
-
-/*=== main === */
+/* === main === */
 /* banner */
-.main_banner { width: 100%; height: 32vw; } 
+.main_banner { width: 100%; height: 32vw;} 
 .main_banner { background: url(../img/promotion_top_pc_bg_1.jpg) no-repeat center center/cover;}
 
+.main_banner .container{display: flex;}
+.main_banner ul:nth-child(2){display: flex;}
+.main_banner ul{margin: auto;}
 
+/* text */
+.main_banner .container{max-width: 100%; position: relative; box-sizing: border-box; height: 100%; margin: 0 auto;}
+.main_banner .container .banner_text{position: absolute; top: 35%; left: 12%; width: 22%;}
+.banner_text>img {max-width: 100%; vertical-align: top;}
+.banner_text>a {max-width: 100%; vertical-align: top; }
+
+.banner_text a{font-family: 'NanumBarunGothic'; color: var(--primary); font-size: 1.4rem;}
+.banner_text li:last-child { width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--primary); border-radius: 0.5rem; margin-top: 4rem; margin-left: 16rem;}
+
+/* img */
+.banner_img li img{height: 80%;}
+.main_banner .container .banner_img{position: absolute; top: 12%; right: 13%;}
+.banner_img_2 img{margin-left: 0%; vertical-align: top;}
+.banner_img_1 img{margin-left:-10%; vertical-align: top;}
+.banner_img_3 img{margin-left: -75%; vertical-align: top;}
 
 
 /* nav_1 */
-.nav_1 { width: 100%; height: 4.2rem; margin: auto; } 
+.nav_1 { width: 100%; height: 5rem; margin: auto; } 
+.nav_1 .flex { display: flex;} 
 
-.nav_1 .flex { display: flex; } 
+/* notion */
+.nav_1 div.notice { width: 55%; height: 5rem; background-color: black; display: flex;}
+.notice p{color: #fff; font-family: 'NanumBarunGothic'; line-height: 5rem; font-size: 1.8rem; width: 10rem; margin-left: 40%;}
+.notice li a{color: #fff; line-height: 5rem; font-size: 1.4rem;}
 
-.nav_1 li.notice { width: 55%; height: 4.2rem; background-color: black; } 
+.notice .btn_plus img{width: 3.6rem; margin-top: 1rem; margin-right: 2rem;}
 
-.nav_1 li.promotion { width: 45%; height: 4.2rem; background-color: white; } 
+/* promotion */
+.nav_1 div.promotion { width: 45%; height: 4.2rem; background-color: white; } 
+
+
+
+
+
+
+
 
 /* hidden */
 .nav_1_pr { height: 0; overflow: hidden; } 
