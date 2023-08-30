@@ -125,14 +125,13 @@ dt,
 dd,
 dl { list-style: none; } 
 
-a { color: #333; font-size: 1.6rem; } 
-
+a { color: #333; font-size: 1.6rem; }
 a:link,
 a:visited { color: #333; } 
 
 img { border: 0; vertical-align: top; } 
 
-:root { --primary: #056342; --secondary1: #F6F5F0; --secondary2: #1E3932; --text1: #2C2A29; --text2: #8b9091; --text3:#999; --background: #fff; --pointcolor1: #8b734b; --pointcolor2: #01A862; --pointcolor3: #669900; --pointcolor4: #B9813E;} 
+:root { --primary: #056342; --secondary1: #F6F5F0; --secondary2: #1E3932; --text1: #2C2A29; --text2: #8b9091; --text3:#999; --text4:#282828; --background: #fff; --pointcolor1: #8b734b; --pointcolor2: #01A862; --pointcolor3: #669900; --pointcolor4: #B9813E;} 
 
 /* 최상위 콘텐츠 선택자/ 이것만 바꾸고 아래 변수로 적용하면 언제든 쉽게 바꿀 수 있다. */
 
