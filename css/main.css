@@ -33,7 +33,7 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 
 
 /* 댑스 레이아웃 세부 */
-.gnb h2 { margin-left: 10rem; margin-top: 2rem; } 
+.gnb h2 a { margin-left: 10rem; margin-top: 2rem; } 
 
 .main_menu { max-width: 1300px; } 
 
@@ -61,11 +61,22 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 
 .dep1>a:hover { display: block; width: 100%; text-align: center; height: 56px; background-color: var(--text1); color: var(--pointcolor3); border-bottom: none; } 
 
-/* ##### header css.ing ###### */
+/* ##### header main_banner fade_in animate ###### */
+.main_banner ul.banner_text li:first-child img,
+.main_banner ul.banner_text li:last-child,
+.main_banner ul.banner_img li.banner_img_2,
+.main_banner ul.banner_img li.banner_img_1,
+.main_banner ul.banner_img li.banner_img_3{
+opacity: 0;
+}
 
+.main_banner ul.banner_text li:first-child img{transition: all 0.2s; transition-delay:0s}
 
-
-
+.main_banner ul.banner_img li.banner_img_1{transition: all 0.2; transition-delay:0.3s}
+.main_banner ul.banner_img li.banner_img_2{transition: all 0.2s; transition-delay:0.7s}
+.main_banner ul.banner_img li.banner_img_3{transition: all 0.2s; transition-delay:1.1s}
+.main_banner ul.banner_text li:last-child{transition: all 0.2s; transition-delay:1.5s}
+/* ##//animate */
 
 /* === Sticky === */
 .sticky { width: 166px; height: 116px; position: sticky; top: 150px; left: 160rem; z-index: 111; } 
@@ -128,7 +139,7 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 .nav_1 .flex { display: flex; } 
 
 /* notion */
-.nav_1 div.notice { width: 55%; height: 5rem; background-color: black; display: flex; overflow: hidden; } 
+.nav_1 div.notice { width: 55%; height: 5rem; background-color: black; display: flex; overflow: hidden;} 
 
 .notice p { color: #fff; font-family: 'NanumBarunGothic'; line-height: 5rem; font-size: 1.8rem; width: 10rem; margin-left: 40%; } 
 
@@ -137,16 +148,22 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 .notice .btn_plus img { margin-top: 0.6rem; margin-right: 2rem; } 
 
 /* promotion */
-.nav_1 div.promotion ul { width: 45%; height: 5rem; background-color: var(--background); display: flex; } 
+.nav_1 div.promotion ul { width: 45%; height: 5rem; background-color: var(--background); display: flex; position: relative;} 
 
-.promotion_list>li>a { display: block; font-family: 'NanumBarunGothic'; width: 25rem; line-height: 5rem; font-size: 1.8rem; text-decoration: none; text-align: center; margin-left: 20rem; } 
+.promotion_list:first-child>li>a { display: block; font-family: 'NanumBarunGothic'; width: 25rem; line-height: 5rem; font-size: 1.8rem; text-decoration: none; text-align: center; margin-left: 20rem; } 
 
-.promotion_list:last-child img { margin-top: 0.6rem; margin-left: -60rem; } 
+
+/* ## promotion botton hidden ## */
+.promotion_list li:nth-child(2){ position: absolute; top:0.6rem; left: 15rem; opacity: 1; } /* close시 */ 
+.promotion_list li:last-child{ position: absolute;  top:0.6rem; left: 15rem; opacity: 0; } /* open시 */
+
+/* ##// promotion botton hidden */
+
 
 
 /* === hidden === */
 /* h_img */
-.nav_1_pr .hidden { width: 100%; height: 66rem; background-color: var(--background); } 
+.nav_1_pr .hidden { width: 100%; height: 66rem; background-color: var(--background); display: none;} 
 
 .hidden .flex { display: flex; padding-top: 5rem; gap: 2rem; } 
 
