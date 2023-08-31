@@ -13,3 +13,8 @@ $('.popup').hide();
 $('.overlay').removeClass('open');
 })
 // x버튼 누르면 사라지게 하기
+
+
+$('.promotion_list:last-child img').click(function(){
+    $('.nav_1_pr .hidden').stop().slideToggle('slow');
+})

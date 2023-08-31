@@ -61,6 +61,11 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 
 .dep1>a:hover { display: block; width: 100%; text-align: center; height: 56px; background-color: var(--text1); color: var(--pointcolor3); border-bottom: none; } 
 
+/* ##### header css.ing ###### */
+
+
+
+
 
 /* === Sticky === */
 .sticky { width: 166px; height: 116px; position: sticky; top: 150px; left: 160rem; z-index: 111; } 
@@ -87,6 +92,10 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 .main_banner ul:nth-child(2) { display: flex; } 
 
 .main_banner ul { margin: auto; } 
+
+/* # banner css.ing # */
+
+
 
 /* text */
 .main_banner .container { max-width: 100%; position: relative; box-sizing: border-box; height: 100%; margin: 0 auto; } 
@@ -136,8 +145,6 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 
 
 /* === hidden === */
-/* .nav_1_pr { height: 0; overflow: hidden; } */
-
 /* h_img */
 .nav_1_pr .hidden { width: 100%; height: 66rem; background-color: var(--background); } 
 
