@@ -201,9 +201,9 @@ ul.hidden_btn { position: absolute; display: flex; gap: 0.5rem; top: 63rem; left
 
 .container_cloumn { display: flex; margin-top: 4rem; margin-left: 3rem; } 
 
-.container_cloumn h2 { color: #fff; font-size: 3.1rem; letter-spacing: -0.5px; margin-right: 6rem; } 
+.container_cloumn h1 { color: #fff; font-size: 3.1rem; letter-spacing: -0.5px; margin-right: 6rem; } 
 
-.container_cloumn h2 strong { font-family: 'NanumBarunGothicBold'; } 
+.container_cloumn h1 strong { font-family: 'NanumBarunGothicBold'; } 
 
 .text_btn { display: flex; gap: 1rem; margin-top: 1rem; } 
 
