@@ -154,8 +154,8 @@ opacity: 0;
 
 
 /* ## promotion botton hidden ## */
-.promotion_list li:nth-child(2){ position: absolute; top:0.6rem; left: 15rem; opacity: 1; } /* close시 */ 
-.promotion_list li:last-child{ position: absolute;  top:0.6rem; left: 15rem; opacity: 0; } /* open시 */
+.promotion_list li:nth-child(2){ position: absolute; top:0.6rem; left: 15rem; opacity: 1;} /* close시 */ 
+.promotion_list li:last-child{ position: absolute;  top:0.6rem; left: 15rem; opacity: 0;} /* open시 */
 
 /* ##// promotion botton hidden */
 
