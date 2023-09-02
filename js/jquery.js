@@ -1,5 +1,3 @@
-
-
 $('.close').on('click',function(e) {
     e.preventDefault();
     // $('.popup').css('display', 'block'); 아래와 같다.
@@ -30,11 +28,24 @@ $('.main_banner ul.banner_text li:last-child').ready(function(){
 
 // 메인배너 사이트 들어가자마자 오파서티로 나타내기
 
+$(document).ready(function() {
+    $('.promotion .p_close').click(function() {
+        $('.promotion .p_close').css('display','none');
+        $('.promotion .p_open').css('display','block');
+    });
+});
 
+$(document).ready(function() {
+    $('.promotion .p_open').click(function() {
+        $('.promotion .p_open').css('display','none');
+        $('.promotion .p_close').css('display','block');
+    });
+});
 
+//프로모션 히든 클릭 버튼 구현
 
 $('.promotion_list li img').click(function(event){event.preventDefault();
     $('.nav_1_pr .hidden').stop().slideToggle('slow');
 })
-// 스타벅스 프로모션 히든 페이지
+// 스타벅스 프로모션 히든 페이지 나타내기
 //function(event){event.preventDefault();: 스크롤 고정해서 위로 올라가는 것을 막아준다.

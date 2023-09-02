@@ -61,22 +61,6 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 
 .dep1>a:hover { display: block; width: 100%; text-align: center; height: 56px; background-color: var(--text1); color: var(--pointcolor3); border-bottom: none; } 
 
-/* ##### header main_banner fade_in animate ###### */
-.main_banner ul.banner_text li:first-child img,
-.main_banner ul.banner_text li:last-child,
-.main_banner ul.banner_img li.banner_img_2,
-.main_banner ul.banner_img li.banner_img_1,
-.main_banner ul.banner_img li.banner_img_3{
-opacity: 0;
-}
-
-.main_banner ul.banner_text li:first-child img{transition: all 0.2s; transition-delay:0s}
-
-.main_banner ul.banner_img li.banner_img_1{transition: all 0.2; transition-delay:0.3s}
-.main_banner ul.banner_img li.banner_img_2{transition: all 0.2s; transition-delay:0.7s}
-.main_banner ul.banner_img li.banner_img_3{transition: all 0.2s; transition-delay:1.1s}
-.main_banner ul.banner_text li:last-child{transition: all 0.2s; transition-delay:1.5s}
-/* ##//animate */
 
 /* === Sticky === */
 .sticky { width: 166px; height: 116px; position: sticky; top: 150px; left: 160rem; z-index: 111; } 
@@ -105,7 +89,22 @@ opacity: 0;
 .main_banner ul { margin: auto; } 
 
 /* # banner css.ing # */
+/* ##### header main_banner fade_in animate ###### */
+.main_banner ul.banner_text li:first-child img,
+.main_banner ul.banner_text li:last-child,
+.main_banner ul.banner_img li.banner_img_2,
+.main_banner ul.banner_img li.banner_img_1,
+.main_banner ul.banner_img li.banner_img_3{
+opacity: 0;
+}
 
+.main_banner ul.banner_text li:first-child img{transition: all 0.2s; transition-delay:0s}
+
+.main_banner ul.banner_img li.banner_img_1{transition: all 0.2; transition-delay:0.3s}
+.main_banner ul.banner_img li.banner_img_2{transition: all 0.2s; transition-delay:0.7s}
+.main_banner ul.banner_img li.banner_img_3{transition: all 0.2s; transition-delay:1.1s}
+.main_banner ul.banner_text li:last-child{transition: all 0.2s; transition-delay:1.5s}
+/* ##//animate */
 
 
 /* text */
@@ -113,24 +112,30 @@ opacity: 0;
 
 .main_banner .container .banner_text { position: absolute; top: 35%; left: 12%; width: 22%; } 
 
-.banner_text>img { max-width: 100%; vertical-align: top; } 
+.banner_text li img {position: absolute; max-width: 100%; vertical-align: top; } 
 
-.banner_text>a { max-width: 100%; vertical-align: top; } 
+.banner_text li a {position: absolute; top: 0; left: 0; max-width: 100%; vertical-align: top; } 
 
 .banner_text a { font-family: 'NanumBarunGothic'; color: var(--primary); font-size: 1.4rem; } 
 
-.banner_text li:last-child { width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--primary); border-radius: 0.5rem; margin-top: 4rem; margin-left: 16rem; } 
+.banner_text li a {position: absolute; margin-top: 33%; margin-left: 36%; width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--primary); border-radius: 0.5rem;} 
+
+/* hover */
+.banner_text li:nth-child(2) a:hover{background-color: var(--primary); color: var(--secondary1);}
+
 
 /* img */
-.banner_img li img { height: 80%; } 
+.main_banner .container{position: relative;}
 
-.main_banner .container .banner_img { position: absolute; top: 12%; right: 13%; } 
+.banner_img li img {position: absolute; height: 80%; top: 0; right: 0;} 
 
-.banner_img_2 img { margin-left: 0%; vertical-align: top; } 
+.banner_img li img{top: 9%; right: 14%;}
 
-.banner_img_1 img { margin-left: -10%; vertical-align: top; } 
+.banner_img_2 img { left: 40%; vertical-align: top; } 
 
-.banner_img_3 img { margin-left: -75%; vertical-align: top; } 
+.banner_img_1 img { left: 55%; vertical-align: top; } 
+
+.banner_img_3 img { left: 70%; vertical-align: top; } 
 
 
 /* nav_1 */
@@ -154,8 +159,8 @@ opacity: 0;
 
 
 /* ## promotion botton hidden ## */
-.promotion_list li:nth-child(2){ position: absolute; top:0.6rem; left: 15rem; opacity: 1;} /* close시 */ 
-.promotion_list li:last-child{ position: absolute;  top:0.6rem; left: 15rem; opacity: 0;} /* open시 */
+.promotion_list li.p_close{ position: absolute; top:0.6rem; left: 15rem; display: block;} /* close시 */ 
+.promotion_list li.p_open{ position: absolute;  top:0.6rem; left: 15rem; display: none;} /* open시 */
 
 /* ##// promotion botton hidden */
 
@@ -163,11 +168,12 @@ opacity: 0;
 
 /* === hidden === */
 /* h_img */
-.nav_1_pr .hidden { width: 100%; height: 66rem; background-color: var(--background); display: none;} 
+.nav_1_pr .hidden { width: 100%; height: 66rem; background-color: var(--background); display: none; position: relative;} 
 
-.hidden .flex { display: flex; padding-top: 5rem; gap: 2rem; } 
+.hidden .flex { display: flex; padding-top: 5rem; gap: 2rem; }
 
-.hidden .flex li:nth-child(1) { margin-left: -290px; } 
+.hidden .flex li{position: absolute; right: 15%;}
+
 
 /* 자세히 보기 버튼 */
 ul.flex li.inner { position: relative; } 
@@ -182,8 +188,6 @@ ul.left_right li:first-child { position: absolute; top: -50%; left: 25%; display
 ul.left_right li:last-child { position: absolute; top: -50%; right: 22.5%; display: block; } 
 
 /* 재생 정지 */
-.nav_1_pr .hidden { position: relative; } 
-
 ul.hidden_btn { position: absolute; display: flex; gap: 0.5rem; top: 63rem; left: 50%; } 
 
 
@@ -225,9 +229,9 @@ ul.hidden_btn { position: absolute; display: flex; gap: 0.5rem; top: 63rem; left
 
 /* === content === */
 /* content_1_1 */
-.content_1 { width: 100%; height: 58rem; display: flex; } 
+.content_1 { width: 100%; height: 64.65vh; display: flex; position: relative;} 
 
-.content_1 .content_1_1 { width: 50%; height: 58rem; background: url(../img/promotion_bg_2_2.jpg) no-repeat center center/cover; position: relative; } 
+.content_1 .content_1_1 { width: 50%; height: 64.65vh; background: url(../img/promotion_bg_2_2.jpg) no-repeat center center/cover; position: relative; } 
 .inner_text { position: absolute; right: 5rem; top:30% } 
 
 .inner_text li { color: var(--secondary1); line-height: 1.5; font-size: 1.8rem; font-family: 'NanumBarunGothic'; } 
@@ -235,12 +239,16 @@ ul.hidden_btn { position: absolute; display: flex; gap: 0.5rem; top: 63rem; left
 .inner_text li:nth-child(2) { font-size: 3.5rem; font-family: 'NanumBarunGothic'; } 
 .inner_text li:not(:nth-child(2)) { color: rgba(246,245,240,.6) } 
 .inner_text li:last-child a { display: block; color: var(--secondary1); width: 125px; text-align: center; padding: 0.7rem 2rem; border: 2.5px solid var(--secondary1); border-radius: 0.5rem; font-size: 1.4rem; margin-top: 3.5rem; } 
-
-.content_1_2 a { display: block; color: var(--pointcolor4); width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--pointcolor4); border-radius: 0.5rem; font-size: 1.4rem; margin-top: 32rem; margin-left: 33%; } 
-
-
 /* content_1_2 */
-.content_1 .content_1_2 { width: 50%; height: 58rem; background: url(../img/230811_pc_reserve_bg_1.jpg) no-repeat center center/cover; } 
+
+.content_1_2 a { display: block; color: var(--pointcolor4); width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--pointcolor4); border-radius: 0.5rem; font-size: 1.4rem; margin-top: 30rem; margin-left: 33%; } 
+
+.content_1 .content_1_2 { width: 50%; height: 64.65vh; background: url(../img/230811_pc_reserve_bg_1.jpg) no-repeat center center/cover; position: relative;} 
+
+/* hover */
+.inner_text:last-child a:hover{background-color: var(--secondary1); color: var(--primary);}
+
+.content_1_2 a:hover{background-color: var(--pointcolor4); color: var(--text1);}
 
 
 /* content_2 */
@@ -258,7 +266,10 @@ ul.hidden_btn { position: absolute; display: flex; gap: 0.5rem; top: 63rem; left
 .content_2_1 .left_text_1 .left_h2 li { color: #fff; font-size: 2.8rem; line-height: 1.1; } 
 
 .content_2_1 p { margin-left: 33rem; margin-top: 3rem; } 
-.content_2_1 p>a { display: block; color: var(--background); width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--background); border-radius: 0.5rem; font-size: 1.4rem; } 
+.content_2_1 p>a { display: block; color: var(--background); width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--background); border-radius: 0.5rem; font-size: 1.4rem; }
+
+/* hover */
+.content_2_1 p>a:hover{background-color: var(--secondary1); color: var(--text1);}
 
 /* img */
 .content_2 .content_2_2 { width: 60%; } 
@@ -291,15 +302,21 @@ section.slide_card { position: relative; }
 
 
 /* gnb_nav */
-.gnb_nav { width: 100%; height: 12rem; background-color: #BFE1E3; display: flex; } 
-.gnb_nav .container { width: 100%; max-width: 1300px; height: 12rem; position: relative; left: 50rem; top: 3.5rem; } 
+.gnb_nav { width: 100%; height: 12rem; background-color: #BFE1E3; display: flex; position: relative;} 
+.gnb_nav .container { width: 100%; max-width: 1300px; height: 12rem; margin: auto;} 
 
-.gnb_nav .container span img { margin-right: 1.5rem; } 
+.nav{ position: absolute; left: 26.4vw; top: 3.5rem; }
+
+.container span:nth-child(1){position: absolute; top: 0; left: 0;}
+.container span:nth-child(2){position: absolute; top: 0; left: 7.5rem;}
+.container span:nth-child(3){position: absolute; top: 0; left: 15.1rem;}
+.container span:nth-child(4){position: absolute; top: 0; left: 22.7rem;}
 
 /* 검색 */
-form .search_wrap { position: absolute; right: 90rem; } 
+div.search_bar{position: relative; left:80rem; top: 3.5rem;}
+form .search_wrap { position: absolute; } 
 
-input#search { width: 60rem; height: 5rem; background: #ffffff; border: 0; font-size: 1.6rem; text-align:center; color: var(--primary); border-radius: 50px; } 
+input#search { width: 31.6vw; height: 5rem; background: #ffffff; border: 0; font-size: 1.6rem; text-align:center; color: var(--primary); border-radius: 50px; } 
 
 .search_wrap span.icon img { width:40px;} 
 
@@ -309,15 +326,18 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
 
 
 /* ===== info_1 ==== */
-.info_1 { width: 100%; height: 45rem; background: url(../img/reserve_bg_pc.png) no-repeat center; background-position-y: 10rem; } 
+.info_1 { width: 100%; height: 45rem; background: url(../img/reserve_bg_pc.png) no-repeat center; background-position-y: 10rem;} 
 
-.info_1 .container { max-width: 1200px; display: flex; position: relative;} 
+.info_1 .container { max-width: 1200px; height: inherit; position: relative;} 
 
 .info_1 .container .img { width: 100%; height: 45rem; background: url(../img/reserve_visual_pc.png) no-repeat; background-position-x: 80%; background-position-y: 5rem; position: absolute; left: 5rem; top: -0.2rem;} 
 
-.info_1 .container .icon { height: 10rem; display: flex; z-index: 1; margin-top: 15.5rem; margin-right: 15rem;} 
+.info_1 .container .icon { height: 10rem; display: flex; z-index: 1; position: absolute; top: 15.5rem; left: 10rem;} 
 
-.info_1 .botton a{display: block; color: var(--text1); width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--text1); border-radius: 0.5rem; font-size: 1.4rem; margin-top: 5rem; margin-left: 80rem; font-family: 'NanumBarunGothic';}
+.info_1 .botton a{display: block; position: absolute;z-index: 1; top: 29rem; left: 40rem; color: var(--text1); width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--text1); border-radius: 0.5rem; font-size: 1.4rem; font-family: 'NanumBarunGothic';}
+
+/* hover */
+.info_1 .botton a:hover{background-color: var(--text1); color: var(--secondary1);}
 
 
 /* ==== info_2 ==== */
@@ -334,7 +354,7 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
 .info_2 .group { display: flex; }
 
 /* info_text */
-.info_text{margin-top: 10rem;}
+.info_text{margin-top: 10rem; z-index: 1;}
 .info_text_1>li,.info_text_2>li,.info_text_3>li>a{ color: var(--text1);}
 
 .info_text ul.info_text_1{line-height: 1.333;}
@@ -348,6 +368,9 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
 .info_text ul.info_text_2 li:last-child{margin-top: 1rem; font-family: 'NanumBarunGothic';}
 
 .info_text ul.info_text_3 li a{font-family: 'NanumBarunGothic'; display: block; color: var(--text1); width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--text1); border-radius: 0.5rem; font-size: 1.6rem; margin-top: 3rem;}
+
+/* hover */
+.info_text ul.info_text_3 li a:hover{background-color: var(--text1); color: var(--secondary1);}
 
 
 /* ==== footer_1 ===== */
