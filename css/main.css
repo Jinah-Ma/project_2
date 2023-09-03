@@ -174,9 +174,10 @@ opacity: 0;
 
 
 /* promotion */
-.nav_1 div.promotion ul { width: 45%; height: 5rem; background-color: var(--background); display: flex; position: relative;} 
+.promotion{position: relative;}
+.nav_1 div.promotion ul {position: absolute; width: 45%; height: 5rem; background-color: var(--background); display: flex; } 
 
-.promotion_list:first-child>li>a { display: block; font-family: 'NanumBarunGothic'; width: 25rem; line-height: 5rem; font-size: 1.8rem; text-decoration: none; text-align: center; margin-left: 20rem; } 
+.promotion_list:first-child>li>a { display: block; font-family: 'NanumBarunGothic'; width: 25rem; line-height: 5rem; font-size: 1.8rem; text-decoration: none; text-align: center; position: absolute; left: 20rem; } 
 
 
 /* ## promotion botton hidden ## */
