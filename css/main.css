@@ -67,7 +67,7 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 
 
 /* === popup === */
-.popup { position: fixed; z-index: 999; width: 50rem; height: 20rem; background: rgba(255, 255, 255, .8); top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); } 
+.popup { position: fixed; z-index: 999; width: 50rem; height: 20rem; background: rgba(255, 255, 255, .8); top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); backdrop-filter: blur(20px);} 
 
 .popup .textbox { width: 100%; height: 20rem; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; line-height: 1.75; } 
 
@@ -276,6 +276,54 @@ ul.hidden_btn { position: absolute; display: flex; gap: 0.5rem; top: 63rem; left
 
 .content_2 .content_2_2 img { margin-top: 3rem; margin-left: 5rem; } 
 
+/* ### animation ### */
+ .content_2 .content_2_1 img{
+    animation-name: img_show;
+    animation-duration: 3s;
+    animation-fill-mode:both;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+@keyframes img_show {
+    0% {transform: translate(-640px); overflow: hidden; opacity: 0;
+    }
+}
+
+.content_2 .content_2_1 .left_text_1{
+    animation-name: text_show;
+    animation-duration: 3s;
+    animation-fill-mode:both;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+   opacity: 0;
+    animation-delay: 0.2s;
+}
+@keyframes text_show {
+    0% {transform: translate(-640px); overflow: hidden; opacity: 0; 
+    }
+    100%{
+        transform: translate(0); opacity: 1;
+    }
+}
+
+.content_2 p a{
+    margin-left:7.5rem;
+    animation-name: a_show;
+    animation-duration: 4s;
+    animation-fill-mode:both;
+    animation-iteration-count: 1;
+    animation-play-state:running;
+}
+@keyframes a_show {
+    0%{
+         opacity: 0;
+    }
+    100%{
+         opacity: 1;
+    }
+}
+/* //### animation */
+
 
 /* ==== news ===== */
 .store_slide { width: 100%; height: 46rem; } 
@@ -316,11 +364,11 @@ section.slide_card { position: relative; }
 div.search_bar{position: relative; left:80rem; top: 3.5rem;}
 form .search_wrap { position: absolute; } 
 
-input#search { width: 31.6vw; height: 5rem; background: #ffffff; border: 0; font-size: 1.6rem; text-align:center; color: var(--primary); border-radius: 50px; } 
+input#search { width: 31.6vw; height: 5rem; background: #ffffff; border: 0; font-size: 1.6rem; text-align:center; color: var(--primary); border-radius: 50px; position: relative;} 
 
 .search_wrap span.icon img { width:40px;} 
 
-.search_wrap span.icon { position: absolute; top: 0.5rem; right: 0.2rem; } 
+.search_wrap span.icon { position: absolute; top: 0.5rem; left: 23.9vw; } 
 
 input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; } 
 
