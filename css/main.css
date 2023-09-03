@@ -100,7 +100,7 @@ opacity: 0;
 
 .main_banner ul.banner_text li:first-child img{transition: all 0.2s; transition-delay:0s}
 
-.main_banner ul.banner_img li.banner_img_1{transition: all 0.2; transition-delay:0.3s}
+.main_banner ul.banner_img li.banner_img_1{transition: all 0.2s; transition-delay:0.3s}
 .main_banner ul.banner_img li.banner_img_2{transition: all 0.2s; transition-delay:0.7s}
 .main_banner ul.banner_img li.banner_img_3{transition: all 0.2s; transition-delay:1.1s}
 .main_banner ul.banner_text li:last-child{transition: all 0.2s; transition-delay:1.5s}
@@ -162,8 +162,6 @@ opacity: 0;
 .promotion_list li.p_close{ position: absolute; top:0.6rem; left: 15rem; display: block;} /* close시 */ 
 .promotion_list li.p_open{ position: absolute;  top:0.6rem; left: 15rem; display: none;} /* open시 */
 
-/* ##// promotion botton hidden */
-
 
 
 /* === hidden === */
@@ -173,6 +171,9 @@ opacity: 0;
 .hidden .flex { display: flex; padding-top: 5rem; gap: 2rem; }
 
 .hidden .flex li{position: absolute; right: 15%;}
+
+/* ### button ### */
+.left_right img:hover {background-color: var(--background); border-radius: 50%; transition: background-color .7s;}
 
 
 /* 자세히 보기 버튼 */
@@ -188,7 +189,20 @@ ul.left_right li:first-child { position: absolute; top: -50%; left: 25%; display
 ul.left_right li:last-child { position: absolute; top: -50%; right: 22.5%; display: block; } 
 
 /* 재생 정지 */
-ul.hidden_btn { position: absolute; display: flex; gap: 0.5rem; top: 63rem; left: 50%; } 
+ul.hidden_btn { position: absolute; display: flex; gap: 0.5rem; top: 63rem; left: 50%; cursor: pointer;} 
+
+/* ## btn_se ## */
+/* 1 */
+.slide_se1 li.start{display: block;}
+.slide_se1 li.end{display: none;}
+/* 2 */
+.slide_se2 li.start{display: block;}
+.slide_se2 li.end{display: none;}
+/* 3 */
+.slide_se3 li.start{display: block;}
+.slide_se3 li.end{display: none;}
+
+
 
 
 /* nav_2 */
@@ -332,7 +346,7 @@ ul.hidden_btn { position: absolute; display: flex; gap: 0.5rem; top: 63rem; left
 .store_slide h2.title_2 { margin-left: 12rem; margin-top: 3rem; margin-bottom: 1.5rem; font-size: 3.8rem; font-family: 'NanumBarunGothicBold'; } 
 
 
-.store_slide section ul { display: grid; grid-template-columns: repeat(6, 400px); gap: 1rem; width: 100%; height: 34rem; overflow: hidden; overflow-y: hidden; justify-content: center; align-items: center; } 
+.store_slide section ul:not(:last-child) { display: grid; grid-template-columns: repeat(6, 400px); gap: 1rem; width: 100%; height: 34rem; overflow: hidden; overflow-y: hidden; justify-content: center; align-items: center; } 
 
 .store_slide li.block img { width: 400px; height: 315px; } 
 
@@ -345,8 +359,26 @@ section.slide_card { position: relative; }
 
 .slide_card ul.left_right_2 li:last-child { position: absolute; display: block; top: 0; right: 0; margin-top: 20rem; margin-right: 15rem; } 
 
+/* ## 버튼 hover ## */
+.left_right_2 img:hover {background-color: var(--background); border-radius: 50%; transition: background-color .7s;}
+
+
 /* 재생 정지 */
-.slide_card ul.hidden_btn_2 { position: absolute; display: flex; gap: 0.5rem; top: 0; left: 0; margin: auto; margin-top: 25rem; } 
+.slide_card ul.slide_btn_2{ position: absolute; gap: 2rem; display: flex; top: 40rem; left: 49%;}
+.slide_btn_2 ul.button{display: flex; }
+.slide_btn_2 ul.button li.start{position: absolute; cursor: pointer;}
+.slide_btn_2 ul.button li.end{position: absolute; cursor: pointer;}
+
+/* ## 재생 정지 버튼 ##*/
+/* 1 */
+.slide_se4 li.start{display: block;}
+.slide_se4 li.end{display: none;}
+/* 2 */
+.slide_se5 li.start{display: block;}
+.slide_se5 li.end{display: none;}
+/* 3 */
+.slide_se6 li.start{display: block;}
+.slide_se6 li.end{display: none;}
 
 
 /* gnb_nav */
@@ -387,6 +419,23 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
 /* hover */
 .info_1 .botton a:hover{background-color: var(--text1); color: var(--secondary1);}
 
+/* ## .info_1 .img animation @## */
+
+.info_1 .container .img{
+    animation-name: class_show;
+    animation-duration: 1s;
+    animation-fill-mode:both;
+    animation-iteration-count: 1;
+    animation-play-state:running;
+}
+@keyframes class_show {
+    0%{
+         opacity: 0;
+    }
+    100%{
+         opacity: 1;
+    }
+}
 
 /* ==== info_2 ==== */
 .info_2 { width: 100%; height: 40rem; background: url(../img/store_bg.jpg) no-repeat center center/cover; } 
@@ -419,6 +468,53 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
 
 /* hover */
 .info_text ul.info_text_3 li a:hover{background-color: var(--text1); color: var(--secondary1);}
+
+/* ### .info_2 .info_text animation ### */
+
+.info_2 .info_text .info_text_1{
+    animation-name: info_show1;
+    animation-duration: 3s;
+    animation-fill-mode:both;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+}
+@keyframes info_show1 {
+    0% {transform: translate(640px); overflow: hidden; opacity: 0;
+    }
+}
+
+.info_2 .info_text .info_text_2{
+    animation-name: info_show2;
+    animation-duration: 3s;
+    animation-fill-mode:both;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+   opacity: 0;
+    animation-delay: 0.2s;
+}
+@keyframes info_show2 {
+    0% {transform: translate(640px); overflow: hidden; opacity: 0; 
+    }
+    100%{
+        transform: translate(0); opacity: 1;
+    }
+}
+
+.info_2 .info_text .info_text_3{
+    animation-name: info_show3;
+    animation-duration: 4s;
+    animation-fill-mode:both;
+    animation-iteration-count: 1;
+    animation-play-state:running;
+    animation-delay: 0.2s;
+}
+@keyframes info_show3 {
+    0% {transform: translate(640px); overflow: hidden; opacity: 0; 
+    }
+    100%{
+        transform: translate(0); opacity: 1;
+    }
+}
 
 
 /* ==== footer_1 ===== */

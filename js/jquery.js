@@ -51,23 +51,104 @@ $('.promotion_list li img').click(function (event) {
 // 스타벅스 프로모션 히든 페이지 나타내기
 //function(event){event.preventDefault();: 스크롤 고정해서 위로 올라가는 것을 막아준다.
 
+/* 1 */
 $(document).ready(function () {
-    const imgElement = $('.content_2 .content_2_1 img');
-    const textElement = $('.content_2 .content_2_1 .left_text_1');
-    const aElements = $('.content_2 p a');
-})
-$(window).scroll(function () {
-    const windowHeight = $(window).height();
-    const scrollY = $(window).scrollTop();
-})
-if (imgElement.offset().top <= scrollY + windowHeight) {
-    imgElement.addClass('animate');
-}
-if (textElement.offset().top <= scrollY + windowHeight) {
-    textElement.addClass('animate');
-}
-aElements.each(function() {
-    if ($(this).offset().top <= scrollY + windowHeight) {
-      $(this).addClass('animate');
-    }
-  });    
+    $('.slide_se1 li.start').click(function () {
+        $('.slide_se1 li.start').css('display', 'none');
+        $('.slide_se1 li.end').css('display', 'block');
+    });
+});
+$(document).ready(function () {
+    $('.slide_se1 li.end').click(function () {
+        $('.slide_se1 li.end').css('display', 'none');
+        $('.slide_se1 li.start').css('display', 'block');
+    });
+});
+
+/* 2 */
+$(document).ready(function () {
+    $('.slide_se2 li.start').click(function () {
+        $('.slide_se2 li.start').css('display', 'none');
+        $('.slide_se2 li.end').css('display', 'block');
+    });
+});
+$(document).ready(function () {
+    $('.slide_se2 li.end').click(function () {
+        $('.slide_se2 li.end').css('display', 'none');
+        $('.slide_se2 li.start').css('display', 'block');
+    });
+});
+
+/* 3 */
+$(document).ready(function () {
+    $('.slide_se3 li.start').click(function () {
+        $('.slide_se3 li.start').css('display', 'none');
+        $('.slide_se3 li.end').css('display', 'block');
+    });
+});
+$(document).ready(function () {
+    $('.slide_se3 li.end').click(function () {
+        $('.slide_se3 li.end').css('display', 'none');
+        $('.slide_se3 li.start').css('display', 'block');
+    });
+});
+
+// 프로모션 재생 정지 버튼 구현
+
+
+
+
+// 프로모션 히든페이지 슬라이드
+
+
+
+
+// 스크롤을 내릴 때마다 매번 슬라이드로 나타나게 하기
+
+/* 4 */
+$(document).ready(function () {
+    $('.slide_se4 li.start').click(function () {
+        $('.slide_se4 li.start').css('display', 'none');
+        $('.slide_se4 li.end').css('display', 'block');
+    });
+});
+$(document).ready(function () {
+    $('.slide_se4 li.end').click(function () {
+        $('.slide_se4 li.end').css('display', 'none');
+        $('.slide_se4 li.start').css('display', 'block');
+    });
+});
+
+/* 5 */
+$(document).ready(function () {
+    $('.slide_se5 li.start').click(function () {
+        $('.slide_se5 li.start').css('display', 'none');
+        $('.slide_se5 li.end').css('display', 'block');
+    });
+});
+$(document).ready(function () {
+    $('.slide_se5 li.end').click(function () {
+        $('.slide_se5 li.end').css('display', 'none');
+        $('.slide_se5 li.start').css('display', 'block');
+    });
+});
+
+/* 6 */
+$(document).ready(function () {
+    $('.slide_se6 li.start').click(function () {
+        $('.slide_se6 li.start').css('display', 'none');
+        $('.slide_se6 li.end').css('display', 'block');
+    });
+});
+$(document).ready(function () {
+    $('.slide_se6 li.end').click(function () {
+        $('.slide_se6 li.end').css('display', 'none');
+        $('.slide_se6 li.start').css('display', 'block');
+    });
+});
+
+
+// 온라인스토어 재생 정지 버튼 구현
+
+
+//온라인스토어 슬라이드
