@@ -28,6 +28,12 @@ $('.main_banner ul.banner_text li:last-child').ready(function () {
 
 // 메인배너 사이트 들어가자마자 오파서티로 나타내기
 
+
+
+
+
+// 배너 밑 '공지사항'
+
 $(document).ready(function () {
     $('.promotion .p_close').click(function () {
         $('.promotion .p_close').css('display', 'none');

@@ -67,7 +67,7 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 
 
 /* === popup === */
-.popup { position: fixed; z-index: 999; width: 50rem; height: 20rem; background: rgba(255, 255, 255, .8); top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); backdrop-filter: blur(20px);} 
+.popup { position: fixed; z-index: 999; width: 50rem; height: 20rem; background: rgba(255, 255, 255, .8); top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); border-radius: 10px; backdrop-filter: blur(20px); box-shadow: 0px 0px 5px var(--text1)} 
 
 .popup .textbox { width: 100%; height: 20rem; display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; line-height: 1.75; } 
 
@@ -144,13 +144,34 @@ opacity: 0;
 .nav_1 .flex { display: flex; } 
 
 /* notion */
-.nav_1 div.notice { width: 55%; height: 5rem; background-color: black; display: flex; overflow: hidden;} 
+.nav_1 div.notice { width: 55%; height: 5rem; background-color: black; display: flex; overflow: hidden; position: relative;} 
 
-.notice p { color: #fff; font-family: 'NanumBarunGothic'; line-height: 5rem; font-size: 1.8rem; width: 10rem; margin-left: 40%; } 
+.notice p {position: absolute; color: #fff; font-family: 'NanumBarunGothic'; line-height: 5rem; font-size: 1.8rem; width: 10rem; margin-left: 40%; } 
 
 .notice li a { color: #fff; line-height: 5rem; font-size: 1.4rem; } 
 
-.notice .btn_plus img { margin-top: 0.6rem; margin-right: 2rem; } 
+.notice .btn_plus img {position: absolute; margin-top: 0.6rem; right: 2rem; }
+
+/* ## notion animation ## */
+
+.history li{
+    position: absolute;
+    left: 48rem;
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-timing-function: 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+.history .list_1{animation-delay: 0s;}
+.history .list_2{animation-delay: 1s;}
+.history .list_3{animation-delay: 2s;}
+.history .list_4{animation-delay: 3s;}
+.history .list_5{animation-delay: 4s;}
+
+
+
 
 /* promotion */
 .nav_1 div.promotion ul { width: 45%; height: 5rem; background-color: var(--background); display: flex; position: relative;} 
