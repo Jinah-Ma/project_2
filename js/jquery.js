@@ -28,7 +28,21 @@ $('.main_banner ul.banner_text li:last-child').ready(function () {
 
 // 메인배너 사이트 들어가자마자 오파서티로 나타내기
 
-
+$('.history .list_1').ready(function(){
+    $('.history .list_1').animate({opacity:1,}, 500)
+})
+$('.history .list_2').ready(function(){
+    $('.history .list_1').delay(1000).animate({opacity:1}, 500)
+})
+$('.history .list_3').ready(function(){
+    $('.history .list_1').delay(2000).animate({opacity:1}, 500)
+})
+$('.history .list_4').ready(function(){
+    $('.history .list_1').delay(3000).animate({opacity:1}, 500)
+})
+$('.history .list_5').ready(function(){
+    $('.history .list_1').delay(4000).animate({opacity:1}, 500)
+})
 
 
 

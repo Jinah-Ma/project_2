@@ -153,22 +153,16 @@ opacity: 0;
 .notice .btn_plus img {position: absolute; margin-top: 0.6rem; right: 2rem; }
 
 /* ## notion animation ## */
-
-.history li{
-    position: absolute;
-    left: 48rem;
-    opacity: 0;
-    animation-name: fadeIn;
-    animation-timing-function: 0.5s ease-in-out;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-}
-
-.history .list_1{animation-delay: 0s;}
-.history .list_2{animation-delay: 1s;}
-.history .list_3{animation-delay: 2s;}
-.history .list_4{animation-delay: 3s;}
-.history .list_5{animation-delay: 4s;}
+.history .list_1{position: absolute;
+    left: 49rem;opacity: 0; transition-delay: 0s;}
+.history .list_2{position: absolute;
+    left: 49rem;opacity: 0;transition-delay: 1s;}
+.history .list_3{position: absolute;
+    left: 49rem;opacity: 0;transition-delay: 2s;}
+.history .list_4{position: absolute;
+    left: 49rem;opacity: 0;transition-delay: 3s;}
+.history .list_5{position: absolute;
+    left: 49rem;opacity: 0;transition-delay: 4s;}
 
 
 
