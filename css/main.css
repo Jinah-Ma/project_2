@@ -33,7 +33,7 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 
 
 /* 댑스 레이아웃 세부 */
-.gnb h2 a { margin-left: 10rem; margin-top: 2rem; } 
+.gnb h1 a { margin-left: 10rem; margin-top: 2rem; } 
 
 .main_menu { max-width: 1300px; } 
 
@@ -138,7 +138,7 @@ opacity: 0;
 .banner_img_3 img { left: 70%; vertical-align: top; } 
 
 
-/* nav_1 */
+/* ======== nav_1 ========== */
 .nav_1 { width: 100%; height: 5rem; margin: auto; } 
 
 .nav_1 .flex { display: flex; } 
@@ -146,30 +146,21 @@ opacity: 0;
 /* notion */
 .nav_1 div.notice { width: 55%; height: 5rem; background-color: black; display: flex; overflow: hidden; position: relative;} 
 
-.notice p {position: absolute; color: #fff; font-family: 'NanumBarunGothic'; line-height: 5rem; font-size: 1.8rem; width: 10rem; margin-left: 40%; } 
+.notice p {position: absolute; color: #fff; font-family: 'NanumBarunGothic'; line-height: 5rem; font-size: 1.8rem; width: 10rem; left: 40%; } 
 
 .notice li a { color: #fff; line-height: 5rem; font-size: 1.4rem; } 
 
 .notice .btn_plus img {position: absolute; margin-top: 0.6rem; right: 2rem; }
 
 /* ## notion animation ## */
-.history .list_1{position: absolute;
-    left: 49rem;opacity: 0; transition-delay: 0s;}
-.history .list_2{position: absolute;
-    left: 49rem;opacity: 0;transition-delay: 1s;}
-.history .list_3{position: absolute;
-    left: 49rem;opacity: 0;transition-delay: 2s;}
-.history .list_4{position: absolute;
-    left: 49rem;opacity: 0;transition-delay: 3s;}
-.history .list_5{position: absolute;
-    left: 49rem;opacity: 0;transition-delay: 4s;}
+.history li{position: absolute; left: 26.9vw; width: 40rem; overflow: hidden;}
 
 
 
 
 /* promotion */
 .promotion{position: relative;}
-.nav_1 div.promotion ul {position: absolute; width: 45%; height: 5rem; background-color: var(--background); display: flex; } 
+.nav_1 div.promotion ul {position: absolute; width: 45%; background-color: var(--background); display: flex; } 
 
 .promotion_list:first-child>li>a { display: block; font-family: 'NanumBarunGothic'; width: 25rem; line-height: 5rem; font-size: 1.8rem; text-decoration: none; text-align: center; position: absolute; left: 20rem; } 
 
@@ -235,9 +226,9 @@ ul.hidden_btn { position: absolute; display: flex; gap: 0.5rem; top: 63rem; left
 
 .container_cloumn { display: flex; margin-top: 4rem; margin-left: 3rem; } 
 
-.container_cloumn h1 { color: #fff; font-size: 3.1rem; letter-spacing: -0.5px; margin-right: 6rem; } 
+.container_cloumn h2 { color: #fff; font-size: 3.1rem; letter-spacing: -0.5px; margin-right: 6rem; } 
 
-.container_cloumn h1 strong { font-family: 'NanumBarunGothicBold'; } 
+.container_cloumn h2 strong { font-family: 'NanumBarunGothicBold'; } 
 
 .text_btn { display: flex; gap: 1rem; margin-top: 1rem; } 
 
@@ -575,3 +566,54 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
 
 
 .footer_3 .container p { display: flex; text-align: center; justify-content: center; font-size: 1.2rem; margin-top: 2rem; color: rgba(246,245,240,.6);}
+
+
+
+/* @----- 태블릿 ------@ */
+@media all and (min-width: 641px) and (max-width: 960px){
+   
+    /* === header === */
+    /* 헤더 댑스 기본 레이아웃 */
+    nav{
+        height: 70px; position: relative;
+    }
+   nav .main_menu{ display: none;}
+
+
+   nav h1 img{width: 45px; position: absolute; top:1rem; left: 1rem;}
+
+   /* sticky */
+   div.sticky{top: 12%;}
+
+   /* 메인 배너 */
+   .main_banner{ width: 100%; height: 278vw; position: relative; top: -4.5rem; background: url(../img/phone/2023_m_summer2_promotion_bg_2.jpg) no-repeat center center/cover;}
+
+   .main_banner ul.banner_text li:first-child img{display: none;}
+   
+   .main_banner ul.banner_img li.banner_img_2 img{display: none;}
+   .main_banner ul.banner_img li.banner_img_1 img{display: none;}
+   .main_banner ul.banner_img li.banner_img_3 img{display: none;}
+
+
+   /* ===== nav_1 ======= */
+   .nav_1 {position: relative; top: -4.5rem;}
+   .nav_1 .notice {position: absolute;}
+
+   /* notice */
+   .notice p {left: 5%;}
+   .notice li {left: 25%; width: 20rem;}
+
+   /* promotion */
+   .promotion_list:first-child>li>a{ left: 0rem;}
+
+   
+
+}
+
+
+
+
+/* @----- 모바일 ------@ */
+@media all and (max-width: 425px){
+
+}
