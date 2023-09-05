@@ -273,7 +273,7 @@ ul.hidden_btn { position: absolute; display: flex; gap: 0.5rem; top: 63rem; left
 
 
 /* content_2 */
-.content_2 { width: 100%; height: 66rem; background: url(../img/summer2_pick_bg.jpg) no-repeat center fixed; } 
+.content_2 { width: 100%; height: 66rem; background: url(../img/summer2_pick_bg.jpg) no-repeat center /* fixed */; } 
 
 .content_2 .container { display: flex; } 
 
@@ -624,7 +624,15 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
    .container_card .g_btn { margin-top: 3rem; margin-left: 4rem;}
 
    /* === content ====== */
+   .content_1{display: inline-block;}
    
+   /* content_1_1 */
+   .content_1 .content_1_1{ width: 100%; height: 152.6vh; background: url(../img/phone/2023_m_summer2_promotion_bg_1.jpg) no-repeat center center/cover; top: -1.8rem;}
+   .content_1 .content_1_1::before{content: url(../img/phone/2023_m_summer2_promotion_img_1.png); position: absolute; top: 20rem; left: 35%;}
+
+
+
+   /* content_1_2 */
 
 
 }
