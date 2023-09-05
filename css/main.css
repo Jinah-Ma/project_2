@@ -37,7 +37,7 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 
 .main_menu { max-width: 1300px; } 
 
-.main_menu .util_nav { display: flex; justify-content: end; margin-top: -1rem; margin-bottom: 1rem; margin-right:21rem; } 
+.main_menu .util_nav { display: flex; justify-content: end;  margin-right:21rem; } 
 
 .main_menu .util_nav li a { font-size: 1.4rem; padding-left: 1.5rem; margin-right: 2rem; } 
 
@@ -63,7 +63,7 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 
 
 /* === Sticky === */
-.sticky { width: 166px; height: 116px; position: sticky; top: 150px; left: 160rem; z-index: 111; } 
+.sticky { width: 166px; position: sticky; top: 150px; left: 160rem; z-index: 12; } 
 
 
 /* === popup === */
@@ -144,7 +144,7 @@ opacity: 0;
 .nav_1 .flex { display: flex; } 
 
 /* notion */
-.nav_1 div.notice { width: 55%; height: 5rem; background-color: black; display: flex; overflow: hidden; position: relative;} 
+.nav_1 div.notice { width: 55%; height: 10.5vw; background-color: black; display: flex; overflow: hidden; position: relative;} 
 
 .notice p {position: absolute; color: #fff; font-family: 'NanumBarunGothic'; line-height: 5rem; font-size: 1.8rem; width: 10rem; left: 40%; } 
 
@@ -212,7 +212,7 @@ ul.hidden_btn { position: absolute; display: flex; gap: 0.5rem; top: 63rem; left
 
 
 
-/* nav_2 */
+/* ====== nav_2 ====== */
 .nav_2 { width: 100%; height: 24rem; background-color: var(--secondary2); position: relative; } 
 
 .nav_2>div.container { width: 1300px; position: absolute; right: 0; left: 0; } 
@@ -600,13 +600,32 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
    .nav_1 .notice {position: absolute;}
 
    /* notice */
-   .notice p {left: 5%;}
-   .notice li {left: 25%; width: 20rem;}
+
+   .notice p {left: 5%; top: 1.8rem;}
+   .notice li {left: 25%; top: 1.8rem; overflow: hidden; text-overflow: ellipsis; width: 20rem;}
+   .notice .btn_plus img {top: 1.8rem;}
 
    /* promotion */
-   .promotion_list:first-child>li>a{ left: 0rem;}
-
+   .promotion_list:first-child>li>a{ left: 0rem; top: 1.9rem; font-family:'NanumBarunGothicBold';}
    
+   
+   /* ===== hidden ====== */
+
+
+   /* ====== nav_2 ====== */
+   .nav_2{height: 43rem; top: -1.8rem;}
+   .nav_2 .container img {width: 26rem; margin-left: 5rem; margin-top: 6.5rem; margin-bottom: 6rem;}
+   .text_btn{margin-top: 1.5rem;}
+
+   /* text */
+   .container_cloumn{flex-direction: column; width: 37rem; line-height: 1.333; }
+   
+   .container_card{flex-direction: column; width: 43rem;margin-left: -1rem;}
+   .container_card .g_btn { margin-top: 3rem; margin-left: 4rem;}
+
+   /* === content ====== */
+   
+
 
 }
 
