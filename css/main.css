@@ -108,17 +108,11 @@ opacity: 0;
 
 
 /* text */
-.main_banner .container { max-width: 100%; position: relative; box-sizing: border-box; height: 100%; margin: 0 auto; } 
+.main_banner .container {max-width: 100%; position: relative; box-sizing: border-box; height: 100%; margin: 0 auto;}
 
-.main_banner .container .banner_text { position: absolute; top: 35%; left: 12%; width: 22%; } 
+.main_banner .container .banner_text li img {position: absolute; top: 12vw; left: 12vw;  width: 22%; } 
 
-.banner_text li img {position: absolute; max-width: 100%; vertical-align: top; } 
-
-.banner_text li a {position: absolute; top: 0; left: 0; max-width: 100%; vertical-align: top; } 
-
-.banner_text a { font-family: 'NanumBarunGothic'; color: var(--primary); font-size: 1.4rem; } 
-
-.banner_text li a {position: absolute; margin-top: 33%; margin-left: 36%; width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--primary); border-radius: 0.5rem;} 
+.banner_text li a { position: absolute; top: 20vw; left: 19vw; width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--primary); border-radius: 0.5rem;  font-family: 'NanumBarunGothic'; color: var(--primary); font-size: 1.4rem;  } 
 
 /* hover */
 .banner_text li:nth-child(2) a:hover{background-color: var(--primary); color: var(--secondary1);}
@@ -135,7 +129,10 @@ opacity: 0;
 
 .banner_img_1 img { left: 55%; vertical-align: top; } 
 
-.banner_img_3 img { left: 70%; vertical-align: top; } 
+.banner_img_3 img { left: 70%; vertical-align: top; }
+
+/* 모바일용 배너 이미지 */
+.banner_text_img, .banner_img_4, .banner_img_5, .banner_img_6 {display: none;}
 
 
 /* ======== nav_1 ========== */
@@ -261,6 +258,10 @@ ul.hidden_btn { position: absolute; display: flex; gap: 0.5rem; top: 63rem; left
 .inner_text li:nth-child(2) { font-size: 3.5rem; font-family: 'NanumBarunGothic'; } 
 .inner_text li:not(:nth-child(2)) { color: rgba(246,245,240,.6) } 
 .inner_text li:last-child a { display: block; color: var(--secondary1); width: 125px; text-align: center; padding: 0.7rem 2rem; border: 2.5px solid var(--secondary1); border-radius: 0.5rem; font-size: 1.4rem; margin-top: 3.5rem; } 
+
+/* 모바일 이미지 */
+.content_1_1 img{display: none;}
+
 /* content_1_2 */
 
 .content_1_2 a { display: block; color: var(--pointcolor4); width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--pointcolor4); border-radius: 0.5rem; font-size: 1.4rem; margin-top: 30rem; margin-left: 33%; } 
@@ -571,6 +572,10 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
 
 .footer_3 .container p { display: flex; text-align: center; justify-content: center; font-size: 1.2rem; margin-top: 2rem; color: rgba(246,245,240,.6);}
 
+/* homebutton */
+.homebutton {position: fixed; bottom: 7rem; right: 2rem; z-index: 11;}
+.homebutton a img{width: 3rem; filter:grayscale(0%) invert(60%) sepia(30%) saturate(1000%) hue-rotate(40deg);}
+
 
 
 /* @----- 태블릿 ------@ */
@@ -590,13 +595,31 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
    div.sticky{top: 12%;}
 
    /* 메인 배너 */
-   .main_banner{ width: 100%; height: 278vw; position: relative; top: -4.5rem; background: url(../img/phone/2023_m_summer2_promotion_bg_2.jpg) no-repeat center center/cover;}
+   .main_banner{ width: 100%; height: 270vw; position: relative; top: -4.5rem; background: url(../img/phone/2023_m_summer2_promotion_bg_2.jpg) no-repeat center center/cover;}
 
    .main_banner ul.banner_text li:first-child img{display: none;}
    
    .main_banner ul.banner_img li.banner_img_2 img{display: none;}
    .main_banner ul.banner_img li.banner_img_1 img{display: none;}
    .main_banner ul.banner_img li.banner_img_3 img{display: none;}
+
+   .main_banner .container .banner_text li a {margin: 0; font-family:'NanumBarunGothicBold'; font-size: 2.4rem; padding: 3rem 3rem; width: 29vw; top: 235vw; left: 35vw;}
+
+   /* 모바일용 이미지 */
+   .banner_text_img ,  .banner_img_4, .banner_img_5, .banner_img_6{display: flex; position: absolute; top: 0; left: 0;}
+
+   .banner_text_img { top: 12.67vw; left: 12.67vw;}
+   .banner_text_img img{ width: 35vw;}
+
+   .banner_img_4 { top: 45vw; left: 15vw;}
+   .banner_img_4 img {width: 63vw;}
+
+   .banner_img_5 { top: 102vw; left: 27vw;}
+   .banner_img_5 img {width: 70vw;}
+   
+   .banner_img_6 { top: 160vw; left: 15vw;}
+   .banner_img_6 img {width: 63vw;}
+
 
 
    /* ===== nav_1 ======= */
@@ -605,26 +628,30 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
 
    /* notice */
 
-   .notice p {left: 5%; top: 1.8rem;}
-   .notice li {left: 25%; top: 1.8rem; overflow: hidden; text-overflow: ellipsis; width: 20rem;}
+   .notice p {left: 5%; top: 1.9rem;}
+   .notice .history li {padding-top: 1.8rem; margin-left: -12rem; width: 28vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
    .notice .btn_plus img {top: 1.8rem;}
 
    /* promotion */
-   .promotion_list:first-child>li>a{ left: 0rem; top: 1.9rem; font-family:'NanumBarunGothicBold';}
+   .promotion_list:first-child>li>a{ left: 0rem; top: 2rem; font-family:'NanumBarunGothicBold';}
    
    
    /* ===== hidden ====== */
 
+   .nav_1_pr .hidden {height: 48rem;}
+   
+
 
    /* ====== nav_2 ====== */
-   .nav_2{height: 43rem; top: -1.8rem;}
-   .nav_2 .container img {width: 26rem; margin-left: 5rem; margin-top: 6.5rem; margin-bottom: 6rem;}
+   .nav_2{height: 43rem;}
+   .nav_2 .container img {width: 26rem; margin-left: 10vw; margin-top: 6.5rem; margin-bottom: 6rem;}
    .text_btn{margin-top: 1.5rem;}
 
    /* text */
-   .container_cloumn{flex-direction: column; width: 37rem; line-height: 1.333; }
+   .container_cloumn{flex-direction: column; width: 37rem; line-height: 1.333; margin-left: 7vw; }
    
-   .container_card{flex-direction: column; width: 43rem;margin-left: -1rem;}
+   .container_card{flex-direction: column; width: 43rem;margin-left: 3vw;}
    .container_card .g_btn { margin-top: 3rem; margin-left: 4rem;}
 
    /* === content ====== */
@@ -632,7 +659,8 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
    
    /* content_1_1 */
    .content_1 .content_1_1{ width: 100%; height: 152.6vh; background: url(../img/phone/2023_m_summer2_promotion_bg_1.jpg) no-repeat center center/cover; top: -1.8rem;}
-   .content_1 .content_1_1::before{content: url(../img/phone/2023_m_summer2_promotion_img_1.png); position: absolute; top: 20rem; left: 35%;}
+
+   .content_1_1 img{display: block; position: absolute; width: 28vw; top: 14rem; left: 35vw;}
 
    /* text */
    .inner_text{text-align: center; top: 53%; left: 5%;}
@@ -692,7 +720,7 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
    .info_1 {background: url(../img/phone/reserve_visual_m.jpg) no-repeat center center/cover; height:140rem;}
    .info_1 .container li.img{display: none;}
    .info_1 .container li.icon{display: none;}
-   .info_1 li.botton {position: absolute; bottom: 35rem; left: 20rem;}
+   .info_1 li.botton {position: absolute; bottom: 35rem; left: 15vw;}
 
    /* ==== info_2 ==== */
    .info_2{background: url(../img/phone/store_bg.jpg) no-repeat center center/cover; height: 80rem;}
