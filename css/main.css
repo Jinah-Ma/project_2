@@ -639,8 +639,13 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
    
    /* ===== hidden ====== */
 
-   .nav_1_pr .hidden {height: 48rem;}
-   
+   .nav_1_pr{height: 48rem;}
+   .nav_1_pr .hidden {background-color: #fff;}
+   .hidden .flex {padding-top: 2.5rem; gap: 1rem;}
+   .hidden .flex li{right: 0;}
+
+   /* img */
+
 
 
    /* ====== nav_2 ====== */
