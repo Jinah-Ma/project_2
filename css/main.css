@@ -26,6 +26,14 @@ nav .w100 { overflow: hidden; height: 0; }
 
 .gnb .dep1:hover .w100 { height: 35rem; } 
 
+/* 모바일 햄버거 */
+.ham-menu{display: none;}
+
+/* 모바일 메뉴 히든 */
+.h_form{display: none;}
+.h_dep1{display: none;}
+.h_dep_butten1{display: none;}
+
 /* 투댑스 내려오게 하기 */
 nav { position: relative; } 
 
@@ -62,9 +70,9 @@ nav .w100 { position: absolute; top: 120px; left: 0; }
 .dep1>a:hover { display: block; width: 100%; text-align: center; height: 56px; background-color: var(--text1); color: var(--pointcolor3); border-bottom: none; } 
 
 
-/* === Sticky === */
-.sticky { width: 166px; position: sticky; top: 150px; left: 160rem; z-index: 12; } 
 
+/* === Sticky === */
+.sticky { width: 166px; position: sticky; top: 150px; left: 160rem;  } 
 
 /* === popup === */
 .popup { position: fixed; z-index: 999; width: 50rem; height: 20rem; background: rgba(255, 255, 255, .8); top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); border-radius: 10px; backdrop-filter: blur(20px); box-shadow: 0px 0px 5px var(--text1)} 
@@ -186,7 +194,7 @@ ul.flex li.inner { position: relative; }
 ul.flex li.inner a { position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-62px); width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--primary); border-radius: 0.5rem; font-family: 'NanumBarunGothic'; color: var(--primary); font-size: 1.4rem; } 
 
 /* 좌우 버튼 */
-ul.left_right { width: 100%; height: 66rem; position: relative; } 
+ul.left_right { width: 100%; position: relative;height: 49vw; } 
 
 ul.left_right li:first-child { position: absolute; top: -50%; left: 25%; display: block; } 
 
@@ -579,20 +587,60 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
 
 
 /* @----- 태블릿 ------@ */
-@media all and (min-width: 641px) and (max-width: 960px){
+@media screen and (min-width: 768px) and (max-width: 960px){
    
     /* === header === */
+ 
+    /* sticky */
+   div.sticky{top: 12%;}
+
+   /* 햄버거 */
+   .ham-menu{display: block; position: relative; width: 100%; top: 0; left: 0;}
+   .ham {display: flex; gap: 3rem; justify-content: end; margin-top: 2vw; margin-right: 2vw;}
+   .ham li img {width: 30px;}
+
+   .ham li.ham_3{margin-top: 0.5vw;}
+   .ham li.ham_4{display: none;}
+
+   nav .main_menu .util_nav {display: none;}
+
+   .main_menu{display: block;}
+
+   nav .main_menu ul.sub_gnb_nav{
+       background-color: black;
+       position: fixed;
+      /*  right: -300vw; */
+       left: 40vw;
+       top: 0;
+       width: 70vw;
+       display: flex;
+       flex-direction: column;
+       align-items: start;
+       justify-content: left;
+       transition: 1s;
+       gap: 0;
+       height: 100vh;
+       z-index: 9999;
+   }
+
+   nav .main_menu ul.sub_gnb_nav li a{
+    font-size: 2.8rem; color: #fff; 
+   }
+
     /* 헤더 댑스 기본 레이아웃 */
     nav{
         height: 70px; position: relative;
     }
-   nav .main_menu{ display: none;}
-
-
+    
    nav h1 img{width: 45px; position: absolute; top:1rem; left: 1rem;}
 
-   /* sticky */
-   div.sticky{top: 12%;}
+
+
+
+
+
+
+  
 
    /* 메인 배너 */
    .main_banner{ width: 100%; height: 270vw; position: relative; top: -4.5rem; background: url(../img/phone/2023_m_summer2_promotion_bg_2.jpg) no-repeat center center/cover;}
@@ -639,17 +687,27 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
    
    /* ===== hidden ====== */
 
-   .nav_1_pr{height: 48rem;}
-   .nav_1_pr .hidden {background-color: #fff;}
+   .nav_1_pr .hidden {background-color: #fff; height: 49rem;}
    .hidden .flex {padding-top: 2.5rem; gap: 1rem;}
    .hidden .flex li{right: 0;}
+   .hidden .flex li img{ height: 40vw;}
 
-   /* img */
+   /* button */
+   ul.flex li.inner a{height: 30px; padding: 0.6rem 2rem; bottom: 1.1rem;}
 
+   /* left_right button */
+   ul.left_right li:first-child {top: -30%; left: 18vw;}
+   ul.left_right li:last-child {top: -30%; right: 18vw;}
 
+   .hidden .flex::before { content: ' '; background-color: #fff; position: absolute; width: 15vw; height: 46vw; z-index: 1;}
+   .hidden .flex::after {content: ' '; background-color: #fff; position: absolute; width: 15vw; height: 46vw; z-index: 1; right: 0;}
+   
+
+   /* 재생 정지 버튼 */
+   ul.hidden_btn {top: 45vw; z-index: 2;}
 
    /* ====== nav_2 ====== */
-   .nav_2{height: 43rem;}
+   .nav_2{height: 49rem; margin-top: -2rem;}
    .nav_2 .container img {width: 26rem; margin-left: 10vw; margin-top: 6.5rem; margin-bottom: 6rem;}
    .text_btn{margin-top: 1.5rem;}
 
@@ -795,6 +853,7 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
 
 
 /* @----- 모바일 ------@ */
-@media all and (max-width: 425px){
+@media all and (min-width: 425px) and (max-width: 767px){
+
 
 }
