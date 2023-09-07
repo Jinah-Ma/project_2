@@ -32,7 +32,8 @@ nav .w100 { overflow: hidden; height: 0; }
 /* 모바일 메뉴 히든 */
 .h_form{display: none;}
 .h_dep1{display: none;}
-.h_dep_butten1{display: none;}
+.dep1 img {display: none;}
+
 
 /* 투댑스 내려오게 하기 */
 nav { position: relative; } 
@@ -581,7 +582,7 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
 .footer_3 .container p { display: flex; text-align: center; justify-content: center; font-size: 1.2rem; margin-top: 2rem; color: rgba(246,245,240,.6);}
 
 /* homebutton */
-.homebutton {position: fixed; bottom: 7rem; right: 2rem; z-index: 11;}
+.homebutton {position: fixed; bottom: 7rem; right: 2rem; z-index: 2;}
 .homebutton a img{width: 3rem; filter:grayscale(0%) invert(60%) sepia(30%) saturate(1000%) hue-rotate(40deg);}
 
 
@@ -605,27 +606,45 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
    nav .main_menu .util_nav {display: none;}
 
    .main_menu{display: block;}
+   
+   /* 모바일 메뉴 상단 */
+   .sub_gnb_nav li.h_form {display: block; width: 100%;}
+   .sub_gnb_nav li.h_dep1 {display: block;}
+
+   .sub_gnb_nav li.h_form {padding: 0 0 2.5rem 9.5rem; border-bottom: 1px solid black;}
+   .h_form .h_search input{width: 30rem; height: 5.2rem; border-radius: 0.5rem; margin-right: 1rem;}
+   .h_form .h_search label{padding: 1.1rem 2.5rem; background-color: var(--text3); border-radius: 0.5rem; font-size: 2.5rem; font-family: 'NanumBarunGothic'; cursor: pointer;}
+   .h_form .h_search label:hover {text-decoration: underline;}
 
    nav .main_menu ul.sub_gnb_nav{
-       background-color: black;
+    width: 100%;
+       background-color:#2e2c2a;
        position: fixed;
       /*  right: -300vw; */
-       left: 40vw;
+       left: 30vw;
        top: 0;
-       width: 70vw;
        display: flex;
        flex-direction: column;
        align-items: start;
        justify-content: left;
-       transition: 1s;
+       transition: 0.3s;
        gap: 0;
        height: 100vh;
-       z-index: 9999;
    }
 
    nav .main_menu ul.sub_gnb_nav li a{
-    font-size: 2.8rem; color: #fff; 
+    font-size: 2.8rem; color: #fff;
    }
+
+   /* 모바일 메뉴 */
+   .dep1 img{display: block;}
+
+   .sub_gnb_nav li{width: 100%; padding: 2rem 0 2rem 0; display: flex; position: relative;}
+   .sub_gnb_nav li.h_dep1{padding: 2rem;}
+   .sub_gnb_nav li.h_dep1 img{width: 2.5rem; position: absolute; left: 62vw; top: 50%; transform: translateY(-50%);}
+   .sub_gnb_nav .dep1 img{width: 2.5rem; position: absolute; left: 62vw; top: 50%; transform: translateY(-50%);}
+   
+   
 
     /* 헤더 댑스 기본 레이아웃 */
     nav{
