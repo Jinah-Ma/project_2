@@ -160,3 +160,19 @@ $(document).ready(function () {
 //온라인스토어 슬라이드
 
 
+// 햄버거 메뉴로 없어졌다 나타나게 하기
+/* let hamMenuIcon = document.getElementById("hamIcon1");
+let navBar = document.getElementById("mainMenu");
+let navLinks = document.querySelectorAll("li");
+
+hamMenuIcon.addEventListener('click', function () {
+    navBar.classList.toggle("active");
+    hamMenuIcon.classList.toggle("hamIcon2");
+})
+
+navLinks.forEach(function (x) {
+    x.addEventListener('click', function () {
+        navBar.classList.remove("active");
+        hamMenuIcon.classList.toggle("hamIcon2");
+    })
+}); */
