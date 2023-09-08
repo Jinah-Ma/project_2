@@ -657,14 +657,15 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
    /* h 세부 */
 
 
-   
+   /* h_호버 */
+   .h_dep1:hover ul.h_dep2 li{display: block; height: 50vw;}
    
    
    
    
    
    /* 버튼 호버 */
-   .dep1>a:hover
+   .dep1>a:hover { text-align: initial; background-color: black; height: 0;}
 
  
 
