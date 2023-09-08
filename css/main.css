@@ -608,18 +608,14 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
    nav .main_menu .util_nav {display: none;}
 
    .main_menu{display: block; max-width: 960px;}
+
+
    
-   /* 모바일 메뉴 상단 */
-   .sub_gnb_nav li.h_form {display: block; width: 100%;}
-   .sub_gnb_nav li.h_dep1 {display: block;}
-
-   .sub_gnb_nav li.h_form {padding: 0 0 2.5rem 9.5rem; border-bottom: 1px solid black;}
-   .h_form .h_search input{width: 30rem; height: 5.2rem; border-radius: 0.5rem; margin-right: 1rem;}
-   .h_form .h_search label{padding: 1.1rem 2.5rem; background-color: var(--text3); border-radius: 0.5rem; font-size: 2.5rem; font-family: 'NanumBarunGothic'; cursor: pointer;}
-   .h_form .h_search label:hover {text-decoration: underline;}
-
+   /* 모바일*/
+   /* -----------------------헤더 투뎁스 기본 틀 */
    nav .main_menu ul.sub_gnb_nav{
     width: 100%;
+    max-width: 960px;
        background-color:#2e2c2a;
        position: fixed;
       /*  right: -300vw; */
@@ -634,13 +630,54 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
        height: 100vh;
    }
 
-
-
    nav .main_menu ul.sub_gnb_nav li a{
     font-size: 2.8rem; color: #fff;
    }
 
-   /* 모바일 메뉴 */
+   nav .main_menu ul.sub_gnb_nav li{width: 100%; display: flex; flex-direction: column; position: relative;}
+
+   .dep1 img{display: block;}
+
+   /* ------------- 메뉴 상단  */
+   .sub_gnb_nav li.h_form {display: block; width: 100%;}
+   .sub_gnb_nav li.h_form {padding: 0 0 2.5rem 9.5rem; border-bottom: 1px solid black;}
+   .h_form .h_search input{width: 30rem; height: 5.2rem; border-radius: 0.5rem; margin-right: 1rem;}
+   .h_form .h_search label{padding: 1.1rem 2.5rem; background-color: var(--text3); border-radius: 0.5rem; font-size: 2.5rem; font-family: 'NanumBarunGothic'; cursor: pointer;}
+   .h_form .h_search label:hover {text-decoration: underline;}
+
+   /* -------------------- 히든 메뉴 투뎁스 */
+   /* h 기본 */
+    .sub_gnb_nav li.h_dep1 {display: block; width: 100%; padding: 2rem; position: relative;}
+    /* // */
+
+   /* h 버튼 */
+    .sub_gnb_nav li.h_dep1 img{width: 2.5rem; position: absolute; left: 62vw; top: 50%; transform: translateY(-50%); cursor: pointer;}
+    /* // */
+   
+   /* h 세부 */
+
+
+   
+   
+   
+   
+   
+   
+   /* 버튼 호버 */
+   .dep1>a:hover
+
+ 
+
+  
+   .sub_gnb_nav .dep1 img{width: 2.5rem; position: absolute; left: 62vw; top: 50%; transform: translateY(-50%);}
+
+   .dep1{ border-bottom: 1px solid #3f3f3f; background-color: black;}
+   .dep2, .dep3{display: flex; flex-direction: column; }
+   
+   /* 하단 검은색 */
+   .sub_gnb_nav::after{content: ' '; background-color: black; width: 100%; height: 80vh; }
+
+   
 
 
 
