@@ -24,7 +24,9 @@ ul.gnb li { height: 100%; }
 
 nav .w100 { overflow: hidden; height: 0; } 
 
-.gnb .dep1:hover .w100 { height: 35rem; } 
+.gnb .dep1:hover .w100 { height: 35rem; }
+
+
 
 /* 모바일 햄버거 */
 .ham-menu{display: none;}
@@ -39,7 +41,7 @@ nav .w100 { overflow: hidden; height: 0; }
 nav { position: relative; } 
 
 nav .w100 { position: absolute; top: 120px; left: 0; } 
-
+nav ul.container { display: flex; justify-content: center; padding-top: 2.7rem;}
 
 /* 댑스 레이아웃 세부 */
 .gnb h1 a { margin-left: 10rem; margin-top: 2rem; } 
@@ -557,7 +559,7 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
 /* footer_2 */
 .footer_2 { width: 100%; height: 10rem; background-color: var(--text4)} 
 
-ul.container { display: flex; justify-content: center; padding-top: 2.7rem; } 
+.footer_2 ul.container { display: flex; justify-content: center; padding-top: 2.7rem; } 
 
 /* footer_3 */
 .footer_3 { width: 100%; height: 22rem; background-color: var(--text1) } 
@@ -605,7 +607,7 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
 
    nav .main_menu .util_nav {display: none;}
 
-   .main_menu{display: block;}
+   .main_menu{display: block; max-width: 960px;}
    
    /* 모바일 메뉴 상단 */
    .sub_gnb_nav li.h_form {display: block; width: 100%;}
@@ -632,19 +634,16 @@ ul.container { display: flex; justify-content: center; padding-top: 2.7rem; }
        height: 100vh;
    }
 
+
+
    nav .main_menu ul.sub_gnb_nav li a{
     font-size: 2.8rem; color: #fff;
    }
 
    /* 모바일 메뉴 */
-   .dep1 img{display: block;}
 
-   .sub_gnb_nav li{width: 100%; padding: 2rem 0 2rem 0; display: flex; position: relative;}
-   .sub_gnb_nav li.h_dep1{padding: 2rem;}
-   .sub_gnb_nav li.h_dep1 img{width: 2.5rem; position: absolute; left: 62vw; top: 50%; transform: translateY(-50%);}
-   .sub_gnb_nav .dep1 img{width: 2.5rem; position: absolute; left: 62vw; top: 50%; transform: translateY(-50%);}
-   
-   
+
+
 
     /* 헤더 댑스 기본 레이아웃 */
     nav{
