@@ -161,18 +161,31 @@ $(document).ready(function () {
 
 
 // 햄버거 메뉴로 없어졌다 나타나게 하기
-/* let hamMenuIcon = document.getElementById("hamIcon1");
-let navBar = document.getElementById("mainMenu");
-let navLinks = document.querySelectorAll("li");
+$(document).ready(function() {
+    let hamMenuIcon1 = $("#hamIcon1");
+    let hamMenuIcon2 = $('.hamIcon2');
+    let overlay = $('.overlay');
 
-hamMenuIcon.addEventListener('click', function () {
-    navBar.classList.toggle("active");
-    hamMenuIcon.classList.toggle("hamIcon2");
-})
+    hamMenuIcon1.click(
+        function(){
+            $('nav .main_menu .sub_gnb_nav').css('right', '300vw');
+            $('.ham_4').css('display','flex').css('right', '70vw');
+            hamMenuIcon1.css('opacity','0');
+            $('.sticky').css('z-index','1');
+        }
+    );
 
-navLinks.forEach(function (x) {
-    x.addEventListener('click', function () {
-        navBar.classList.remove("active");
-        hamMenuIcon.classList.toggle("hamIcon2");
-    })
-}); */
+    hamMenuIcon2.click(
+        function(){
+            $('nav .main_menu .sub_gnb_nav').css('right', '-300vw');
+            $('.ham_4').css('display','none').css('transition', '0.8s');
+            hamMenuIcon1.css('opacity','100');
+            $('.sticky').css('z-index','6');
+        }
+    );
+
+
+
+    
+
+});
