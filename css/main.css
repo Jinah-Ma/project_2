@@ -1111,13 +1111,35 @@ background-size: 40vw, 25vw;}
 
    /* text */
    .container_card .g_card{width: 35rem;}
-
+   
+   .content_2 p a{margin-left: 4.5rem;}
 
 /* ========== info_2 ========= */
    .info_text{margin-top: 73vw; margin-left: -100vw;}
 
+}
+
+/* @----- 모바일2 ------@ */
+@media all and (max-width: 500px){
+  
+    .h_form .h_search input{width: 16rem;}
+
+    .container_cloumn{width: 35rem;}
+
+    .nav_1 div.notice {width: 100%; height: 16vw;}
 
 
+    main .nav_2 .container img {width: 14rem; margin-left: 1vw; margin-bottom: 25rem;}
+    .container_card .g_card{width: 35rem;}
 
+    input#search{display: none;}
+    .search_wrap span.icon {left: 20vw;}
 
+}
+
+/* @----- 모바일2 ------@ */
+@media all and (min-width: 435px) and (max-width: 460px){
+
+    .promotion_list li.p_close {left: 77vw;}
+    .info_1 .botton a {left: 32rem; top: 33rem;}
 }
