@@ -34,6 +34,13 @@ $('.main_banner ul.banner_text li:last-child').ready(function () {
 
 // 배너 밑 '공지사항'
 
+
+
+
+
+// 스크롤을 내릴 때마다 매번 슬라이드로 나타나게 하기
+
+
 $(document).ready(function () {
     $('.promotion .p_close').click(function () {
         $('.promotion .p_close').css('display', 'none');
@@ -49,6 +56,23 @@ $(document).ready(function () {
 });
 
 //프로모션 히든 클릭 버튼 구현
+
+$('.img_ctl_slider').bxSlider({
+    prevSelector : ".img_ctl .prev",
+    nextSelector : ".img_ctl .next",
+    minSlides : 1,
+    maxSlides : 3,
+    moveSlides : 1,
+    autoControls: true,
+    stopAutoOnClick: true,
+    pager: true,
+    slideWidth: 819,
+    slideHeight: 610,
+    slideMargin : 20,
+    auto: true,
+    speed : 50,
+});
+
 
 $('.promotion_list li img').click(function (event) {
     event.preventDefault();
@@ -101,26 +125,22 @@ $(document).ready(function () {
 
 // 프로모션 재생 정지 버튼 구현, 프로모션 히든페이지 슬라이드
 
-$('.img_ctl_slider').bxSlider({
-    prevSelector : ".img_ctl .prev",
-    nextSelector : ".img_ctl .next",
-    minSlides : 1,
-    maxSlides : 3,
+
+$('.img_ctl_slider2').bxSlider({
+    prevSelector : ".img_ctl .prev2",
+    nextSelector : ".img_ctl .next2",
+    minSlides : 4.5,
+    maxSlides : 6,
     moveSlides : 1,
     autoControls: true,
     stopAutoOnClick: true,
     pager: true,
-    responsive : false,
     slideWidth: 819,
     slideHeight: 610,
     slideMargin : 10,
     auto: true,
     speed : 50,
 });
-
-
-// 스크롤을 내릴 때마다 매번 슬라이드로 나타나게 하기
-
 
 
 

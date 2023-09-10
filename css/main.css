@@ -196,8 +196,7 @@ opacity: 0;
  */ */
 
  .nav_1_pr .hidden { width: 100%; height: 70vw; background-color: var(--background); display: none; position: relative;}
- .hidden .flex { display: flex; padding-top: 5rem; gap: 2rem; }
- .flex li img{ margin-left: -38%;}
+ .flex li.inner img{ margin-left: -16.5vw; margin-top: 5rem;}
  .flex {position: relative;}
 
 
@@ -376,13 +375,15 @@ ul.hidden_btn .btn_se3 li:last-child{position: absolute; top: -0.1rem; display: 
 
 
 /* ==== news ===== */
+/* 슬라이드 구현 */
+
 .store_slide { width: 100%; height: 46rem; } 
 
 
 .store_slide h2.title_2 { margin-left: 12rem; margin-top: 3rem; margin-bottom: 1.5rem; font-size: 3.8rem; font-family: 'NanumBarunGothicBold'; } 
 
 
-.store_slide section ul:not(:last-child) { display: grid; grid-template-columns: repeat(6, 400px); gap: 1rem; width: 100%; height: 34rem; overflow: hidden; overflow-y: hidden; justify-content: center; align-items: center; } 
+.store_slide section ul:not(:last-child) { display: grid; grid-template-columns: repeat(6, 400px); width: 100%; height: 34rem; overflow: hidden; overflow-y: hidden; justify-content: center; align-items: center; } 
 
 .store_slide li.block img { width: 400px; height: 315px; } 
 
@@ -396,14 +397,24 @@ section.slide_card { position: relative; }
 .slide_card ul.left_right_2 li:last-child { position: absolute; display: block; top: 0; right: 0; margin-top: 20rem; margin-right: 15rem; } 
 
 /* ## 버튼 hover ## */
-.left_right_2 img:hover {background-color: var(--background); border-radius: 50%; transition: background-color .7s;}
+/* .left_right_2 img:hover {background-color: var(--background); border-radius: 50%; transition: background-color .7s;} */
+
+/* 자바 버튼 숨기기 */
+.img_ctl .prev2 a{padding: 2rem; position: absolute; left: -10%; opacity: 0;}
+.img_ctl .prev2:hover {background-color: var(--background); border-radius: 50%; transition: background-color .5s; cursor: pointer;}
+
+.img_ctl .next2 a{padding: 2rem; position: absolute; right:-20%; opacity: 0;}
+.img_ctl .next2:hover{background-color: var(--background); border-radius: 50%; transition: background-color .5s; cursor: pointer;}
 
 
 /* 재생 정지 */
-.slide_card ul.slide_btn_2{ position: absolute; gap: 2rem; display: flex; top: 40rem; left: 49%;}
+
+.slide_card ul.slide_btn_2{display: none;}
+
+/* .slide_card ul.slide_btn_2{ position: absolute; display: flex; top: 40rem; left: 49%;}
 .slide_btn_2 ul.button{display: flex; }
 .slide_btn_2 ul.button li.start{position: absolute; cursor: pointer;}
-.slide_btn_2 ul.button li.end{position: absolute; cursor: pointer;}
+.slide_btn_2 ul.button li.end{position: absolute; cursor: pointer;} */
 
 /* ## 재생 정지 버튼 ##*/
 /* 1 */
@@ -415,6 +426,7 @@ section.slide_card { position: relative; }
 /* 3 */
 .slide_se6 li.start{display: block;}
 .slide_se6 li.end{display: none;}
+
 
 
 /* ====== gnb_nav ======= */
@@ -754,6 +766,7 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
    .nav_1 .notice {position: absolute;}
 
    /* notice */
+   .nav_1 div.notice {height: 9vw;}
 
    .notice p {left: 5%; top: 1.9rem;}
    .notice .history li {padding-top: 1.8rem; margin-left: -12rem; width: 28vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -767,23 +780,22 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
    /* ===== hidden ====== */
 
    .nav_1_pr .hidden {background-color: #fff; height: 49rem;}
-   .hidden .flex {padding-top: 2.5rem; gap: 1rem;}
    .hidden .flex li{right: 0;}
-   .hidden .flex li img{ height: 40vw;}
+   .hidden .flex li img{ height: 40vw; margin-top: 2rem; margin-left: 20vw;}
 
    /* button */
-   ul.flex li.inner a{height: 30px; padding: 0.6rem 2rem; bottom: 1.1rem;}
+   ul.flex li.inner a{height: 30px; padding: 0.6rem 2rem; bottom: 1.1rem; left: 42vw;}
 
    /* left_right button */
-   ul.left_right li:first-child {top: -30%; left: 18vw;}
-   ul.left_right li:last-child {top: -30%; right: 18vw;}
+   ul.left_right li:first-child {top: -1800%; left: 18vw;}
+   ul.left_right li:last-child {top: -1800%; right: 18vw;}
 
    .hidden .flex::before { content: ' '; background-color: #fff; position: absolute; width: 15vw; height: 46vw; z-index: 1;}
    .hidden .flex::after {content: ' '; background-color: #fff; position: absolute; width: 15vw; height: 46vw; z-index: 1; right: 0;}
    
 
    /* 재생 정지 버튼 */
-   ul.hidden_btn {top: 45vw; z-index: 2;}
+   /* ul.hidden_btn {top: 45vw; z-index: 2;} */
 
    /* ====== nav_2 ====== */
    .nav_2{height: 49rem; margin-top: -2rem;}
@@ -850,7 +862,10 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
    }
 
    /* ==== news ===== */
-   .store_slide .slide_card ul.card{padding-left: 45%;}
+
+
+
+
 
    /* ====== gnb_nav ======= */
    .nav{left: 10vw;}
@@ -982,7 +997,8 @@ nav .main_menu .sub_gnb_nav{
    .notice .btn_plus img { margin-top: 0.9rem; right: 3.2rem; }
 
    /* promotion */
-   .nav_1 div.promotion ul {position: absolute; width: 100%; height: 13vw; background-color: #fff;}
+   .nav_1 div.promotion ul {position: absolute; width: 100%; height:26vw; background-color: #fff;}
+   
    .promotion_list:first-child>li>a{ left: 50%; transform: translateX(-50%); top: 2.2rem; font-size: 2.2rem; text-align: center;}
 
 /* ## promotion botton hidden ## */
@@ -992,7 +1008,8 @@ nav .main_menu .sub_gnb_nav{
    /* ===== hidden ====== */
 
    .nav_1_pr .hidden {top: 15vw;}
-   .hidden .flex li img{ height: 50vw;}
+   .hidden .flex li img{ height: 40vw; margin-top: 0;}
+.img_ctl_slider .inner{top: 11vw; margin-left:0vw;}
 
    /* button */
    .hidden .flex::before { content: ' '; background-color: #fff; position: absolute; width:1vw; height: 50vw;}
