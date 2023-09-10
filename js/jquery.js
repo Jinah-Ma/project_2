@@ -33,6 +33,16 @@ $('.main_banner ul.banner_text li:last-child').ready(function () {
 
 
 // 배너 밑 '공지사항'
+// $('.history').bxSlider({
+//     mode : 'vertical',
+//     speed : 200,
+//     minSlides : 1,
+//     maxSlides : 5,
+//     moveSlides : 1,
+//     slideWidth : 200,
+//     slideMargin : 30,
+//     auto : true,
+// });
 
 
 

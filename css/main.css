@@ -155,7 +155,8 @@ opacity: 0;
 /* notion */
 .nav_1 div.notice { width: 55%; height: 3vw; background-color: black; display: flex; overflow: hidden; position: relative;} 
 
-.notice .history li {width: 20vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.notice .history li {width: 20vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
 
 .notice p {position: absolute; color: #fff; font-family: 'NanumBarunGothic'; line-height: 5rem; font-size: 1.8rem; width: 10rem; left: 40%; } 
 
@@ -164,9 +165,9 @@ opacity: 0;
 .notice .btn_plus img {position: absolute; margin-top: 0.6rem; right: 2rem; }
 
 /* ## notion animation ## */
-.history li{position: absolute; left: 26.9vw; width: 40rem; overflow: hidden;}
+.history li{position: absolute; left: 26.9vw; width: 40rem; overflow: hidden; }
 
-
+/* 공지사항 */
 
 
 /* promotion */
@@ -211,7 +212,7 @@ opacity: 0;
 /* 좌우 버튼 */
 ul.left_right { width: 100%; position: relative; height: 1vw;} 
 ul.left_right li:first-child { position: absolute; top: -1000%; left: 25%; display: block; } 
-ul.left_right li:last-child { position: absolute; top: -1000%; right: 22%; display: block; }
+ul.left_right li:last-child { position: absolute; top: -1000%; right: 25%; display: block; }
 
 /* 자바 버튼 숨기기 */
 .img_ctl .prev a{padding: 2rem; position: absolute; left: -10%; opacity: 0;}
