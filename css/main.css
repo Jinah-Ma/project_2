@@ -227,6 +227,7 @@ ul.hidden_btn .btn_se1 li:last-child{position: absolute; top: -0.1rem; display: 
 ul.hidden_btn .btn_se2 li:last-child{position: absolute; top: -0.1rem; display: none;}
 ul.hidden_btn .btn_se3 li:last-child{position: absolute; top: -0.1rem; display: none;}
 
+ ul.hidden_btn {display: none;}
 /* .bx-controls-auto-item a.bx-start{position: absolute;}
 .bx-controls-auto-item a.bx-stop{position: absolute;}
 .bx-controls-auto-item a{left: 90rem; top: 140rem; width: 30px; height: 30px; cursor: pointer; text-indent: -99999px;} */
@@ -796,6 +797,7 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
 
    /* 재생 정지 버튼 */
    /* ul.hidden_btn {top: 45vw; z-index: 2;} */
+   ul.hidden_btn {display: none;}
 
    /* ====== nav_2 ====== */
    .nav_2{height: 49rem; margin-top: -2rem;}
