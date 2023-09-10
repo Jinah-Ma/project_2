@@ -153,7 +153,9 @@ opacity: 0;
 .nav_1 .flex { display: flex; } 
 
 /* notion */
-.nav_1 div.notice { width: 55%; height: 10.5vw; background-color: black; display: flex; overflow: hidden; position: relative;} 
+.nav_1 div.notice { width: 55%; height: 3vw; background-color: black; display: flex; overflow: hidden; position: relative;} 
+
+.notice .history li {width: 20vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
 .notice p {position: absolute; color: #fff; font-family: 'NanumBarunGothic'; line-height: 5rem; font-size: 1.8rem; width: 10rem; left: 40%; } 
 
@@ -174,51 +176,64 @@ opacity: 0;
 .promotion_list:first-child>li>a { display: block; font-family: 'NanumBarunGothic'; width: 25rem; line-height: 5rem; font-size: 1.8rem; text-decoration: none; text-align: center; position: absolute; left: 20rem; } 
 
 
-/* ## promotion botton hidden ## */
+/* ## promotion button hidden ## */
 .promotion_list li.p_close{ position: absolute; top:0.6rem; left: 15rem; display: block;} /* close시 */ 
 .promotion_list li.p_open{ position: absolute;  top:0.6rem; left: 15rem; display: none;} /* open시 */
 
 
 
-/* === hidden === */
-/* h_img */
-.nav_1_pr .hidden { width: 100%; height: 66rem; background-color: var(--background); display: none; position: relative;} 
+/* === hidden ============================ */
+/* ## btn_se ## */
+/* /* 1 */
+/* .slide_se1 li.start{display: block;}
+.slide_se1 li.end{display: none;}
+ *//* 2 */
+/* .slide_se2 li.start{display: block;}
+.slide_se2 li.end{display: none;}
+ *//* 3 */
+/* .slide_se3 li.start{display: block;}
+.slide_se3 li.end{display: none;}
+ */ */
 
-.hidden .flex { display: flex; padding-top: 5rem; gap: 2rem; }
+ .nav_1_pr .hidden { width: 100%; height: 70vw; background-color: var(--background); display: none; position: relative;}
+ .hidden .flex { display: flex; padding-top: 5rem; gap: 2rem; }
+ .flex li img{ margin-left: -38%;}
+ .flex {position: relative;}
 
-.hidden .flex li{position: absolute; right: 15%;}
+
+ /* 높이 */
+ /* .bx-wrapper { height: 70rem;} */
+ /* .bx-viewport {height: 70rem; overflow:initial;} */
+
+ /* 자세히 보기 버튼 */
+ ul.flex li.inner a { position: absolute; bottom: 1.5rem; left: 6%; width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--primary); border-radius: 0.5rem; font-family: 'NanumBarunGothic'; color: var(--primary); font-size: 1.4rem; } 
 
 /* ### button ### */
-.left_right img:hover {background-color: var(--background); border-radius: 50%; transition: background-color .7s;}
-
-
-/* 자세히 보기 버튼 */
-ul.flex li.inner { position: relative; } 
-
-ul.flex li.inner a { position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-62px); width: 125px; text-align: center; padding: 1rem 2rem; border: 2.5px solid var(--primary); border-radius: 0.5rem; font-family: 'NanumBarunGothic'; color: var(--primary); font-size: 1.4rem; } 
-
 /* 좌우 버튼 */
-ul.left_right { width: 100%; position: relative;height: 49vw; } 
+ul.left_right { width: 100%; position: relative; height: 1vw;} 
+ul.left_right li:first-child { position: absolute; top: -1000%; left: 25%; display: block; } 
+ul.left_right li:last-child { position: absolute; top: -1000%; right: 22%; display: block; }
 
-ul.left_right li:first-child { position: absolute; top: -50%; left: 25%; display: block; } 
+/* 자바 버튼 숨기기 */
+.img_ctl .prev a{padding: 2rem; position: absolute; left: -10%; opacity: 0;}
+.img_ctl .prev:hover {background-color: var(--background); border-radius: 50%; transition: background-color .5s; cursor: pointer;}
 
-ul.left_right li:last-child { position: absolute; top: -50%; right: 22.5%; display: block; } 
+.img_ctl .next a{padding: 2rem; position: absolute; right:-20%; opacity: 0;}
+.img_ctl .next:hover{background-color: var(--background); border-radius: 50%; transition: background-color .5s; cursor: pointer;}
 
 /* 재생 정지 */
-ul.hidden_btn { position: absolute; display: flex; gap: 0.5rem; top: 63rem; left: 50%; cursor: pointer;} 
+ul.hidden_btn { position: absolute; display: flex; gap: 1rem; top: 140rem; left: 50%;}
+.slide_se1{position: relative; }
+ul.hidden_btn .btn_se1 li:last-child{position: absolute; top: -0.1rem; display: none;}
+ul.hidden_btn .btn_se2 li:last-child{position: absolute; top: -0.1rem; display: none;}
+ul.hidden_btn .btn_se3 li:last-child{position: absolute; top: -0.1rem; display: none;}
 
-/* ## btn_se ## */
-/* 1 */
-.slide_se1 li.start{display: block;}
-.slide_se1 li.end{display: none;}
-/* 2 */
-.slide_se2 li.start{display: block;}
-.slide_se2 li.end{display: none;}
-/* 3 */
-.slide_se3 li.start{display: block;}
-.slide_se3 li.end{display: none;}
+/* .bx-controls-auto-item a.bx-start{position: absolute;}
+.bx-controls-auto-item a.bx-stop{position: absolute;}
+.bx-controls-auto-item a{left: 90rem; top: 140rem; width: 30px; height: 30px; cursor: pointer; text-indent: -99999px;} */
 
-
+.bx-controls-auto-item{display: none;}
+.bx-pager-item{display: none;}
 
 
 /* ====== nav_2 ====== */

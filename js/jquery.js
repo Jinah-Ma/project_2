@@ -99,17 +99,30 @@ $(document).ready(function () {
     });
 });
 
-// 프로모션 재생 정지 버튼 구현
+// 프로모션 재생 정지 버튼 구현, 프로모션 히든페이지 슬라이드
 
-
-
-
-// 프로모션 히든페이지 슬라이드
-
-
+$('.img_ctl_slider').bxSlider({
+    prevSelector : ".img_ctl .prev",
+    nextSelector : ".img_ctl .next",
+    minSlides : 1,
+    maxSlides : 3,
+    moveSlides : 1,
+    autoControls: true,
+    stopAutoOnClick: true,
+    pager: true,
+    responsive : false,
+    slideWidth: 819,
+    slideHeight: 610,
+    slideMargin : 10,
+    auto: true,
+    speed : 50,
+});
 
 
 // 스크롤을 내릴 때마다 매번 슬라이드로 나타나게 하기
+
+
+
 
 /* 4 */
 $(document).ready(function () {
@@ -154,10 +167,9 @@ $(document).ready(function () {
 });
 
 
-// 온라인스토어 재생 정지 버튼 구현
+// 온라인스토어 재생 정지 버튼 구현, 온라인스토어 슬라이드
 
 
-//온라인스토어 슬라이드
 
 
 // 햄버거 메뉴로 없어졌다 나타나게 하기
@@ -184,8 +196,5 @@ $(document).ready(function() {
         }
     );
 
-
-
     
-
 });
