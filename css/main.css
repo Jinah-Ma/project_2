@@ -591,7 +591,7 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
 
 
 /* @----- 태블릿 ------@ */
-@media screen and /* (min-width: 735px)  and */(max-width: 960px){
+@media screen and (max-width: 960px){
    
     /* === header === */
  
@@ -914,8 +914,8 @@ input#search::-webkit-input-placeholder { color: var(--primary); opacity: 50%; }
 
 
 
-/* @----- 모바일 ------@ */
-@media all and (min-width: 425px)and  (max-width: 734px){
+/* @----- 모바일1 ------@ */
+@media all and (max-width: 734px){
 
 /* === header === */
 /* 햄버거 */
@@ -1016,6 +1016,106 @@ margin-top: 180rem;}
    .content_2 .content_2_1{margin: 15vw auto auto auto;}
    .content_2_1 p{margin-left: -3vw;}
    .content_2_1 img{width: 30vw;}
+
+/* ==== news ===== */
+.store_slide h2.title_2 { margin-left: 12vw; margin-top: 3rem; margin-bottom: 1.5rem; font-size: 3rem;}
+
+.store_slide .slide_card ul.card{padding-left: 62%;}
+
+/* 좌우 버튼 */
+.slide_card ul.left_right_2 li:first-child { margin-top: 20rem; margin-left: 5vw; } 
+
+.slide_card ul.left_right_2 li:last-child { margin-top: 20rem; margin-right: 5vw; } 
+
+/* ====== gnb_nav ======= */
+.nav{left: 5vw;}
+.nav img{width: 5rem;}
+.container span:nth-child(1){position: absolute; top: 0; left: 0;}
+.container span:nth-child(2){position: absolute; top: 0; left: 6rem;}
+.container span:nth-child(3){position: absolute; top: 0; left: 12rem;}
+.container span:nth-child(4){position: absolute; top: 0; left: 18rem;}
+
+/* 검색 */
+form .search_wrap{ left: -50rem;}
+input#search { width:35vw;}
+.search_wrap span.icon {top: 0.6rem; left: 37vw; }
+
+/* ===== info_1 ==== */
+.info_1 { height:180vw;}
+.info_1 li.botton {left: -15vw; bottom: 40rem;}
+
+/* ==== info_2 ==== */
+.info_2{height: 80rem;}
+   .info_2 .container{height: 80rem; background-position: center, bottom; background-position-x: 20vw, 60vw;
+background-position-y:42vw, bottom;
+background-size: 40vw, 25vw;}
+
+   .info_2 .inner .img1{left: 18vw;}
+
+   .info_2 .inner .img2{left: 50vw; top: 30vw;}
+
+  /* info_text */
+    .info_text{margin-top: 66vw; margin-left: -63rem;}
+
+/* ==== footer ===== */
+    .footer_1 ul.depth_1{padding: 3rem;}
+
+/* f_logo */
+.footer_logo img {display: none;}
+
+/* footer_2 */
+.footer_2 {height: 18rem;}
+
+/* footer_3 */
+
+.footer_tel{flex-wrap: wrap;}
+
+}
+
+/* @----- 모바일2 ------@ */
+@media all and (max-width: 670px){
+   /* ===== hidden ====== */
+   /* button */
+   ul.flex li.inner a{bottom: 1vw;}
+    
+   /* ====== nav_2 ====== */
+   .nav_2 .container img {width: 18rem; margin-left: 4vw; margin-right: 0vw; margin-bottom: 15rem;}
+
+   /* text */
+   .container_card{margin-left: 0;}
+
+}
+
+
+/* @----- 모바일2 ------@ */
+@media all and (max-width: 568px){
+/* === header === */
+/* 햄버거 */
+   /* ------------- 메뉴 상단  */
+   .h_form .h_search input{width: 20rem;}
+
+   /* 메인배너 버튼 */
+   .main_banner .container .banner_text li a{font-size: 1.8rem; padding: 2rem;}
+
+   /* ===== nav_1 ======= */
+   .nav_1 div.notice{height: 15vw;}
+
+   .notice .history li {margin-left: 0rem;}
+
+
+/* promotion */
+.nav_1 div.promotion 
+
+   /* ====== nav_2 ====== */
+   main .nav_2 .container img {width: 16rem; margin-left: 1vw; margin-bottom: 21rem;}
+
+   /* text */
+   .container_card .g_card{width: 35rem;}
+
+
+/* ========== info_2 ========= */
+   .info_text{margin-top: 73vw; margin-left: -100vw;}
+
 
 
 
