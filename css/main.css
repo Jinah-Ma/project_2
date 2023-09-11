@@ -39,7 +39,7 @@ nav .w100 { overflow: hidden; height: 0; }
 
 
 /* 투댑스 내려오게 하기 */
-nav { position: relative; } 
+nav { position: relative; z-index: 7;} 
 
 nav .w100 { position: absolute; top: 120px; left: 0; } 
 nav ul.container { display: flex; justify-content: center; padding-top: 2.7rem;}
@@ -76,7 +76,7 @@ nav ul.container { display: flex; justify-content: center; padding-top: 2.7rem;}
 
 
 /* === Sticky === */
-.sticky { width: 166px; position: sticky; top: 150px; left: 160rem; z-index: 11; } 
+.sticky { width: 166px; position: sticky; top: 150px; left: 160rem; z-index: 5; } 
 
 /* === popup === */
 .popup { position: fixed; z-index: 999; width: 50rem; height: 20rem; background: rgba(255, 255, 255, .8); top: 50%; left: 50%; transform: translateY(-50%) translateX(-50%); border-radius: 10px; backdrop-filter: blur(20px); box-shadow: 0px 0px 5px var(--text1)} 
