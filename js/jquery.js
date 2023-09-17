@@ -33,32 +33,20 @@ $('.main_banner ul.banner_text li:last-child').ready(function () {
 
 
 // 배너 밑 '공지사항'
-// $('.history').bxSlider({
-//     mode : 'vertical',
-//     speed : 200,
-//     minSlides : 1,
-//     maxSlides : 5,
-//     moveSlides : 1,
-//     slideWidth : 200,
-//     slideMargin : 30,
-//     auto : true,
-// });
-
-
 
 
 
 // 스크롤을 내릴 때마다 매번 슬라이드로 나타나게 하기
 
 
-$(document).ready(function () {
+$('.promotion').ready(function () {
     $('.promotion .p_close').click(function () {
         $('.promotion .p_close').css('display', 'none');
         $('.promotion .p_open').css('display', 'block');
     });
 });
 
-$(document).ready(function () {
+$('.promotion').ready(function () {
     $('.promotion .p_open').click(function () {
         $('.promotion .p_open').css('display', 'none');
         $('.promotion .p_close').css('display', 'block');
@@ -67,7 +55,7 @@ $(document).ready(function () {
 
 //프로모션 히든 클릭 버튼 구현
 
-$('.img_ctl_slider').bxSlider({
+/* $('.img_ctl_slider').bxSlider({
     prevSelector : ".img_ctl .prev",
     nextSelector : ".img_ctl .next",
     minSlides : 1,
@@ -76,20 +64,17 @@ $('.img_ctl_slider').bxSlider({
     autoControls: true,
     stopAutoOnClick: true,
     pager: true,
-    slideWidth: 819,
-    slideHeight: 610,
-    slideMargin : 20,
     auto: true,
     speed : 50,
 });
-
+ */
 
 $('.promotion_list li img').click(function (event) {
     event.preventDefault();
     $('.nav_1_pr .hidden').stop().slideToggle('slow');
 })
 // 스타벅스 프로모션 히든 페이지 나타내기
-//function(event){event.preventDefault();: 스크롤 고정해서 위로 올라가는 것을 막아준다.
+//function(event){event.preventDefault();: 스크롤 고정해서 위로 올라가는 것을 막아준다. ★나중에 빼기
 
 /* 1 */
 $(document).ready(function () {
