@@ -77,7 +77,7 @@ $('.promotion_list li img').click(function (event) {
 //function(event){event.preventDefault();: 스크롤 고정해서 위로 올라가는 것을 막아준다. ★나중에 빼기
 
 /* 1 */
-$(document).ready(function () {
+/* $(document).ready(function () {
     $('.slide_se1 li.start').click(function () {
         $('.slide_se1 li.start').css('display', 'none');
         $('.slide_se1 li.end').css('display', 'block');
@@ -88,10 +88,10 @@ $(document).ready(function () {
         $('.slide_se1 li.end').css('display', 'none');
         $('.slide_se1 li.start').css('display', 'block');
     });
-});
+}); */
 
 /* 2 */
-$(document).ready(function () {
+/* $(document).ready(function () {
     $('.slide_se2 li.start').click(function () {
         $('.slide_se2 li.start').css('display', 'none');
         $('.slide_se2 li.end').css('display', 'block');
@@ -102,10 +102,10 @@ $(document).ready(function () {
         $('.slide_se2 li.end').css('display', 'none');
         $('.slide_se2 li.start').css('display', 'block');
     });
-});
+}); */
 
 /* 3 */
-$(document).ready(function () {
+/* $(document).ready(function () {
     $('.slide_se3 li.start').click(function () {
         $('.slide_se3 li.start').css('display', 'none');
         $('.slide_se3 li.end').css('display', 'block');
@@ -116,9 +116,24 @@ $(document).ready(function () {
         $('.slide_se3 li.end').css('display', 'none');
         $('.slide_se3 li.start').css('display', 'block');
     });
-});
+}); */
 
 // 프로모션 재생 정지 버튼 구현, 프로모션 히든페이지 슬라이드
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 $('.img_ctl_slider2').bxSlider({
@@ -140,7 +155,7 @@ $('.img_ctl_slider2').bxSlider({
 
 
 /* 4 */
-$(document).ready(function () {
+/* $(document).ready(function () {
     $('.slide_se4 li.start').click(function () {
         $('.slide_se4 li.start').css('display', 'none');
         $('.slide_se4 li.end').css('display', 'block');
@@ -151,10 +166,10 @@ $(document).ready(function () {
         $('.slide_se4 li.end').css('display', 'none');
         $('.slide_se4 li.start').css('display', 'block');
     });
-});
+}); */
 
 /* 5 */
-$(document).ready(function () {
+/* $(document).ready(function () {
     $('.slide_se5 li.start').click(function () {
         $('.slide_se5 li.start').css('display', 'none');
         $('.slide_se5 li.end').css('display', 'block');
@@ -165,10 +180,10 @@ $(document).ready(function () {
         $('.slide_se5 li.end').css('display', 'none');
         $('.slide_se5 li.start').css('display', 'block');
     });
-});
+}); */
 
 /* 6 */
-$(document).ready(function () {
+/* $(document).ready(function () {
     $('.slide_se6 li.start').click(function () {
         $('.slide_se6 li.start').css('display', 'none');
         $('.slide_se6 li.end').css('display', 'block');
@@ -179,7 +194,7 @@ $(document).ready(function () {
         $('.slide_se6 li.end').css('display', 'none');
         $('.slide_se6 li.start').css('display', 'block');
     });
-});
+}); */
 
 
 // 온라인스토어 재생 정지 버튼 구현, 온라인스토어 슬라이드

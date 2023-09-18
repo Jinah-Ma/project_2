@@ -499,7 +499,7 @@ nav ul.container {
 .slide_se3 li.end{display: none;}
  */
 
- .nav_1_pr .hidden {
+.nav_1_pr .hidden {
     width: 100%;
     height: 36vw;
     position: relative;
@@ -519,9 +519,10 @@ nav ul.container {
 }
 
 .flex li.inner img {
-    width:43vw;
+    width: 43vw;
     height: 30vw;
     margin-top: 4rem;
+    margin-left: 1vw;
     display: block;
 }
 
@@ -554,12 +555,14 @@ ul.left_right li:first-child {
     position: absolute;
     left: 25%;
     display: block;
+    top: -10vw;
 }
 
 ul.left_right li:last-child {
     position: absolute;
     right: 25%;
     display: block;
+    top: -10vw;
 }
 
 /* 자바 버튼 숨기기 */
