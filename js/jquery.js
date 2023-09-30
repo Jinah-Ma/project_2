@@ -203,7 +203,7 @@ $(document).ready(function () {
 
 
 // 햄버거 메뉴로 없어졌다 나타나게 하기
-$(document).ready(function() {
+$(function() {
     let hamMenuIcon1 = $("#hamIcon1");
     let hamMenuIcon2 = $('.hamIcon2');
     let overlay = $('.overlay');
