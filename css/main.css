@@ -200,10 +200,10 @@ nav ul.container {
 .popup {
     position: fixed;
     z-index: 999;
-    width: 50rem;
+    width: 55rem;
     height: 20rem;
     background: rgba(255, 255, 255, .8);
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
     border-radius: 10px;
@@ -854,6 +854,7 @@ ul.hidden_btn {
     width: 100%;
     height: 66rem;
     background: url(../img/summer2_pick_bg.jpg) no-repeat center fixed;
+    background-position-y: 13rem;
 }
 
 .content_2 .container {
@@ -1593,8 +1594,8 @@ p {
     color: rgba(246, 245, 240, .6);
 }
 
-/* homebutton */
-.homebutton {
+/* 탑버튼 */
+.homebutton img{
     position: fixed;
     bottom: 7rem;
     right: 2rem;
