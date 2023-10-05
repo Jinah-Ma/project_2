@@ -50,6 +50,10 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./img/icon/favicon/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- 스와이퍼 슬라이드 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.css">
+
 </head>
 
 <body>
@@ -65,13 +69,22 @@
                             <li class="ham_2"><a href="#"><img src="./img/phone/icon_spot_m.png" alt="매장검색"></a></li>
                         </ul>
                     </div>
+
                     <div class="main_menu">
                         <ul class="container util_nav">
                             <li><a href="#">Sign In</a></li>
                             <li><a href="#">My Starbucks</a></li>
                             <li><a href="#">Customer Service & Ideas</a></li>
-                            <li><a href="#">Find a Store</a></li>
-                            <li><a href="#"><img src="./img/icon/search.png" alt="search"></a></li>
+                            <!-- <li><a href="#">Find a Store</a></li> -->
+                            <li>
+                                <ul class="icon">
+                                    <li><a href="#"><img src="./img/icon/facebook.png" alt="search"></a></li>
+                                    <li><a href="#"><img src="./img/icon//instar.png" alt="instar"></a></li>
+                                    <li><a href="#"><img src="./img/icon/twitter.png" alt="twitter"></a></li>
+                                    <li><a href="#"><img src="./img/icon/youtube.png" alt="youtube"></a></li>
+                                    <li><a href="#"><img src="./img/icon/search_t.png" alt="search"></a></li>
+                                </ul>
+                            </li>
                         </ul>
                         <div class="ham_3"><img src="./img/phone/btn_berger_m.png" alt="메뉴 펼치기" id="hamIcon1"></div>
                         <div class="ham_4"><img src="./img/icon/cancel.png" alt="메뉴 닫기" class="hamIcon2"></div>
@@ -137,6 +150,7 @@
                                 </div>
                             </li>
                             <!-- //h_dep -->
+
                             <li class="dep1">
                                 <a href="#">COFFEE</a><img src="./img/phone/mobile_footer_arrow_up.png"
                                     alt="큰 메뉴 열고 닫기 버튼">
@@ -196,9 +210,10 @@
                                 </div>
                                 <!-- //dep2 //1 -->
                             </li>
-                            <!-- 1 -->
-                            <li class="dep1"><a href="#">MENU</a><img src="./img/phone/mobile_footer_arrow_up.png"
-                                    alt="큰 메뉴 열고 닫기 버튼">
+                            <!-- //1 -->
+
+                            <li class="dep1"><a href="#" title="MENU">MENU</a><img
+                                    src="./img/phone/mobile_footer_arrow_up.png" alt="큰 메뉴 열고 닫기 버튼">
                                 <div class="w100">
                                     <ul class="dep2 container">
                                         <li><a href="#">음료</a><img src="./img/phone/mobile_footer_arrow_down2.png"
@@ -266,9 +281,10 @@
                                 </div>
                                 <!-- //dep2 //2 -->
                             </li>
-                            <!-- 2 -->
-                            <li class="dep1"><a href="#">STORE</a><img src="./img/phone/mobile_footer_arrow_up.png"
-                                    alt="큰 메뉴 열고 닫기 버튼">
+                            <!-- //2 -->
+
+                            <li class="dep1"><a href="#" title="STORE">STORE</a><img
+                                    src="./img/phone/mobile_footer_arrow_up.png" alt="큰 메뉴 열고 닫기 버튼">
                                 <div class="w100">
                                     <ul class="dep2 container">
                                         <li><a href="#">매장 찾기</a><img src="./img/phone/mobile_footer_arrow_down2.png"
@@ -289,8 +305,9 @@
                                 </div>
                                 <!-- //dep2 //3 -->
                             </li>
-                            <!-- 3 -->
-                            <li class="dep1"><a href="#">RESPONSIBILITY</a><img
+                            <!-- //3 -->
+
+                            <li class="dep1"><a href="#" title="RESPONSIBILITY">RESPONSIBILITY</a><img
                                     src="./img/phone/mobile_footer_arrow_up.png" alt="큰 메뉴 열고 닫기 버튼">
                                 <div class="w100">
                                     <ul class="dep2 container">
@@ -339,8 +356,9 @@
                                 </div>
                                 <!-- //dep2 //4 -->
                             </li>
-                            <!-- 4 -->
-                            <li class="dep1"><a href="#">STARBUCKS REWARDS</a><img
+                            <!-- //4 -->
+
+                            <li class="dep1"><a href="#" title="STARBUCKS REWARDS">STARBUCKS REWARDS</a><img
                                     src="./img/phone/mobile_footer_arrow_up.png" alt="큰 메뉴 열고 닫기 버튼">
                                 <div class="w100">
                                     <ul class="dep2 container">
@@ -380,8 +398,9 @@
                                 </div>
                                 <!-- //dep2 //5 -->
                             </li>
-                            <!-- 5 -->
-                            <li class="dep1"><a href="#">CORPORATE SALES</a><img
+                            <!-- //5 -->
+
+                            <li class="dep1"><a href="#" title="CORPORATE SALES">CORPORATE SALES</a><img
                                     src="./img/phone/mobile_footer_arrow_up.png" alt="큰 메뉴 열고 닫기 버튼">
                                 <div class="w100">
                                     <ul class="dep2 container">
@@ -408,9 +427,10 @@
                                 </div>
                                 <!-- //dep2 //6 -->
                             </li>
-                            <!-- 6 -->
-                            <li class="dep1"><a href="#">WHAT'S NEW</a><img src="./img/phone/mobile_footer_arrow_up.png"
-                                    alt="큰 메뉴 열고 닫기 버튼">
+                            <!-- //6 -->
+
+                            <li class="dep1"><a href="#" title="WHAT'S NEW">WHAT'S NEW</a><img
+                                    src="./img/phone/mobile_footer_arrow_up.png" alt="큰 메뉴 열고 닫기 버튼">
                                 <div class="w100">
                                     <ul class="dep2 container">
                                         <li><a href="#">이벤트</a><img src="./img/phone/mobile_footer_arrow_down2.png"
@@ -450,6 +470,7 @@
                                 </div>
                                 <!-- //dep2 //7 -->
                             </li>
+                            <!-- //7 -->
                         </ul>
                     </div>
                 </div>
@@ -465,7 +486,7 @@
                 <div class="text1">해당 사이트는 학습용으로 제작되었으며 스타벅스와 무관합니다.</div>
                 <div class="text2">구직용 포트폴리오로 상업적 의도와 목적이 없음을 밝힙니다.</div>
             </div>
-            <div><a href="#" class="close"><img src="./img/icon/close-icon.svg" alt=""></a></div>
+            <div><a href="#" class="close"><img src="./img/icon/close-icon.svg" alt="닫기버튼"></a></div>
         </div>
         <!-- //popup -->
 
@@ -477,9 +498,12 @@
                         <li><a href="#">자세히 보기</a></li>
                     </ul>
                     <ul class="banner_img">
-                        <li class="banner_img_2"><img src="./img/top_drink2.png" alt="라즈베리 팝 쉐이큰 티" data-at2x="./img/retina/2x_top_drink2.png"></li>
-                        <li class="banner_img_1"><img src="./img/top_drink1.png" alt="씨솔트 카라멜 콜드 브루" data-at2x="./img/retina/2x_top_drink1.png"></li>
-                        <li class="banner_img_3"><img src="./img/top_drink3.png" alt="만다린 버베나 피지오" data-at2x="./img/retina/2x_top_drink3.png"></li>
+                        <li class="banner_img_2"><img src="./img/top_drink2.png" alt="라즈베리 팝 쉐이큰 티"
+                                data-at2x="./img/retina/2x_top_drink2.png"></li>
+                        <li class="banner_img_1"><img src="./img/top_drink1.png" alt="씨솔트 카라멜 콜드 브루"
+                                data-at2x="./img/retina/2x_top_drink1.png"></li>
+                        <li class="banner_img_3"><img src="./img/top_drink3.png" alt="만다린 버베나 피지오"
+                                data-at2x="./img/retina/2x_top_drink3.png"></li>
                     </ul>
                     <ul class="banner_mobail">
                         <li class="banner_text_img"><img src="./img/phone/2023_m_summer2_top_logo.png" alt="logo"></li>
@@ -521,45 +545,35 @@
             <!-- //nav_1 -->
 
             <div class="nav_1_pr">
-                <div class="hidden slideWrap">
-                    <ul class="flex img_ctl_slider1">
-                        <li class="inner evn_1">
+                <div class="hidden swiper1 mySwiper">
+                    <div class="flex swiper-wrapper">
+                        <div class="inner swiper-slide">
                             <a href="#"><img src="./img/promotion_2.jpg" alt="스타벅스와 함께하는 뜻밖의 여름"></a>
                             <a href="#" class="a">자세히 보기</a>
-                        </li>
-                        <li class="inner evn_2">
-                            <a href="#"><img src="./img/promotion_1.jpg" alt="등록된 스타벅스 카드로 결제시, 만원당 별 한 개를 추가로 드립니다."></a>
+                        </div>
+                        <div class="inner swiper-slide">
+                            <a href="#"><img src="./img/promotion_1.jpg"
+                                    alt="등록된 스타벅스 카드로 결제시, 만원당 별 한 개를 추가로 드립니다."></a>
                             <a href="#" class="a">자세히 보기</a>
-                        </li>
-                        <li class="inner evn_3">
+                        </div>
+                        <div class="inner swiper-slide">
                             <a href="#"><img src="./img/promotion_3.jpg" alt="함께라서 더 즐거운 가을을 즐겨봐요"></a>
                             <a href="#" class="a">자세히 보기</a>
-                        </li>
-                    </ul>
-                    <ul class="left_right img_ctl">
-                        <li class="prev"><img src="./img/icon/left_1_1.png" alt="왼쪽"></li>
-                        <li class="next"><img src="./img/icon/right_1_1.png" alt="오른쪽"></li>
-                    </ul>
-                    <ul class="hidden_btn img_btn">
-                        <li class="btn_se1">
-                            <ul class="slide_se1">
-                                <li class="start"><img src="./img/icon/btn_start.png" alt="시작 버튼"></li>
-                                <li class="end"><img src="./img/icon/btn_end.png" alt="일시정지 버튼"></li>
-                            </ul>
-                        </li>
-                        <li class="btn_se2">
-                            <ul class="slide_se2">
-                                <li class="start"><img src="./img/icon/btn_1.png" alt="다음페이지"></li>
-                                <li class="end"><img src="./img/icon/btn_2.png" alt="현재페이지"></li>
-                            </ul>
-                        </li>
-                        <li class="btn_se3">
-                            <ul class="slide_se3">
-                                <li class="start"><img src="./img/icon/btn_1.png" alt="다음페이지"></li>
-                                <li class="end"><img src="./img/icon/btn_2.png" alt="현재페이지"></li>
-                            </ul>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <img src="./img/icon/left_1_1.png" alt="이전 페이지">
+                    </div>
+                    <div class="pause on">
+                        <img src="./img/icon/main_stop2.png" alt="정지버튼">
+                    </div>
+                    <div class="play">
+                        <img src="./img/icon/main_play2.png" alt="시작버튼">
+                    </div>
+                    <div class="swiper-button-next">
+                        <img src="./img/icon/right_1_1.png" alt="다음페이지">
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
             <!-- //nav_1_pr hidden -->
@@ -624,7 +638,8 @@
                         <p><a href="#">자세히 보기</a></p>
                     </div>
                     <div class="content_2_2">
-                        <img src="./img/2023_summer2_pick_img.png" alt="pick your favorite" data-at2x="./img/retina/2x_2023_summer2_pick_img.png">
+                        <img src="./img/2023_summer2_pick_img.png" alt="pick your favorite"
+                            data-at2x="./img/retina/2x_2023_summer2_pick_img.png">
                     </div>
                 </div>
             </div>
@@ -842,11 +857,16 @@
     </div>
     <!-- retina -->
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
-<script src="./js/retina.min.js"></script>
-    
-<!-- jquery core -->
+    <script src="./js/retina.min.js"></script>
+
+    <!-- jquery core -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/swiper.js"></script>
+
     <script src="./js/jquery.js"></script>
 </body>
 

@@ -18,10 +18,7 @@ $('.main_banner ul.banner_img li.banner_img_3').animate({ opacity: 1 }, 1000)
 
 // 5
 $('.main_banner ul.banner_text li:last-child').animate({ opacity: 1 }, 1000)
-
-
 // 메인배너 사이트 들어가자마자 오파서티로 나타내기
-
 
 
 
@@ -67,7 +64,7 @@ $('.promotion_list li img').click(function (event) {
 
 
 
-$('.img_ctl_slider2').bxSlider({
+/* $('.img_ctl_slider2').bxSlider({
     prevSelector: ".img_ctl .prev2",
     nextSelector: ".img_ctl .next2",
     minSlides: 4.5,
@@ -81,7 +78,7 @@ $('.img_ctl_slider2').bxSlider({
     slideMargin: 10,
     auto: true,
     speed: 50,
-});
+}); */
 
 
 
