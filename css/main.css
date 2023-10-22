@@ -484,7 +484,6 @@ nav ul.container {
   height: 32vw;
   width: auto;
   align-items: center;
-
 }
 
 .nav_1_pr .flex .inner {
@@ -862,7 +861,6 @@ nav ul.container {
   animation-fill-mode: both;
   animation-iteration-count: 1;
   animation-play-state: running;
-
   transform: translateX(-640px);
   overflow: hidden;
   opacity: 0;
@@ -876,7 +874,6 @@ nav ul.container {
   animation-iteration-count: 1;
   animation-play-state: running;
   opacity: 0;
-
   transform: translateX(-640px);
   overflow: hidden;
   opacity: 0;
@@ -1058,7 +1055,6 @@ nav ul.container {
   animation-fill-mode: both;
   animation-iteration-count: 1;
   animation-play-state: running;
-
   opacity: 0;
   transition: opacity 2s;
 }
@@ -1175,11 +1171,9 @@ nav ul.container {
   animation-fill-mode: both;
   animation-iteration-count: 1;
   animation-play-state: running;
-
   transform: translate(640px);
   overflow: hidden;
   opacity: 0;
-
   transition: transform 1.2s, opacity 1.2s;
 }
 
@@ -1192,7 +1186,6 @@ nav ul.container {
   transform: translate(640px);
   overflow: hidden;
   opacity: 0;
-
   transition: transform 2s, opacity 2s;
 }
 
@@ -1205,7 +1198,6 @@ nav ul.container {
   transform: translate(640px);
   overflow: hidden;
   opacity: 0;
-
   transition: transform 2.5s, opacity 2.5s;
 }
 
@@ -1403,32 +1395,71 @@ p {
     margin-left: 1rem;
   }
 
-  .nav_ham{display: block;}
+  .nav_ham {
+    display: block;
+  }
 
   /* 상단 메뉴 아이콘 */
   .spot_menu {
     display: flex;
     position: relative;
   }
-  .spot_menu a:first-child{display: block; position: absolute; right: 20vw; top: 1.5rem;}
-  .spot_menu a:first-child img{width: 3.5rem;}
-  .spot_menu a:nth-child(2){display: block;position: absolute;right: 0; right: 11vw; top: 1.5rem;}
-  .spot_menu a:nth-child(2) img{width: 3.2rem;}
-  .spot_menu .hamOC a:first-child{display: block; position: absolute; right: 2vw; top: 2rem;}
-  .spot_menu .hamOC a:last-child{display: block; position: absolute; right: 2vw; top: 2rem; display: none;}
-  .spot_menu .hamOC a:last-child img{width: 3.5rem; filter:invert(100%);}
+
+  .spot_menu a:first-child {
+    display: block;
+    position: absolute;
+    right: 15vw;
+    top: 2rem;
+  }
+
+  .spot_menu a:first-child img {
+    width: 3rem;
+  }
+
+  .spot_menu a:nth-child(2) {
+    display: block;
+    position: absolute;
+    right: 0;
+    right: 8.5vw;
+    top: 1.9rem;
+  }
+
+  .spot_menu a:nth-child(2) img {
+    width: 2.8rem;
+  }
+
+  .spot_menu .hamOC a:first-child {
+    display: block;
+    position: absolute;
+    right: 2vw;
+    top: 2.5rem;
+  }
+
+  .spot_menu .hamOC a:last-child {
+    display: block;
+    position: absolute;
+    right: 63rem;
+    top: 2rem;
+    /* display: none; */
+  }
+
+  .spot_menu .hamOC a:last-child img {
+    width: 3.5rem;
+    filter: invert(100%);
+  }
 
 
   /* 햄버거 */
   .h_wrap {
-    /* display: block; */
+    display: block;
     background: #000;
     width: 65vw;
     position: fixed;
+    height: 100%;
     top: 0;
     right: 0;
     z-index: 9999;
-    display: none;
+    /* display: none; */
   }
 
   .overay {
@@ -1439,10 +1470,100 @@ p {
     right: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: -1;
+    /* display: none; */
+    display: block;
+  }
+
+  /* 햄버거 검색 */
+  .h_top.h_form {
+    width: 100%;
+    height: 10rem;
+    background: #2d2926;
+    border-bottom: 1px solid #222;
+  }
+
+  .h_form {
+    text-align: center;
+  }
+
+  .h_form #h_search_bar {
+    border: none;
+    border-radius: 0.5rem;
+    width: 30rem;
+    height: 5rem;
+    margin-right: 1rem;
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+  }
+
+  .h_form label a {
+    background: #666;
+    padding: 0.8rem 3rem;
+    font-size: 2.6rem;
+    font-family: 'NanumBarunGothicExtraLight';
+    border-radius: 0.5rem;
+    color: #fff;
+  }
+
+  /* 햄버거 마이 스타벅스 */
+  .h_top.myStar {
+    width: 100%;
+    height: 7rem;
+    background: #2d2926;
+    border-bottom: 1px solid #222;
+  }
+
+  .myStar {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .myStar>a {
+    color: #fff;
+    font-size: 2.8rem;
+    font-family: 'NanumBarunGothicExtraLight';
+  }
+
+  .myStar>img {
+    position: absolute;
+    right: 4rem;
+    width: 2rem;
+    margin-top: 1rem;
+  }
+
+  .h_dep2,
+  .h_dep3 {
     display: none;
   }
 
+  /* 햄버거 원뎁스 */
+  .h_main li.h_dep1 {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    height: 7rem;
+    border-bottom: 1px solid #222;
+  }
 
+  .h_main li.h_dep1>a {
+    color: #fff;
+    font-size: 2.8rem;
+    font-family: 'NanumBarunGothicExtraLight';
+  }
+
+  .h_main li.h_dep1>img {
+    position: absolute;
+    right: 4rem;
+    width: 2rem;
+    margin-top: 1rem;
+  }
 
   /* 메인 배너 */
   .main_banner {
@@ -1979,7 +2100,6 @@ p {
     padding-right: 4rem;
     justify-content: center;
   }
-
 }
 
 
