@@ -76,11 +76,11 @@ win.on('scroll', function () {
     if (scroll + winH >= content2H) {
         $('.content_2_1 img').css({
             opacity: 1,
-            transform : 'translateX(0)',
+            transform: 'translateX(0)',
         })
         $('.content_2_1 .left_text_1').css({
             opacity: 1,
-            transform : 'translateX(0)',
+            transform: 'translateX(0)',
         })
         $('.content_2 p a').css({
             opacity: 1,
@@ -110,15 +110,15 @@ win.on('scroll', function () {
     if (scroll + winH >= content2H) {
         $('.info_text_1').css({
             opacity: 1,
-            transform : 'translateX(0)',
+            transform: 'translateX(0)',
         })
         $('.info_text_2').css({
             opacity: 1,
-            transform : 'translateX(0)',
+            transform: 'translateX(0)',
         })
         $('.info_text_3').css({
             opacity: 1,
-            transform : 'translateX(0)',
+            transform: 'translateX(0)',
         })
     }
 })
@@ -127,34 +127,38 @@ win.on('scroll', function () {
 
 const homeTop = $('.homebutton');
 
-homeTop.on('click', function(){
-    $('html, body').animate({scrollTop : 0},'slow');
+homeTop.on('click', function () {
+    $('html, body').animate({ scrollTop: 0 }, 'slow');
 })
 
 
-// 햄버거 메뉴로 없어졌다 나타나게 하기
-$(function () {
-    let hamMenuIcon1 = $("#hamIcon1");
-    let hamMenuIcon2 = $('.hamIcon2');
-    let overlay = $('.overlay');
+// 햄버거 메뉴
+const hamMenuOpen = $('.nav_ham .hamOC a:first-child');
+const hamMenuClose = $('.nav_ham .hamOC a:last-child');
+const hamMain = $('.h_wrap');
+const overay = $('.overay');
 
-    hamMenuIcon1.click(
-        function () {
-            $('nav .main_menu .sub_gnb_nav').css('right', '300vw');
-            $('.ham_4').css('display', 'flex').css('right', '70vw');
-            hamMenuIcon1.css('opacity', '0');
-            $('.sticky').css('z-index', '1');
-        }
-    );
+hamMenuOpen.on('click', function (e) {
+    e.preventDefault;
+    hamMenuClose.css({ right: '67vw' });
+    hamMain.css({ transform: 'translateX(0)' });
+    overay.show();
+})
 
-    hamMenuIcon2.click(
-        function () {
-            $('nav .main_menu .sub_gnb_nav').css('right', '-300vw');
-            $('.ham_4').css('display', 'none').css('transition', '0.8s');
-            hamMenuIcon1.css('opacity', '100');
-            $('.sticky').css('z-index', '6');
-        }
-    );
+hamMenuClose.on('click', function (e) {
+    e.preventDefault;
+    hamMenuClose.css({ right: '-60vw' });
+    hamMain.css({ transform: 'translateX(65vw)' });
+    overay.hide();
+})
 
-
-});
+hamMenuClose.on(
+    {
+        'mouseenter': function () {
+            $(this).css({ transform: 'rotate(-180deg)' })
+        },
+        'mouseleave': function () {
+            $(this).css({ transform: 'rotate(180deg)' })
+        },
+    }
+)

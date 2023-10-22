@@ -1438,14 +1438,17 @@ p {
   .spot_menu .hamOC a:last-child {
     display: block;
     position: absolute;
-    right: 63rem;
+    right: -60vw;
     top: 2rem;
-    /* display: none; */
+    transition: transform 1.5s;
   }
 
   .spot_menu .hamOC a:last-child img {
     width: 3.5rem;
     filter: invert(100%);
+  }
+  .spot_menu .hamOC a:last-child {
+    z-index: 1;
   }
 
 
@@ -1459,7 +1462,9 @@ p {
     top: 0;
     right: 0;
     z-index: 9999;
-    /* display: none; */
+    overflow: hidden;
+    transform: translateX(65vw);
+    transition: transform 0.5s;
   }
 
   .overay {
@@ -1469,9 +1474,9 @@ p {
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-    /* display: none; */
-    display: block;
+    z-index: 0;
+    overflow: hidden;
+    display: none;
   }
 
   /* 햄버거 검색 */
