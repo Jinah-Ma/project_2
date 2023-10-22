@@ -53,16 +53,83 @@ openBtn.on('click', function (e) {
 
 //슬라이드2 재생 정지★
 var mySwiper = $('.swiper2');
-$('.controls2 .stop').on('click', function(){
+$('.controls2 .stop').on('click', function () {
     $(this).hide();
     $('.controls2 .start').show();
     mySwiper.autoplay.stop();
 });
-$('.controls2 .start').on('click', function(){
+$('.controls2 .start').on('click', function () {
     $(this).hide();
     $('.controls2 .stop').show();
     mySwiper.autoplay.start();
 });
+
+
+//content_2 애니메이션
+const win = $(window);
+
+win.on('scroll', function () {
+    const winH = win.height();
+    let scroll = $(window).scrollTop();
+    let content2H = $('.content_2').offset().top;
+
+    if (scroll + winH >= content2H) {
+        $('.content_2_1 img').css({
+            opacity: 1,
+            transform : 'translateX(0)',
+        })
+        $('.content_2_1 .left_text_1').css({
+            opacity: 1,
+            transform : 'translateX(0)',
+        })
+        $('.content_2 p a').css({
+            opacity: 1,
+        })
+    }
+})
+
+//.info_1 .container 애니메이션
+win.on('scroll', function () {
+    const winH = win.height();
+    let scroll = $(window).scrollTop();
+    let content2H = $('.info_1 .container').offset().top;
+
+    if (scroll + winH >= content2H) {
+        $('.info_1 .container .img').css({
+            opacity: 1
+        })
+    }
+})
+
+//.info_2 .info_text 애니메이션
+win.on('scroll', function () {
+    const winH = win.height();
+    let scroll = $(window).scrollTop();
+    let content2H = $('.info_2').offset().top;
+
+    if (scroll + winH >= content2H) {
+        $('.info_text_1').css({
+            opacity: 1,
+            transform : 'translateX(0)',
+        })
+        $('.info_text_2').css({
+            opacity: 1,
+            transform : 'translateX(0)',
+        })
+        $('.info_text_3').css({
+            opacity: 1,
+            transform : 'translateX(0)',
+        })
+    }
+})
+
+// 탑버튼 구현
+
+const homeTop = $('.homebutton');
+
+homeTop.on('click', function(){
+    $('html, body').animate({scrollTop : 0},'slow');
+})
 
 
 // 햄버거 메뉴로 없어졌다 나타나게 하기

@@ -809,7 +809,7 @@ nav ul.container {
   width: 100%;
   height: 66rem;
   background: url(../img/summer2_pick_bg.jpg) no-repeat center fixed;
-  background-position-y: 13rem;
+  background-position-y: 12rem;
 }
 
 .content_2 .container {
@@ -880,21 +880,18 @@ nav ul.container {
   margin-left: 5rem;
 }
 
-/* ### animation ### */
+/* 애니메이션 */
 .content_2 .content_2_1 img {
   animation-name: img_show;
   animation-duration: 3s;
   animation-fill-mode: both;
   animation-iteration-count: 1;
   animation-play-state: running;
-}
 
-@keyframes img_show {
-  0% {
-    transform: translate(-640px);
-    overflow: hidden;
-    opacity: 0;
-  }
+  transform: translateX(-640px);
+  overflow: hidden;
+  opacity: 0;
+  transition: transform 1.2s, opacity 1.2s;
 }
 
 .content_2 .content_2_1 .left_text_1 {
@@ -904,21 +901,13 @@ nav ul.container {
   animation-iteration-count: 1;
   animation-play-state: running;
   opacity: 0;
-  animation-delay: 0.2s;
+
+  transform: translateX(-640px);
+  overflow: hidden;
+  opacity: 0;
+  transition: transform 1.6s, opacity 1.6s;
 }
 
-@keyframes text_show {
-  0% {
-    transform: translate(-640px);
-    overflow: hidden;
-    opacity: 0;
-  }
-
-  100% {
-    transform: translate(0);
-    opacity: 1;
-  }
-}
 
 .content_2 p a {
   margin-left: 7.5rem;
@@ -927,19 +916,9 @@ nav ul.container {
   animation-fill-mode: both;
   animation-iteration-count: 1;
   animation-play-state: running;
+  opacity: 0;
+  transition: opacity 2s;
 }
-
-@keyframes a_show {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-/* // animation */
 
 
 /* ==== 뉴스 이벤트 ===== */
@@ -1015,12 +994,12 @@ nav ul.container {
 }
 
 .store_slide .swiper-pagination2 .swiper-pagination-bullet {
-width: 1rem;
+  width: 1rem;
   height: 1rem;
 }
 
 /* 재생 정지 */
-.controls2 .stop{
+.controls2 .stop {
   position: absolute;
   left: 48vw;
   bottom: -0.5rem;
@@ -1028,7 +1007,8 @@ width: 1rem;
   cursor: pointer;
   padding: 0.5rem;
 }
-.controls2 .start{
+
+.controls2 .start {
   position: absolute;
   left: 48vw;
   bottom: -0.5rem;
@@ -1095,7 +1075,7 @@ width: 1rem;
   color: var(--secondary1);
 }
 
-/* ## .info_1 .img animation @## */
+/* .info_1 애니메이션 */
 
 .info_1 .container .img {
   animation-name: class_show;
@@ -1103,17 +1083,11 @@ width: 1rem;
   animation-fill-mode: both;
   animation-iteration-count: 1;
   animation-play-state: running;
+
+  opacity: 0;
+  transition: opacity 2s;
 }
 
-@keyframes class_show {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 /* ==== info_2 ==== */
 .info_2 {
@@ -1218,7 +1192,7 @@ width: 1rem;
   color: var(--secondary1);
 }
 
-/* ### .info_2 .info_text animation ### */
+/* .info_2 .info_text 애니메이션 */
 
 .info_2 .info_text .info_text_1 {
   animation-name: info_show1;
@@ -1226,14 +1200,12 @@ width: 1rem;
   animation-fill-mode: both;
   animation-iteration-count: 1;
   animation-play-state: running;
-}
 
-@keyframes info_show1 {
-  0% {
-    transform: translate(640px);
-    overflow: hidden;
-    opacity: 0;
-  }
+  transform: translate(640px);
+  overflow: hidden;
+  opacity: 0;
+
+  transition: transform 1.2s, opacity 1.2s;
 }
 
 .info_2 .info_text .info_text_2 {
@@ -1242,21 +1214,11 @@ width: 1rem;
   animation-fill-mode: both;
   animation-iteration-count: 1;
   animation-play-state: running;
+  transform: translate(640px);
+  overflow: hidden;
   opacity: 0;
-  animation-delay: 0.2s;
-}
 
-@keyframes info_show2 {
-  0% {
-    transform: translate(640px);
-    overflow: hidden;
-    opacity: 0;
-  }
-
-  100% {
-    transform: translate(0);
-    opacity: 1;
-  }
+  transition: transform 2s, opacity 2s;
 }
 
 .info_2 .info_text .info_text_3 {
@@ -1265,20 +1227,11 @@ width: 1rem;
   animation-fill-mode: both;
   animation-iteration-count: 1;
   animation-play-state: running;
-  animation-delay: 0.2s;
-}
+  transform: translate(640px);
+  overflow: hidden;
+  opacity: 0;
 
-@keyframes info_show3 {
-  0% {
-    transform: translate(640px);
-    overflow: hidden;
-    opacity: 0;
-  }
-
-  100% {
-    transform: translate(0);
-    opacity: 1;
-  }
+  transition: transform 2.5s, opacity 2.5s;
 }
 
 
@@ -1439,6 +1392,7 @@ p {
   bottom: 7rem;
   right: 2rem;
   z-index: 2;
+  cursor: pointer;
 }
 
 .homebutton img {
