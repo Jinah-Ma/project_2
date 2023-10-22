@@ -9,6 +9,9 @@ body {
   width: 100%;
 }
 
+.nav_ham {
+  display: none;
+}
 
 /* === 헤더 =================== */
 header {
@@ -62,29 +65,6 @@ nav .w100 {
 
 
 /* 모바일 햄버거 */
-.ham-menu {
-  display: none;
-}
-
-
-/* 모바일 메뉴 히든 */
-.h_form {
-  display: none;
-}
-
-.h_dep1 {
-  display: none;
-}
-
-.dep1 img {
-  display: none;
-}
-
-.ham_3,
-.ham_4 {
-  display: none;
-}
-
 
 /* 메뉴 내려오게 하기 */
 nav {
@@ -107,18 +87,12 @@ nav ul.container {
 
 /* 메뉴 레이아웃 세부 */
 .gnb h1 a {
-  margin-left: 10rem;
   margin-top: 2rem;
-}
-
-.main_menu {
-  max-width: 1300px;
 }
 
 .main_menu .util_nav {
   display: flex;
-  justify-content: end;
-  margin-right: 21rem;
+  margin-left: 35vw;
 }
 
 .main_menu .util_nav li a {
@@ -137,7 +111,7 @@ nav ul.container {
 /* 아이콘 */
 .main_menu .util_nav .icon {
   display: flex;
-  margin-left: 3.5rem;
+  margin-left: 2vw;
 }
 
 .main_menu .util_nav .icon li {
@@ -152,7 +126,8 @@ nav ul.container {
 }
 
 .main_menu .sub_gnb_nav {
-  width: 1300px;
+  width: 900px;
+  margin-left: 20vw;
 }
 
 .main_menu .sub_gnb_nav .dep1 {
@@ -167,7 +142,7 @@ nav ul.container {
 
 .sub_gnb_nav .dep2 {
   display: flex;
-  justify-content: start;
+  justify-content: center;
 }
 
 .main_menu .sub_gnb_nav .dep2 a {
@@ -411,7 +386,7 @@ nav ul.container {
 
 .notice .history li {
   width: 20vw;
-  height: 2vw;
+  height: 5rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -427,7 +402,7 @@ nav ul.container {
   line-height: 5rem;
   font-size: 1.8rem;
   width: 10rem;
-  left: 40%;
+  left: 20vw;
 }
 
 .notice li a {
@@ -528,7 +503,7 @@ nav ul.container {
 /* 자세히 보기 버튼 */
 .nav_1_pr .inner a.a {
   position: absolute;
-  bottom: 7.8rem;
+  top: 26vw;
   left: 50%;
   transform: translate(-50%);
   text-align: center;
@@ -1400,238 +1375,71 @@ p {
   filter: grayscale(0%) invert(60%) sepia(30%) saturate(1000%) hue-rotate(40deg);
 }
 
-
-
 /* @----- 태블릿 ------@ */
 @media screen and (max-width: 960px) {
-  /* === header === */
 
+  /* === 헤더 === */
   /* sticky */
   div.sticky {
     top: 12%;
   }
 
+  .main_menu,
+  .sub_gnb_nav {
+    display: none;
+  }
+
+  header nav {
+    height: 7rem;
+  }
+
+  /* 로고 */
+  nav h1 img {
+    width: 4.5rem;
+  }
+
+  .gnb h1 a {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .nav_ham{display: block;}
+
+  /* 상단 메뉴 아이콘 */
+  .spot_menu {
+    display: flex;
+    position: relative;
+  }
+  .spot_menu a:first-child{display: block; position: absolute; right: 20vw; top: 1.5rem;}
+  .spot_menu a:first-child img{width: 3.5rem;}
+  .spot_menu a:nth-child(2){display: block;position: absolute;right: 0; right: 11vw; top: 1.5rem;}
+  .spot_menu a:nth-child(2) img{width: 3.2rem;}
+  .spot_menu .hamOC a:first-child{display: block; position: absolute; right: 2vw; top: 2rem;}
+  .spot_menu .hamOC a:last-child{display: block; position: absolute; right: 2vw; top: 2rem; display: none;}
+  .spot_menu .hamOC a:last-child img{width: 3.5rem; filter:invert(100%);}
+
 
   /* 햄버거 */
-  .ham-menu {
-    display: block;
-    position: relative;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-
-  .ham {
-    display: flex;
-    gap: 3rem;
-    justify-content: end;
-    margin-top: 2vw;
-    margin-right: 3.5vw;
-  }
-
-  .ham li img {
-    width: 30px;
-  }
-
-  .ham_3,
-  .ham_4 {
-    display: flex;
-    position: relative;
-    top: 2vw;
-  }
-
-  .ham_4 {
-    display: none;
-    position: absolute;
-    top: 2vw;
-    right: 0vw;
-  }
-
-  .ham_3 img {
-    margin-right: 2vw;
-    cursor: pointer;
-  }
-
-  .ham_4 img {
-    width: 40px;
-    filter: grayscale(0%) invert(30%) sepia(100%) saturate(150%) hue-rotate(1deg);
-    cursor: pointer;
-  }
-
-  nav .main_menu .util_nav {
-    display: none;
-  }
-
-  .main_menu {
-    display: block;
-    max-width: 960px;
-  }
-
-
-
-  /* 태블릿 */
-  /* -----------------------헤더 투뎁스 기본 틀 */
-  nav .main_menu .sub_gnb_nav {
-    width: 100%;
-    max-width: 960px;
-    background-color: #2e2c2a;
+  .h_wrap {
+    /* display: block; */
+    background: #000;
+    width: 65vw;
     position: fixed;
-    right: -300vw;
-    width: 300vw;
-    left: 30vw;
     top: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: left;
-    transition: 0.8s;
-    gap: 0;
-    height: 100vh;
-  }
-
-  nav .main_menu ul.sub_gnb_nav li a {
-    font-size: 2.7rem;
-    color: #fff;
-  }
-
-  nav .main_menu ul.sub_gnb_nav li {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
-  .dep1 img {
-    display: block;
-  }
-
-  /* ------------- 메뉴 상단 */
-  .sub_gnb_nav li.h_form {
-    display: block;
-    width: 100%;
-  }
-
-  .sub_gnb_nav li.h_form {
-    padding: 0 0 2.5rem 9.5rem;
-    border-bottom: 1px solid black;
-  }
-
-  .h_form .h_search input {
-    width: 30rem;
-    height: 5.2rem;
-    border-radius: 0.5rem;
-    margin-right: 1rem;
-  }
-
-  .h_form .h_search label {
-    padding: 1.1rem 2.5rem;
-    background-color: var(--text3);
-    border-radius: 0.5rem;
-    font-size: 2.5rem;
-    font-family: 'NanumBarunGothic';
-    cursor: pointer;
-  }
-
-  .h_form .h_search label:hover {
-    text-decoration: underline;
-  }
-
-  /* -------------------- 히든 메뉴 투뎁스 */
-  /* h 기본 */
-  .sub_gnb_nav li.h_dep1 {
-    display: block;
-    width: 100%;
-    height: 25rem;
-    justify-content: center;
-    padding-left: 2rem;
-  }
-
-  /* // */
-
-  /* h 버튼 */
-  .sub_gnb_nav li.h_dep1 img {
-    width: 2.5rem;
-    position: absolute;
-    left: 62vw;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-
-  .ham_4 img {
-    position: relative;
-  }
-
-  /* // */
-
-  /* h 세부 */
-
-
-  /* h_호버 */
-
-
-
-
-  /* --------------------기본 메뉴 */
-  .sub_gnb_nav .dep1 {
-    height: 25rem;
-    justify-content: center;
-    padding-left: 0.5rem;
-  }
-
-
-
-
-
-  /* 버튼 호버 */
-  /* .dep1>a:hover { text-align: initial; background-color: black; height: 0; } */
-
-  .sub_gnb_nav .dep1>.w100 {
+    right: 0;
+    z-index: 9999;
     display: none;
   }
 
-
-  .sub_gnb_nav .dep1 img {
-    width: 2.5rem;
-    position: absolute;
-    left: 62vw;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-
-
-  .dep1 {
-    border-bottom: 1px solid #3f3f3f;
-    background-color: black;
-  }
-
-  /* .dep2, .dep3 { display: flex; flex-direction: column; } */
-
-  /* 하단 검은색 */
-  .sub_gnb_nav::after {
-    content: ' ';
-    background-color: black;
-    width: 100%;
-    height: 80vh;
-  }
-
-
-
-
-
-
-  /* 헤더 댑스 기본 레이아웃 */
-  nav {
-    height: 70px;
-    position: relative;
-  }
-
-  nav h1 img {
-    width: 45px;
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
+  .overay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    display: none;
   }
 
 
