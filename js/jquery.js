@@ -162,3 +162,30 @@ hamMenuClose.on(
         },
     }
 )
+
+// 햄버거 메뉴
+//1댑스
+const dep11 = $('.h_top .myStar');
+const dep12 = $('.h_top .h_dep2');
+let isOpen = false;
+
+dep11.on('click', function (e) {
+    e.preventDefault;
+    if (!isOpen) {
+        dep12.slideDown();
+        isOpen = true;
+    }
+    else if (isOpen == true) {
+        dep12.slideUp('slow');
+        isOpen = false;
+    }
+})
+
+// 2댑스
+const dep21 = $('.h_main .h_dep1');
+const dep22 = $('.h_main .h_dep2');
+const dep3 = $('.h_main .h_dep3');
+
+
+
+//3댑스

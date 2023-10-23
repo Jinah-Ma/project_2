@@ -65,6 +65,10 @@ nav .w100 {
 
 
 /* 모바일 햄버거 */
+.nav_ham {
+  display: none;
+}
+
 
 /* 메뉴 내려오게 하기 */
 nav {
@@ -1447,6 +1451,7 @@ p {
     width: 3.5rem;
     filter: invert(100%);
   }
+
   .spot_menu .hamOC a:last-child {
     z-index: 1;
   }
@@ -1454,7 +1459,8 @@ p {
 
   /* 햄버거 */
   .h_wrap {
-    display: block;
+    display: flex;
+    flex-direction: column;
     background: #000;
     width: 65vw;
     position: fixed;
@@ -1462,7 +1468,7 @@ p {
     top: 0;
     right: 0;
     z-index: 9999;
-    overflow: hidden;
+    overflow-x: hidden;
     transform: translateX(65vw);
     transition: transform 0.5s;
   }
@@ -1511,23 +1517,15 @@ p {
   }
 
   /* 햄버거 마이 스타벅스 */
-  .h_top.myStar {
+  .h_top .myStar {
+    display: flex;
     width: 100%;
     height: 7rem;
     background: #2d2926;
     border-bottom: 1px solid #222;
-  }
-
-  .myStar {
-    width: 100%;
-    display: block;
     cursor: pointer;
-    width: 100%;
     padding-top: 2rem;
     padding-left: 2rem;
-  }
-
-  .myStar>a {
     color: #fff;
     font-size: 2.8rem;
     font-family: 'NanumBarunGothicExtraLight';
@@ -1538,37 +1536,145 @@ p {
     right: 4rem;
     width: 2rem;
     margin-top: 1rem;
-  }
-
-  .h_dep2,
-  .h_dep3 {
-    display: none;
+    transform: rotate(-180deg);
   }
 
   /* 햄버거 원뎁스 */
+  .h_main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul.container {
+    padding-top: 0;
+  }
+
   .h_main li.h_dep1 {
     width: 100%;
     display: block;
     cursor: pointer;
-    width: 100%;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    height: 7rem;
+    height: 100%;
     border-bottom: 1px solid #222;
   }
 
   .h_main li.h_dep1>a {
     color: #fff;
+    display: block;
     font-size: 2.8rem;
     font-family: 'NanumBarunGothicExtraLight';
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
   }
 
-  .h_main li.h_dep1>img {
+  .h_main li.h_dep1 img {
     position: absolute;
     right: 4rem;
     width: 2rem;
     margin-top: 1rem;
   }
+
+  /* 햄버거 2댑스 */
+  .h_main .h_dep2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+  .h_main .h_dep2>li.h_dep2Li {
+    height: 100%;
+    width: 100%;
+    background-color: #181818;
+    border-bottom: 1px solid #222;
+    display: block;
+    cursor: pointer;
+  }
+
+  .h_main .h_dep2>li.h_dep2Li>a {
+    display: block;
+    font-size: 2.1rem;
+    font-family: 'NanumBarunGothic';
+    color: #fff;
+    height: 7rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .h_main .h_dep2 li.h_dep2Li>img {
+    position: absolute;
+    right: 4rem;
+    width: 2rem;
+    margin-top: -4rem;
+  }
+
+  /* 햄버거 3댑스 */
+  .h_main .h_dep3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+
+  .h_main .h_dep3 li {
+    height: 7rem;
+    width: 100%;
+    background-color: #222;
+    border-bottom: 1px solid #222;
+    display: block;
+    cursor: pointer;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .h_main .h_dep3 li a {
+    font-size: 1.6rem;
+    font-family: 'NanumBarunGothicExtraLight';
+    color: rgba(255, 255, 255, .6);
+  }
+
+  .h_main .h_dep3 li img {
+    position: absolute;
+    right: 4rem;
+    width: 2rem;
+    margin-top: 1rem;
+  }
+
+  .h_top .myStar .h_dep3 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  .h_top .myStar .h_dep3 li {
+    height: 7rem;
+    width: 100%;
+    background-color: #222;
+    border-bottom: 1px solid #222;
+    display: block;
+    cursor: pointer;
+    padding-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .h_top .myStar .h_dep3 li a {
+    font-size: 1.6rem;
+    font-family: 'NanumBarunGothicExtraLight';
+    color: #fff;
+  }
+
+  .h_top .myStar .h_dep3 li img {
+    position: absolute;
+    right: 4rem;
+    width: 2rem;
+    margin-top: 1rem;
+  }
+
+
+
 
   /* 메인 배너 */
   .main_banner {
