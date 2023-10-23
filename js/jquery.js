@@ -171,6 +171,7 @@ let isOpen = false;
 
 dep11.on('click', function (e) {
     e.preventDefault;
+    e.stopPropagation()
     if (!isOpen) {
         dep12.slideDown();
         isOpen = true;
@@ -186,6 +187,20 @@ const dep21 = $('.h_main .h_dep1');
 const dep22 = $('.h_main .h_dep2');
 const dep3 = $('.h_main .h_dep3');
 
-
+dep21.on('click', function(e){
+    e.preventDefault;
+    e.stopPropagation()
+    $(this).find('.h_dep2').slideToggle();
+})
 
 //3댑스
+
+dep22.on('click', function(e){
+    e.preventDefault;
+    e.stopPropagation();
+    
+    let hDep3 = $(this).find('.h_dep3');
+    hDep3.on(function(){
+        $(this).slideToggle();
+    })
+})
