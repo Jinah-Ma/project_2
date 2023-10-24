@@ -51,31 +51,47 @@ var swiper2 = new Swiper(".swiper2",
 
 // max-width 960px
 
-if($(window).width() <= 960){
+if ($(window).width() <= 960) {
     var swiper1 = new Swiper(".swiper1",
-    {
-        slidesPerView: 1,
-        centeredSlides: false,
-        slidesPerGroupSkip: 1,
-        grabCursor: true,
-        pagination: {
-            el: ".swiper1 .swiper-pagination",
-            type: 'bullets',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper1 .controls1 .swiper-button-next",
-            prevEl: ".swiper1 .controls1 .swiper-button-prev",
-        },
-        keyboard: {
-            enabled: true,
-        },
-        breakpoints: {
-            769: {
-                slidesPerView: 1,
-                slidesPerGroup: 1,
+        {
+            slidesPerView: 1,
+            centeredSlides: false,
+            slidesPerGroupSkip: 1,
+            grabCursor: true,
+            pagination: {
+                el: ".swiper1 .swiper-pagination",
+                type: 'bullets',
+                clickable: true,
             },
-        },
-    }
-);
+            navigation: {
+                nextEl: ".swiper1 .controls1 .swiper-button-next",
+                prevEl: ".swiper1 .controls1 .swiper-button-prev",
+            },
+            keyboard: {
+                enabled: true,
+            },
+            breakpoints: {
+                769: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                },
+            },
+        }
+    );
+
+    //content_1 애니메이션
+    const win = $(window);
+    win.on('scroll', function () {
+        let winH = win.height();
+        let scroll = win.scrollTop();
+        let con1 = $('.content_1').offset().top;
+
+        if (winH + scroll >= con1) {
+            $('.content_1_1 img').fadeIn(800);
+            $('.inner_text').fadeIn(800);
+        }
+    })
+
+
+
 }

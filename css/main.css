@@ -1903,11 +1903,12 @@ p {
   }
 
   .content_1_1 img {
-    display: block;
+    /* display: block; */
     position: absolute;
     width: 28vw;
     top: 14rem;
     left: 35vw;
+    display: none;
   }
 
   /* text */
@@ -1915,6 +1916,7 @@ p {
     text-align: center;
     top: 53%;
     left: 5%;
+    display: none;
   }
 
   .inner_text li {
