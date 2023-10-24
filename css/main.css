@@ -1,4 +1,4 @@
-/* CSS 스타일 시트에서 오버플로우를 허용하도록 설정 */
+@charset "UTF-8";
 
 body {
   width: 100%;
@@ -1377,7 +1377,8 @@ p {
   /* === 헤더 === */
   /* sticky */
   div.sticky {
-    top: 12%;
+    top: 10rem;
+    left: 80vw;
   }
 
   .main_menu,
@@ -1673,6 +1674,19 @@ p {
     margin-top: 1rem;
   }
 
+  /* snsIcon */
+  .snsIcon .h_icon {
+    display: flex;
+    gap: 3rem;
+    margin-left: 50%;
+    transform: translate(-35%);
+    margin-top: 3rem;
+  }
+
+  .snsIcon .h_icon li img {
+    filter: invert(60%);
+    width: 3.5rem;
+  }
 
 
 
@@ -1729,15 +1743,22 @@ p {
 
   .banner_text_img img {
     width: 35vw;
+    opacity: 0;
+    transition: all 0.2s;
+    transition-delay: 0s
   }
 
   .banner_img_4 {
     top: 45vw;
     left: 15vw;
+
   }
 
   .banner_img_4 img {
     width: 63vw;
+    opacity: 0;
+    transition: all 0.2s;
+    transition-delay: 0.3s
   }
 
   .banner_img_5 {
@@ -1747,6 +1768,9 @@ p {
 
   .banner_img_5 img {
     width: 70vw;
+    opacity: 0;
+    transition: all 0.2s;
+    transition-delay: 0.7s
   }
 
   .banner_img_6 {
@@ -1756,8 +1780,16 @@ p {
 
   .banner_img_6 img {
     width: 63vw;
+    opacity: 0;
+    transition: all 0.2s;
+    transition-delay: 1.1s
   }
 
+  .banner_text li:last-child {
+    opacity: 0;
+    transition: all 0.2s;
+    transition-delay: 1.5s
+  }
 
 
   /* ===== nav_1 ======= */
@@ -1782,7 +1814,7 @@ p {
 
   .notice .history li {
     padding-top: 1.8rem;
-    margin-left: -12rem;
+    margin-left: 12rem;
     width: 28vw;
     white-space: nowrap;
     overflow: hidden;
@@ -1800,67 +1832,25 @@ p {
     font-family: 'NanumBarunGothicBold';
   }
 
-
   /* ===== hidden ====== */
-
   .nav_1_pr .hidden {
-    background-color: #fff;
-    height: 49rem;
+    height: 50vw;
   }
 
-  .hidden .flex li {
-    right: 0;
+  .nav_1_pr .flex.swiper-wrapper {
+    height: 50vw;
   }
 
-  .hidden .flex li img {
-    height: 40vw;
-    margin-top: 2rem;
-    margin-left: 20vw;
+  .flex .inner img {
+    height: 42vw;
+    width: auto;
+    margin-left: 50%;
+    transform: translate(-50%);
   }
 
-  /* button */
-  ul.flex li.inner a {
-    height: 30px;
-    padding: 0.6rem 2rem;
-    bottom: 1.1rem;
-    left: 42vw;
-  }
-
-  /* left_right button */
-  ul.left_right li:first-child {
-    top: -1800%;
-    left: 18vw;
-  }
-
-  ul.left_right li:last-child {
-    top: -1800%;
-    right: 18vw;
-  }
-
-  .hidden .flex::before {
-    content: ' ';
-    background-color: #fff;
-    position: absolute;
-    width: 15vw;
-    height: 46vw;
-    z-index: 1;
-  }
-
-  .hidden .flex::after {
-    content: ' ';
-    background-color: #fff;
-    position: absolute;
-    width: 15vw;
-    height: 46vw;
-    z-index: 1;
-    right: 0;
-  }
-
-
-  /* 재생 정지 버튼 */
-  /* ul.hidden_btn { top: 45vw; z-index: 2; } */
-  ul.hidden_btn {
-    display: none;
+  /* 자세히 보기 버튼 */
+  .nav_1_pr .inner a.a {
+    top: 37vw;
   }
 
   /* ====== nav_2 ====== */

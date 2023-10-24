@@ -6,19 +6,19 @@ $('.close').on('click', function (e) {
 
 //배너 이미지 애니메이션
 // 1
-$('.main_banner ul.banner_text li:first-child img').animate({ opacity: 1 }, 1000)
+$('.main_banner ul.banner_text li:first-child img').animate({ opacity: 1 }, 1000);
 
 // 2
-$('.main_banner ul.banner_img li.banner_img_1').animate({ opacity: 1 }, 1000)
+$('.main_banner ul.banner_img li.banner_img_1').animate({ opacity: 1 }, 1000);
 
 // 3
-$('.main_banner ul.banner_img li.banner_img_2').animate({ opacity: 1 }, 1000)
+$('.main_banner ul.banner_img li.banner_img_2').animate({ opacity: 1 }, 1000);
 
 // 4
-$('.main_banner ul.banner_img li.banner_img_3').animate({ opacity: 1 }, 1000)
+$('.main_banner ul.banner_img li.banner_img_3').animate({ opacity: 1 }, 1000);
 
 // 5
-$('.main_banner ul.banner_text li:last-child').animate({ opacity: 1 }, 1000)
+$('.main_banner ul.banner_text li:last-child').animate({ opacity: 1 }, 1000);
 
 // 공지사항
 const noticeHistory = $('.notice .history li');
@@ -164,33 +164,55 @@ hamMenuClose.on(
 )
 
 // 햄버거 메뉴
-//1댑스
+//.myStar 2댑스
 const dep11 = $('.h_top .myStar');
 const dep12 = $('.h_top .h_dep2');
+const dep13 = $('.h_top .h_dep3');
 let isOpen = false;
+let icon = $('.myStar img');
 
 dep11.on('click', function (e) {
     e.preventDefault;
     e.stopPropagation()
     if (!isOpen) {
         dep12.slideDown();
+        icon.css({transform : 'rotate(180deg)'});
         isOpen = true;
     }
     else if (isOpen == true) {
         dep12.slideUp('slow');
+        icon.css({ transform : 'rotate(0)'},);
         isOpen = false;
     }
 })
 
-// 2댑스
+//3댑스
+dep12.on('click', function(e){
+    e.preventDefault;
+    e.stopPropagation()
+    $(this).find('.h_main .h_dep3').slideToggle();
+})
+
+
+
+// .h_main 2댑스
 const dep21 = $('.h_main .h_dep1');
 const dep22 = $('.h_main .h_dep2');
 const dep3 = $('.h_main .h_dep3');
+let mainIcon = $('.h_main li.h_dep1 img');
 
 dep21.on('click', function(e){
     e.preventDefault;
     e.stopPropagation()
     $(this).find('.h_dep2').slideToggle();
+    if (!isOpen) {
+        $(this).find(mainIcon).css({ transform : 'rotate(180deg)'})
+        isOpen = true;
+    }
+    else if (isOpen == true) {
+       $(this).find(mainIcon).css({ transform : 'rotate(0)'})
+        isOpen = false;
+    }
 })
 
 //3댑스
@@ -204,3 +226,11 @@ dep22.on('click', function(e){
         $(this).slideToggle();
     })
 })
+
+
+//모바일 배너 이미지 애니메이션
+$('.banner_text_img img').animate({ opacity: 1 }, 1000);
+$('.banner_img_4 img').animate({ opacity: 1 }, 1000);
+$('.banner_img_5 img').animate({ opacity: 1 }, 1000);
+$('.banner_img_6 img').animate({ opacity: 1 }, 1000);
+$('.banner_text li:last-child').animate({ opacity: 1 }, 1000);
