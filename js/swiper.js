@@ -49,6 +49,18 @@ var swiper2 = new Swiper(".swiper2",
     }
 );
 
+//슬라이드2 재생 정지★
+$('.controls2 .stop img').on('click', function () {
+    $(this).hide();
+    $('.controls2 .start img').show();
+    swiper2.autoplay.stop();
+});
+$('.controls2 .start img').on('click', function () {
+    $(this).hide();
+    $('.controls2 .stop img').show();
+    swiper2.autoplay.start();
+});
+
 // max-width 960px
 
 if ($(window).width() <= 960) {
@@ -79,18 +91,27 @@ if ($(window).width() <= 960) {
         }
     );
 
-    //content_1 애니메이션
-    const win = $(window);
-    win.on('scroll', function () {
-        let winH = win.height();
-        let scroll = win.scrollTop();
-        let con1 = $('.content_1').offset().top;
-
-        if (winH + scroll >= con1) {
-            $('.content_1_1 img').fadeIn(800);
-            $('.inner_text').fadeIn(800);
+    var swiper2 = new Swiper(".swiper2",
+        {
+            loop: false,
+            slidesPerView: 1,
+            centeredSlides: false,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper2 .swiper-pagination2",
+                type: 'bullets',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper2 .controls2 .swiper-button-next",
+                prevEl: ".swiper2 .controls2 .swiper-button-prev",
+            },
+            autoplayDisableOnInteraction: true,
         }
-    })
+    );
 
 
 
