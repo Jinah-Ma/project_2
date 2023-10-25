@@ -2043,7 +2043,7 @@ p {
 
   .swiper-slide img {
     display: block;
-    width: 66%;
+    width: 100% !important;
     height: 100%;
     object-fit: cover;
   }
@@ -2188,9 +2188,13 @@ p {
 
 /* @----- 모바일1 ------@ */
 @media all and (max-width: 734px) {
+
   /* === header === */
   /* 햄버거 */
-
+  /* snsIcon */
+  .snsIcon .h_icon {
+    transform: translate(-45%);
+  }
 
   .main_menu {
     display: block;
@@ -2202,6 +2206,11 @@ p {
   .sub_gnb_nav {
     display: none;
   }
+
+  .h_form #h_search_bar {
+    width: 25rem !important;
+  }
+
 
   /* --------------------기본 메뉴 */
   /* ===== nav_1 ======= */
@@ -2277,6 +2286,7 @@ p {
     top: 15vw;
     height: 70vw;
   }
+
   .nav_1_pr .flex.swiper-wrapper {
     height: 70vw;
   }
@@ -2380,7 +2390,7 @@ p {
 
   /* text */
   .content_2 .content_2_1 {
-   width: 60%;
+    width: 60%;
   }
 
   .content_2_1 img {
@@ -2409,6 +2419,10 @@ p {
     margin-top: 20rem;
     margin-right: 5vw;
   }
+
+.swiper-slide img{
+  margin-left: 3.8rem;
+}
 
   /* ===== info_1 ==== */
   .info_1 {
@@ -2479,6 +2493,14 @@ p {
     bottom: 1vw;
   }
 
+  .h_form #h_search_bar {
+    width: 20rem !important;
+  }
+
+  .flex .inner img{
+    transform: none;
+  }
+
   /* ====== nav_2 ====== */
   .nav_2 .container img {
     width: 18rem;
@@ -2491,6 +2513,18 @@ p {
   .container_card {
     margin-left: 0;
   }
+
+  .content_2 .content_2_1{
+    background: none;
+    backdrop-filter:blur(0);
+  margin-top: 35rem;
+  }
+
+  /* 슬라이드 */
+  .swiper-slide img{
+margin-left: 6rem !important;
+    width: 75% !important;
+  }
 }
 
 
@@ -2500,8 +2534,8 @@ p {
   /* === header === */
   /* 햄버거 */
   /* ------------- 메뉴 상단 */
-  .h_form .h_search input {
-    width: 20rem;
+  .h_form #h_search_bar  {
+    width: 13rem !important;
   }
 
   /* 메인배너 버튼 */
@@ -2510,20 +2544,46 @@ p {
     padding: 2rem;
   }
 
+  /* 팝업 */
+  .popup{width: 35rem !important;}
+  .popup .textbox div{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   /* ===== nav_1 ======= */
   .nav_1 div.notice {
     height: 15vw;
   }
 
   .notice .history li {
-    margin-left: 0rem;
+    margin-left: 15rem;
   }
 
 
   /* promotion */
-  .nav_1 div.promotion
+.swiper1{height: 73vw !important;}
+
+  .swiper-slide img{
+    height: 60vw !important;
+    width: auto !important;
+    margin-left: 0 !important;
+  }
+
+  .nav_1_pr .inner a.a{
+    top: 53vw !important;
+  }
+
+  /* content_1 */
+.content_1_1{ height:110rem !important;}
+
+.content_1_2 a{
+left: 25vw !important;
+}
 
   /* ====== nav_2 ====== */
+.content_2 {height: 140rem !important; margin-top: 160rem;}
+
   main .nav_2 .container img {
     width: 16rem;
     margin-left: 1vw;
@@ -2539,6 +2599,8 @@ p {
     margin-left: 4.5rem;
   }
 
+  
+
   /* ========== info_2 ========= */
   .info_text {
     margin-top: 73vw;
@@ -2548,9 +2610,12 @@ p {
 
 /* @----- 모바일2 ------@ */
 @media all and (max-width: 500px) {
-  .h_form .h_search input {
-    width: 16rem;
-  }
+.h_dep1 a{font-size: 1.6rem !important;}
+
+.h_icon {
+  margin-left: 8.5vw !important;
+  transform: none !important;
+}
 
   .container_cloumn {
     width: 35rem;
@@ -2579,16 +2644,23 @@ p {
   .search_wrap span.icon {
     left: 20vw;
   }
-}
 
-/* @----- 모바일2 ------@ */
-@media all and (min-width: 435px) and (max-width: 460px) {
-  .promotion_list li.p_close {
-    left: 77vw;
+  .content_2 {
+    margin-top: 150rem !important;
   }
 
-  .info_1 .botton a {
-    left: 32rem;
-    top: 33rem;
+  .content_2_1 p a{margin-left: 3rem !important;}
+
+  /* 슬라이드 */
+  .swiper2{
+    width: 100% !important;
+  }
+  .swiper2 img{
+    width: 100% !important;
+  }
+
+  .controls2{
+    width: 60% !important;
+    margin-left: 40%;
   }
 }
