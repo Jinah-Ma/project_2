@@ -208,9 +208,16 @@ dep22.on('click', function (e) {
 })
 
 //3댑스
-$('.h_dep2Li').on('click', function(e){
+$('.h_dep2Li').on('click', function (e) {
     e.preventDefault();
     $(this).find('.h_dep3').slideToggle();
+    if (!isOpen) {
+        $(this).find('img').css({ transform: 'rotate(180deg)' })
+        isOpen = true;
+    } else if (isOpen == true) {
+        $(this).find('img').css({ transform: 'rotate(0)' })
+        isOpen = false;
+    }
 })
 
 
@@ -267,9 +274,4 @@ if ($(window).width() <= 960) {
             });
         }
     })
-}
-
-// max-width 734px
-if ($(window).width() <= 734) {
-
 }
