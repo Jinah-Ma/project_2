@@ -159,8 +159,8 @@ nav ul.container {
   margin-bottom: 2rem;
 }
 
-.dep3 a {
-  color: var(--text3);
+.h_dep3 a {
+  color: var(--text3) !important;
   font-family: 'NanumBarunGothicExtraLight';
   font-size: 1.5rem;
   margin-bottom: 0.9rem;
@@ -175,7 +175,6 @@ nav ul.container {
   color: var(--pointcolor3);
   border-bottom: none;
 }
-
 
 
 /* === 스티키 광고 === */
