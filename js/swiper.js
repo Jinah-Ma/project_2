@@ -93,9 +93,10 @@ if ($(window).width() <= 960) {
 
     var swiper2 = new Swiper(".swiper2",
         {
-            loop: false,
-            slidesPerView: 1,
+            loop: true,
+            slidesPerView: 2,
             centeredSlides: false,
+            slidesPerGroupSkip: 2,
             autoplay: {
                 delay: 2500,
                 disableOnInteraction: false,
@@ -113,6 +114,8 @@ if ($(window).width() <= 960) {
         }
     );
 
+// max-width 734px
+    if ($(window).width() <= 734) {
 
-
+    }
 }

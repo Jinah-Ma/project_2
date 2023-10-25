@@ -1056,7 +1056,7 @@ nav ul.container {
   animation-iteration-count: 1;
   animation-play-state: running;
   opacity: 0;
-  transition: opacity 2s;
+
 }
 
 
@@ -1132,7 +1132,8 @@ nav ul.container {
 
 .info_text ul.info_text_2 {
   margin-top: 1rem;
-  line-height: 1.333
+  line-height: 1.333;
+  font-family: 'NanumBarunGothic';
 }
 
 .info_text ul.info_text_2 strong {
@@ -2030,15 +2031,32 @@ p {
   }
 
   /* 슬라이드2 */
-  .store_slide .swiper-wrapper {
-    margin-left: 0;
+  .swiper2 {
+    width: 100%;
   }
+
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 66%;
+    height: 100%;
+    object-fit: cover;
+  }
+
 
 
   /* ===== info_1 ==== */
   .info_1 {
     background: url(../img/phone/reserve_visual_m.jpg) no-repeat center center/cover;
+    width: 100%;
     height: 140rem;
+    opacity: 0;
   }
 
   .info_1 .container li.img {
@@ -2094,56 +2112,26 @@ p {
 
   /* ### .info_2 .info_text animation ### */
   .info_2 .info_text .info_text_1 {
-    animation-duration: 1s;
+    transform: translateY(-40rem);
+    opacity: 0;
+    overflow: hidden;
+    transition: transform 2s opacity 0.5s;
   }
 
-  @keyframes info_show1 {
-    0% {
-      transform: translateY(-40rem);
-      overflow: hidden;
-      opacity: 0;
-    }
-
-    20% {
-      transform: translateY(-20rem);
-      overflow: hidden;
-      opacity: 0;
-    }
-
-    100% {
-      transform: translate(0);
-      opacity: 1;
-    }
-  }
 
   .info_2 .info_text .info_text_2 {
-    animation-duration: 1s;
     animation-delay: 0.5s;
-  }
-
-  @keyframes info_show2 {
-    0% {
-      transform: translateY(40rem);
-      overflow: hidden;
-      opacity: 0;
-    }
-
-    100% {
-      transform: translate(0);
-      opacity: 1;
-    }
+    transform: translateY(40rem);
+    overflow: hidden;
+    opacity: 0;
+    transition: transform 2s opacity 0.5s;
   }
 
   .info_2 .info_text .info_text_3 {
     animation-delay: 0s;
     animation-duration: 3s;
-  }
-
-  @keyframes info_show3 {
-    0% {
-      transform: translate(0);
-      opacity: 0;
-    }
+    transform: translate(0);
+    opacity: 0;
   }
 
   /* ==== footer_1 ===== */
@@ -2211,52 +2199,12 @@ p {
   }
 
   /* 모바일 */
-  /* -----------------------헤더 투뎁스 기본 틀 */
-  nav .main_menu .sub_gnb_nav {
-    width: 100%;
-    max-width: 660px;
-    right: -300vw;
-    left: 30vw;
+  .main_menu,
+  .sub_gnb_nav {
+    display: none;
   }
-
-  nav .main_menu ul.sub_gnb_nav li a {
-    font-size: 2rem;
-  }
-
-  /* ------------- 메뉴 상단 */
-  .sub_gnb_nav li.h_form {
-    padding: 0 0 2.5rem 3rem;
-  }
-
-  .h_form .h_search input {
-    width: 25rem;
-    height: 4.5rem;
-  }
-
-  .h_form .h_search label {
-    font-size: 2rem;
-  }
-
-  /* -------------------- 히든 메뉴 투뎁스 */
-  /* h 기본 */
-
-  /* h 버튼 */
-  .sub_gnb_nav li.h_dep1 img {
-    width: 2rem;
-  }
-
-  /* h 세부 */
-
-  /* h_호버 */
 
   /* --------------------기본 메뉴 */
-
-
-  /* 버튼 호버 */
-  .sub_gnb_nav .dep1 img {
-    width: 2rem;
-  }
-
   /* ===== nav_1 ======= */
   /* notice */
   .nav_1 .flex {
@@ -2277,11 +2225,12 @@ p {
 
   .notice .history li {
     padding-top: 2.2rem;
-    margin-left: -4rem;
+    margin-left: 18rem;
     width: 50vw;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    height: 13vw;
   }
 
   .notice li a {
@@ -2327,16 +2276,23 @@ p {
 
   .nav_1_pr .hidden {
     top: 15vw;
+    height: 70vw;
+  }
+  .nav_1_pr .flex.swiper-wrapper {
+    height: 70vw;
   }
 
-  .hidden .flex li img {
-    height: 40vw;
-    margin-top: 0;
+  .hidden .flex img {
+    height: 55vw;
   }
 
   .img_ctl_slider .inner {
     top: 11vw;
     margin-left: 0vw;
+  }
+
+  .nav_1_pr .inner a.a {
+    top: 49vw;
   }
 
   /* button */
@@ -2407,10 +2363,10 @@ p {
 
   .content_2 {
     width: 100%;
-    height: 170rem;
+    height: 150rem;
     background: url(../img/phone/2023_m_summer2_pick_bg.jpg) no-repeat;
     background-position-x: center;
-    background-position-y: center;
+    background-position-y: 0%;
     background-attachment: initial;
     background-size: cover;
     margin-top: 180rem;
@@ -2425,11 +2381,7 @@ p {
 
   /* text */
   .content_2 .content_2_1 {
-    margin: 15vw auto auto auto;
-  }
-
-  .content_2_1 p {
-    margin-left: -3vw;
+   width: 60%;
   }
 
   .content_2_1 img {

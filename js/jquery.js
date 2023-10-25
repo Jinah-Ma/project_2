@@ -125,14 +125,14 @@ const hamMain = $('.h_wrap');
 const overay = $('.overay');
 
 hamMenuOpen.on('click', function (e) {
-    e.preventDefault;
+    e.preventDefault();
     hamMenuClose.css({ right: '67vw' });
     hamMain.css({ transform: 'translateX(0)' });
     overay.show();
 })
 
 hamMenuClose.on('click', function (e) {
-    e.preventDefault;
+    e.preventDefault();
     hamMenuClose.css({ right: '-60vw' });
     hamMain.css({ transform: 'translateX(65vw)' });
     overay.hide();
@@ -158,7 +158,7 @@ let isOpen = false;
 let icon = $('.myStar img');
 
 dep11.on('click', function (e) {
-    e.preventDefault;
+    e.preventDefault();
     e.stopPropagation()
     if (!isOpen) {
         dep12.slideDown();
@@ -172,12 +172,6 @@ dep11.on('click', function (e) {
     }
 })
 
-//3댑스
-dep12.on('click', function (e) {
-    e.preventDefault;
-    e.stopPropagation()
-    $(this).find('.h_main .h_dep3').slideToggle();
-})
 
 
 
@@ -188,7 +182,7 @@ const dep3 = $('.h_main .h_dep3');
 let mainIcon = $('.h_main li.h_dep1 img');
 
 dep21.on('click', function (e) {
-    e.preventDefault;
+    e.preventDefault();
     e.stopPropagation()
     $(this).find('.h_dep2').slideToggle();
     if (!isOpen) {
@@ -204,13 +198,19 @@ dep21.on('click', function (e) {
 //3댑스
 
 dep22.on('click', function (e) {
-    e.preventDefault;
+    e.preventDefault();
     e.stopPropagation();
 
     let hDep3 = $(this).find('.h_dep3');
     hDep3.on(function () {
         $(this).slideToggle();
     })
+})
+
+//3댑스
+$('.h_dep2Li').on('click', function(e){
+    e.preventDefault();
+    $(this).find('.h_dep3').slideToggle();
 })
 
 
@@ -231,20 +231,45 @@ if ($(window).width() <= 960) {
     win.on('scroll', function () {
         let winH = win.height();
         let scroll = win.scrollTop();
-        let con1 = $('.content_1').offset().top;
+        const con1 = $('.content_1').offset().top;
+        const con2 = $('.content_2').offset().top;
+        const info1 = $('.info_1').offset().top;
+        const info2 = $('.info_2').offset().top;
+
 
         if (winH + scroll >= con1) {
             $('.content_1_1 img').fadeIn(800);
             $('.inner_text').fadeIn(2000);
         }
 
-        let con2 = $('.content_2').offset().top;
-        if (winH + scroll >= con2){
+        if (winH + scroll >= con2) {
             $('.content_2 .content_2_1 img').fadeIn(2000);
             $('.content_2 .content_2_1 .left_text_1').fadeIn(3200);
             $('.content_2 p a').fadeIn(3500);
         }
 
+        if (winH + scroll >= info1) {
+            $('.info_1').css({ opacity: 1, transition: '2s' });
+        }
 
-    })    
+        if (winH + scroll >= info2) {
+            $('.info_2 .info_text_1').css({
+                transform: 'translate(0)',
+                opacity: 1
+            });
+            $('.info_2 .info_text_2').css({
+                transform: 'translate(0)',
+                opacity: 1
+            });
+            $('.info_2 .info_text_3').css({
+                transform: 'translate(0)',
+                opacity: 1
+            });
+        }
+    })
+}
+
+// max-width 734px
+if ($(window).width() <= 734) {
+
 }
