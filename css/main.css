@@ -928,6 +928,8 @@ nav ul.container {
 /* 좌우 버튼 */
 .store_slide .slide_card {
   position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .store_slide .controls2 .swiper-button-prev {
