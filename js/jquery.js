@@ -4,6 +4,16 @@ $('.close').on('click', function (e) {
     $('.popup').hide();
 })
 
+//a버튼
+$('a').on('click', function (e) {
+    if ($(this).attr('href') == '#') {
+        e.preventDefault();
+    } else {
+
+    }
+})
+
+
 //배너 이미지 애니메이션
 // 1
 $('.main_banner ul.banner_text li:first-child img').animate({ opacity: 1 }, 1000);
