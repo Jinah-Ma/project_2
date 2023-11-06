@@ -228,10 +228,7 @@ $('.banner_img_5 img').animate({ opacity: 1 }, 1000);
 $('.banner_img_6 img').animate({ opacity: 1 }, 1000);
 $('.banner_text li:last-child').animate({ opacity: 1 }, 1000);
 
-
-// max-width 960px
-if ($(window).width() <= 960) {
-
+function handleScroll() {
 	//content_1 애니메이션
 	const win = $(window);
 	win.on('scroll', function () {
@@ -259,7 +256,7 @@ if ($(window).width() <= 960) {
 			$('.info_1 .botton a').css({ opacity: 1, transition: '2s' });
 		}
 
-		if (scroll >= info2) {
+		if (scroll + winH >= info2) {
 			$('.info_2 .info_text_1').css({
 				transform: 'translate(0)',
 				opacity: 1
@@ -275,3 +272,19 @@ if ($(window).width() <= 960) {
 		}
 	})
 }
+
+function addScrollEvent() {
+    if ($(window).width() <= 960) {
+        $(window).on('scroll', handleScroll);
+    } else {
+        $(window).off('scroll', handleScroll);
+    }
+}
+
+$(window).on('resize', function () {
+    addScrollEvent();
+    handleScroll(); // 창 크기가 변경될 때 handleScroll 함수를 호출하여 시작
+});
+
+addScrollEvent(); // 초기 실행
+handleScroll(); // 초기 실행
