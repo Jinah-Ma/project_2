@@ -1,9 +1,8 @@
+// a버튼
 $('a').on('click', function (e) {
-    if ($(this).attr('href') == '#') {
-        e.preventDefault();
-    } else {
-
-    }
+	if ($(this).attr('href') == '#') {
+		e.preventDefault();
+	} else { }
 })
 
 $('.popup').hide();
@@ -82,22 +81,20 @@ win.on('scroll', function () {
 	}
 });
 
+
 //.info_1 .container 애니메이션
 win.on('scroll', function () {
 	const winH = win.height();
 	let scroll = $(window).scrollTop();
-	let content2H = $('.info_1').offset().top;
+	let content2H = $('.info_1 .container').offset().top;
 
 	if (scroll + winH >= content2H) {
-		$('.info_1').fadeIn(800);
 		$('.info_1 .container .img').css({
-			opacity:1,
-		});
-		$('.info_1 .botton a').css({
-			opacity:1,
-		});
+			opacity: 1,
+			transition: '2s',
+		})
 	}
-});
+})
 
 //.info_2 .info_text 애니메이션
 win.on('scroll', function () {
@@ -232,21 +229,49 @@ $('.banner_img_6 img').animate({ opacity: 1 }, 1000);
 $('.banner_text li:last-child').animate({ opacity: 1 }, 1000);
 
 
-win.on('scroll', function () {
-	let winH = win.height();
-	let scroll = win.scrollTop();
-	let con1 = $('.content_1').offset().top;
+// max-width 960px
+if ($(window).width() <= 960) {
 
-	if (winH + scroll >= con1) {
-		$('.content_1 .content_1_1 img').fadeIn(800);
-		$('.inner_text').fadeIn(2000);
-	}
+	//content_1 애니메이션
+	const win = $(window);
+	win.on('scroll', function () {
+		const winH = win.height();
+		let scroll = win.scrollTop();
+		const con1 = $('.content_1').offset().top;
+		const con2 = $('.content_2').offset().top;
+		const info1 = $('.info_1').offset().top;
+		const info2 = $('.info_2').offset().top;
 
-	let con2 = $('.content_2').offset().top;
-	if (winH + scroll >= con2) {
-		$('.content_2 .content_2_1 img').fadeIn(2000);
-		$('.content_2 .content_2_1 .left_text_1').fadeIn(3200);
-		$('.content_2 p a').fadeIn(3500);
-	}
-});
 
+		if (scroll + winH >= con1) {
+			$('.content_1_1 img').fadeIn(800);
+			$('.inner_text').fadeIn(2000);
+		}
+
+		if (scroll >= con2) {
+			$('.content_2 .content_2_1 img').fadeIn(2000);
+			$('.content_2 .content_2_1 .left_text_1').fadeIn(3200);
+			$('.content_2 p a').fadeIn(3500);
+		}
+
+		if (scroll >= info1) {
+			$('.info_1').css({ opacity: 1, transition: '2s' });
+			$('.info_1 .botton a').css({ opacity: 1, transition: '2s' });
+		}
+
+		if (scroll >= info2) {
+			$('.info_2 .info_text_1').css({
+				transform: 'translate(0)',
+				opacity: 1
+			});
+			$('.info_2 .info_text_2').css({
+				transform: 'translate(0)',
+				opacity: 1
+			});
+			$('.info_2 .info_text_3').css({
+				transform: 'translate(0)',
+				opacity: 1
+			});
+		}
+	})
+}

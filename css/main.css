@@ -568,8 +568,6 @@ nav ul.container {
 .nav_2>div.container {
 	width: 100%;
 	max-width: 1300px;
-	right: 0;
-	left: 0;
 }
 
 .nav_2 .container {
@@ -689,10 +687,6 @@ nav ul.container {
 	position: relative;
 }
 
-.content_1 .content_1_1 img{
-	display: none !important;
-}
-
 .inner_text {
 	position: absolute;
 	right: 5rem;
@@ -732,6 +726,9 @@ nav ul.container {
 }
 
 /* 모바일 이미지 */
+.content_1_1 img {
+	display: none;
+  }
 
 /* content_1_2 */
 
@@ -1876,7 +1873,7 @@ p {
 		width: 28vw;
 		top: 14rem;
 		left: 35vw;
-		display: block !important;
+		display: none;
 	}
 
 	/* text */
@@ -2025,13 +2022,13 @@ p {
 		background: url(../img/phone/reserve_visual_m.jpg) no-repeat center center/cover;
 		width: 100%;
 		height: 140rem;
-		display: none;
+		opacity: 0;
 	}
 
 	.info_1 .container {
-		height: 140rem;
+		height: 110rem;
 		position: relative;
-	}
+	} 
 
 	.info_1 .container li.img {
 		display: none;
