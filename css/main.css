@@ -2398,12 +2398,13 @@ p {
 
 	/* ===== info_1 ==== */
 	.info_1 {
-		height: 100rem;
+		height: 120rem;
+		margin-top: 20rem;
 	}
 
-	.info_1 li.botton {
-		left: -15vw;
-		bottom: 40rem;
+	.info_1 .botton a{
+		left: 65vw;
+		top: 110rem;
 	}
 
 	/* ==== info_2 ==== */
