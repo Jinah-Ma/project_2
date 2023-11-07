@@ -279,25 +279,13 @@ $(window).on('resize', function () {
 	handleScroll();
 });
 
+// .content_1_1 img
 function contentImg1() {
 	'scroll', function () {
-		const win = $(window);
 
-		const winH = win.height();
-		let scroll = win.scrollTop();
-		const con1 = $('.content_1').offset().top;
-
-		/* if (scroll + winH >= con1) {
-			$('.content_1_1 img').fadeIn(800);
-			$('.inner_text').fadeIn(2000);
-		} */
-
-		if (scroll + winH >= con1) {
-			$('.content_1_1 img').addClass('on');
-			$('.inner_text').addClass('on');
-		} else if ($(window).width() > 960) {
-			$('.content_1_1 img').removeClass('on');
-			$('.inner_text').removeClass('on');
+		if ($(window).width() > 960) {
+			$('.content_1_1 img').removeClass(on);
+			$('.inner_text').removeClass(on);
 		}
 	}
 }
