@@ -231,60 +231,86 @@ $('.banner_text li:last-child').animate({ opacity: 1 }, 1000);
 function handleScroll() {
 	//content_1 애니메이션
 	const win = $(window);
-	win.on('scroll', function () {
-		const winH = win.height();
-		let scroll = win.scrollTop();
-		const con1 = $('.content_1').offset().top;
-		const con2 = $('.content_2').offset().top;
-		const info1 = $('.info_1').offset().top;
-		const info2 = $('.info_2').offset().top;
 
+	const winH = win.height();
+	let scroll = win.scrollTop();
+	const con2 = $('.content_2').offset().top;
+	const info1 = $('.info_1').offset().top;
+	const info2 = $('.info_2').offset().top;
 
-		if (scroll + winH >= con1) {
-			$('.content_1_1 img').fadeIn(800);
-			$('.inner_text').fadeIn(2000);
-		}
+	if (scroll >= con2) {
+		$('.content_2 .content_2_1 img').fadeIn(2000);
+		$('.content_2 .content_2_1 .left_text_1').fadeIn(3200);
+		$('.content_2 p a').fadeIn(3500);
+	}
 
-		if (scroll >= con2) {
-			$('.content_2 .content_2_1 img').fadeIn(2000);
-			$('.content_2 .content_2_1 .left_text_1').fadeIn(3200);
-			$('.content_2 p a').fadeIn(3500);
-		}
+	if (scroll >= info1) {
+		$('.info_1').css({ opacity: 1, transition: '2s' });
+		$('.info_1 .botton a').css({ opacity: 1, transition: '2s' });
+	}
 
-		if (scroll >= info1) {
-			$('.info_1').css({ opacity: 1, transition: '2s' });
-			$('.info_1 .botton a').css({ opacity: 1, transition: '2s' });
-		}
+	if (scroll + winH >= info2) {
+		$('.info_2 .info_text_1').css({
+			transform: 'translate(0)',
+			opacity: 1
+		});
+		$('.info_2 .info_text_2').css({
+			transform: 'translate(0)',
+			opacity: 1
+		});
+		$('.info_2 .info_text_3').css({
+			transform: 'translate(0)',
+			opacity: 1
+		});
+	}
 
-		if (scroll + winH >= info2) {
-			$('.info_2 .info_text_1').css({
-				transform: 'translate(0)',
-				opacity: 1
-			});
-			$('.info_2 .info_text_2').css({
-				transform: 'translate(0)',
-				opacity: 1
-			});
-			$('.info_2 .info_text_3').css({
-				transform: 'translate(0)',
-				opacity: 1
-			});
-		}
-	})
 }
 
 function addScrollEvent() {
-    if ($(window).width() <= 960) {
-        $(window).on('scroll', handleScroll);
-    } else {
-        $(window).off('scroll', handleScroll);
-    }
+	if ($(window).width() <= 960) {
+		$(window).on('scroll', handleScroll);
+	} else {
+		$(window).off('scroll', handleScroll);
+	}
 }
 
 $(window).on('resize', function () {
-    addScrollEvent();
-    handleScroll(); // 창 크기가 변경될 때 handleScroll 함수를 호출하여 시작
+	addScrollEvent();
+	handleScroll();
 });
 
-addScrollEvent(); // 초기 실행
-handleScroll(); // 초기 실행
+function contentImg1() {
+	'scroll', function () {
+		const win = $(window);
+
+		const winH = win.height();
+		let scroll = win.scrollTop();
+		const con1 = $('.content_1').offset().top;
+
+		/* if (scroll + winH >= con1) {
+			$('.content_1_1 img').fadeIn(800);
+			$('.inner_text').fadeIn(2000);
+		} */
+
+		if (scroll + winH >= con1) {
+			$('.content_1_1 img').addClass('on');
+			$('.inner_text').addClass('on');
+		} else if ($(window).width() > 960) {
+			$('.content_1_1 img').removeClass('on');
+			$('.inner_text').removeClass('on');
+		}
+	}
+}
+
+function addScrollEvent2() {
+	if ($(window).width() <= 960) {
+		$(window).on('scroll', contentImg1);
+	} else {
+		$(window).off('scroll', contentImg1);
+	}
+}
+
+$(window).on('resize', function () {
+	addScrollEvent2();
+	contentImg1();
+});

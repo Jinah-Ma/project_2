@@ -1868,20 +1868,28 @@ p {
 		top: -1.8rem;
 	}
 
-	.content_1 .content_1_1 img {
+	.content_1_1 img {
+		display: none;
+	}
+
+	.content_1_1 img.on {
 		position: absolute;
 		width: 28vw;
 		top: 14rem;
 		left: 35vw;
-		display: none;
+		display: block;
 	}
 
 	/* text */
 	.inner_text {
+		display: none;
+	}
+
+	.inner_text.on {
 		text-align: center;
 		top: 53%;
 		left: 5%;
-		display: none;
+		display: block;
 	}
 
 	.inner_text li {
