@@ -147,10 +147,10 @@ hamMenuClose.on('click', function (e) {
 });
 
 hamMenuClose.on({
-	mouseenter: function () {
+	'mouseenter': function () {
 		$(this).css({ transform: 'rotate(-180deg)' });
 	},
-	mouseleave: function () {
+	'mouseleave': function () {
 		$(this).css({ transform: 'rotate(180deg)' });
 	},
 });
@@ -177,19 +177,6 @@ dep11.on('click', function (e) {
 	}
 });
 
-//3댑스
-dep12.on('click', function (e) {
-	e.preventDefault;
-	e.stopPropagation();
-	$(this).find('.h_main .h_dep3').slideToggle();
-});
-//3뎁스오픈
-$('.h_dep2Li').on('click', function (e) {
-	e.preventDefault();
-	$('.h_dep3').hide();
-	$(this).find('.h_dep3').show();
-});
-
 // .h_main 2댑스
 const dep21 = $('.h_main .h_dep1');
 const dep22 = $('.h_main .h_dep2');
@@ -212,14 +199,27 @@ dep21.on('click', function (e) {
 //3댑스
 
 dep22.on('click', function (e) {
-	e.preventDefault;
-	e.stopPropagation();
+    e.preventDefault();
+    e.stopPropagation();
 
-	let hDep3 = $(this).find('.h_dep3');
-	hDep3.on(function () {
-		$(this).slideToggle();
-	});
-});
+    let hDep3 = $(this).find('.h_dep3');
+    hDep3.on(function () {
+        $(this).slideToggle();
+    })
+})
+
+//3댑스
+$('.h_dep2Li').on('click', function (e) {
+    e.preventDefault();
+    $(this).find('.h_dep3').slideToggle();
+    if (!isOpen) {
+        $(this).find('img').css({ transform: 'rotate(180deg)' })
+        isOpen = true;
+    } else if (isOpen == true) {
+        $(this).find('img').css({ transform: 'rotate(0)' })
+        isOpen = false;
+    }
+})
 
 //모바일 배너 이미지 애니메이션
 $('.banner_text_img img').animate({ opacity: 1 }, 1000);
