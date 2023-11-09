@@ -5,7 +5,7 @@ $('a').on('click', function (e) {
 	} else { }
 })
 
-$('.popup').hide();
+$('.popup').show();
 //팝업 구현
 $('.close').on('click', function (e) {
 	e.preventDefault();
