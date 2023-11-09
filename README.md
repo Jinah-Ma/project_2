@@ -41,6 +41,7 @@ https://user-images.githubusercontent.com/142124095/281629846-e0099518-4e31-40c2
 
 ## 특징
 - parallax
+- 반응형
 
 ## 브라우저 호환성
 - Chrome
