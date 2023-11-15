@@ -166,21 +166,6 @@ img {
     vertical-align: top;
 }
 
-:root {
-    --primary: #056342;
-    --secondary1: #F6F5F0;
-    --secondary2: #1E3932;
-    --text1: #2C2A29;
-    --text2: #8b9091;
-    --text3: #999;
-    --text4: #181818;
-    --background: #fff;
-    --pointcolor1: #8b734b;
-    --pointcolor2: #01A862;
-    --pointcolor3: #669900;
-    --pointcolor4: #B9813E;
-}
-
 
 html {
     overflow-y: scroll;

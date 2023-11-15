@@ -28,7 +28,7 @@ header {
 
 .w100 {
 	width: 100%;
-	background: var(--text1);
+	background: #2C2A29;
 }
 
 /* 메뉴 기본 레이아웃 */
@@ -36,7 +36,7 @@ nav {
 	position: relative;
 	width: 100%;
 	height: 120px;
-	background-color: var(--secondary1);
+	background-color: #F6F5F0;
 }
 
 nav .gnb {
@@ -150,12 +150,12 @@ nav ul.container {
 }
 
 .dep2>li>a {
-	color: var(--secondary1);
+	color: #F6F5F0;
 	margin-bottom: 2rem;
 }
 
 .h_dep3 a {
-	color: var(--text3) !important;
+	color: #999 !important;
 	font-family: 'NanumBarunGothicExtraLight';
 	font-size: 1.5rem;
 	margin-bottom: 0.9rem;
@@ -166,8 +166,8 @@ nav ul.container {
 	width: 100%;
 	text-align: center;
 	height: 56px;
-	background-color: var(--text1);
-	color: var(--pointcolor3);
+	background-color:#2C2A29;
+	color: #669900;
 	border-bottom: none;
 }
 
@@ -192,7 +192,7 @@ nav ul.container {
 	transform: translateY(-50%) translateX(-50%);
 	border-radius: 10px;
 	backdrop-filter: blur(20px);
-	box-shadow: 0px 0px 5px var(--text1);
+	box-shadow: 0px 0px 5px #2C2A29;
 }
 
 .popup .textbox {
@@ -298,17 +298,17 @@ nav ul.container {
 	width: 125px;
 	text-align: center;
 	padding: 1rem 2rem;
-	border: 2.5px solid var(--primary);
+	border: 2.5px solid #056342;
 	border-radius: 0.5rem;
 	font-family: 'NanumBarunGothic';
-	color: var(--primary);
+	color: #056342;
 	font-size: 1.4rem;
 }
 
 /* 호버 */
 .banner_text li:nth-child(2) a:hover {
-	background-color: var(--primary);
-	color: var(--secondary1);
+	background-color: #056342;
+	color:#F6F5F0;
 }
 
 /* 이미지 */
@@ -420,7 +420,7 @@ nav ul.container {
 .nav_1 div.promotion ul {
 	position: absolute;
 	width: 45%;
-	background-color: var(--background);
+	background-color: #fff;
 	display: flex;
 }
 
@@ -498,16 +498,16 @@ nav ul.container {
 	transform: translate(-50%);
 	text-align: center;
 	padding: 1rem 3rem;
-	border: 2.5px solid var(--primary);
+	border: 2.5px solid #056342;
 	border-radius: 0.5rem;
 	font-family: 'NanumBarunGothic';
-	color: var(--primary);
+	color: #056342;
 	font-size: 1.4rem;
 }
 
 .nav_1_pr .inner a.a:hover {
-	background-color: var(--primary);
-	color: var(--background) !important;
+	background-color:#056342;
+	color: #fff !important;
 }
 
 /* 슬라이드 버튼 구현 */
@@ -527,7 +527,7 @@ nav ul.container {
 }
 
 .nav_1_pr .swiper-button-prev:hover {
-	background-color: var(--background);
+	background-color:#fff;
 	border-radius: 50%;
 	transition: background-color 0.5s;
 }
@@ -543,7 +543,7 @@ nav ul.container {
 }
 
 .nav_1_pr .swiper-button-next:hover {
-	background-color: var(--background);
+	background-color:#fff;
 	border-radius: 50%;
 	transition: background-color 0.5s;
 }
@@ -561,7 +561,7 @@ nav ul.container {
 .nav_2 {
 	width: 100%;
 	height: 24rem;
-	background-color: var(--secondary2);
+	background-color: #1E3932;
 	position: relative;
 }
 
@@ -613,10 +613,10 @@ nav ul.container {
 	width: 125px;
 	text-align: center;
 	padding: 0.7rem 2rem;
-	border: 2.5px solid var(--primary);
+	border: 2.5px solid #056342;
 	border-radius: 0.5rem;
 	font-size: 1.4rem;
-	background-color: var(--primary);
+	background-color:#056342;
 	font-family: 'NanumBarunGothic';
 }
 
@@ -624,7 +624,7 @@ nav ul.container {
 	width: 125px;
 	text-align: center;
 	padding: 0.7rem 2rem;
-	border: 2.5px solid var(--background);
+	border: 2.5px solid #fff;
 	border-radius: 0.5rem;
 	font-size: 1.4rem;
 	font-family: 'NanumBarunGothic';
@@ -661,7 +661,7 @@ nav ul.container {
 	width: 125px;
 	text-align: center;
 	padding: 0.7rem 2rem;
-	border: 2.5px solid var(--background);
+	border: 2.5px solid #fff;
 	border-radius: 0.5rem;
 	font-size: 1.4rem;
 	font-family: 'NanumBarunGothic';
@@ -694,7 +694,7 @@ nav ul.container {
 }
 
 .inner_text li {
-	color: var(--secondary1);
+	color:#F6F5F0;
 	line-height: 1.5;
 	font-size: 1.8rem;
 	font-family: 'NanumBarunGothic';
@@ -715,11 +715,11 @@ nav ul.container {
 
 .inner_text li:last-child a {
 	display: block;
-	color: var(--secondary1);
+	color:#F6F5F0;
 	width: 125px;
 	text-align: center;
 	padding: 0.7rem 2rem;
-	border: 2.5px solid var(--secondary1);
+	border: 2.5px solid #F6F5F0;
 	border-radius: 0.5rem;
 	font-size: 1.4rem;
 	margin-top: 3.5rem;
@@ -734,11 +734,11 @@ nav ul.container {
 
 .content_1_2 a {
 	display: block;
-	color: var(--pointcolor4);
+	color:#B9813E;
 	width: 125px;
 	text-align: center;
 	padding: 1rem 2rem;
-	border: 2.5px solid var(--pointcolor4);
+	border: 2.5px solid #B9813E;
 	border-radius: 0.5rem;
 	font-size: 1.4rem;
 	margin-top: 30rem;
@@ -754,13 +754,13 @@ nav ul.container {
 
 /* hover */
 .inner_text:last-child a:hover {
-	background-color: var(--secondary1);
-	color: var(--primary);
+	background-color: #F6F5F0;
+	color: #056342;
 }
 
 .content_1_2 a:hover {
-	background-color: var(--pointcolor4);
-	color: var(--text1);
+	background-color: #B9813E;
+	color: #2C2A29;
 }
 
 /* content_2 */
@@ -814,19 +814,19 @@ nav ul.container {
 
 .content_2_1 p>a {
 	display: block;
-	color: var(--background);
+	color:#fff;
 	width: 125px;
 	text-align: center;
 	padding: 1rem 2rem;
-	border: 2.5px solid var(--background);
+	border: 2.5px solid #fff;
 	border-radius: 0.5rem;
 	font-size: 1.4rem;
 }
 
 /* 호버 */
 .content_2_1 p>a:hover {
-	background-color: var(--secondary1);
-	color: var(--text1);
+	background-color: #F6F5F0;
+	color: #2c2a29;
 }
 
 /* 이미지 */
@@ -923,7 +923,7 @@ nav ul.container {
 }
 
 .store_slide .controls2 .swiper-button-prev:hover {
-	background-color: var(--background);
+	background-color:#FFF;
 	border-radius: 50%;
 	transition: background-color 0.5s;
 }
@@ -939,7 +939,7 @@ nav ul.container {
 }
 
 .store_slide .controls2 .swiper-button-next:hover {
-	background-color: var(--background);
+	background-color:#fff;
 	border-radius: 50%;
 	transition: background-color 0.5s;
 }
@@ -1011,11 +1011,11 @@ nav ul.container {
 	z-index: 1;
 	top: 29rem;
 	left: 40rem;
-	color: var(--text1);
+	color:#2C2A29;
 	width: 125px;
 	text-align: center;
 	padding: 1rem 2rem;
-	border: 2.5px solid var(--text1);
+	border: 2.5px solid #2C2A29;
 	border-radius: 0.5rem;
 	font-size: 1.4rem;
 	font-family: 'NanumBarunGothic';
@@ -1023,8 +1023,8 @@ nav ul.container {
 
 /* 호버 */
 .info_1 .botton a:hover {
-	background-color: var(--text1);
-	color: var(--secondary1);
+	background-color: #2C2A29;
+	color: #F6F5F0;
 }
 
 /* .info_1 애니메이션 */
@@ -1086,7 +1086,7 @@ nav ul.container {
 .info_text_1>li,
 .info_text_2>li,
 .info_text_3>li>a {
-	color: var(--text1);
+	color: #2C2A29;
 }
 
 .info_text ul.info_text_1 {
@@ -1126,11 +1126,11 @@ nav ul.container {
 .info_text ul.info_text_3 li a {
 	font-family: 'NanumBarunGothic';
 	display: block;
-	color: var(--text1);
+	color:#2C2A29;
 	width: 125px;
 	text-align: center;
 	padding: 1rem 2rem;
-	border: 2.5px solid var(--text1);
+	border: 2.5px solid #2C2A29;
 	border-radius: 0.5rem;
 	font-size: 1.6rem;
 	margin-top: 3rem;
@@ -1138,8 +1138,8 @@ nav ul.container {
 
 /* hover */
 .info_text ul.info_text_3 li a:hover {
-	background-color: var(--text1);
-	color: var(--secondary1);
+	background-color: #2C2A29;
+	color: #F6F5F0;
 }
 
 /* .info_2 .info_text 애니메이션 */
@@ -1184,7 +1184,7 @@ nav ul.container {
 .footer_1 {
 	width: 100%;
 	height: 24rem;
-	background-color: var(--text1);
+	background-color: #2C2A29;
 }
 
 .footer_1 ul.depth_1 {
@@ -1197,17 +1197,17 @@ nav ul.container {
 
 .footer_1 ul.depth_1>li>a {
 	font-size: 1.4rem;
-	color: var(--secondary1);
+	color: #F6F5F0;
 }
 
 .footer_1 ul.depth_1 li {
 	font-size: 1.4rem;
-	color: var(--secondary1);
+	color: #F6F5F0;
 }
 
 .footer_1 ul.depth_2>li>a {
 	font-size: 1.2rem;
-	color: var(--secondary1);
+	color: #F6F5F0;
 	line-height: 1.75;
 	font-family: 'NanumBarunGothic';
 }
@@ -1236,7 +1236,7 @@ nav ul.container {
 .footer_2 {
 	width: 100%;
 	height: 10rem;
-	background-color: var(--text4);
+	background-color: #181818;
 }
 
 .footer_2 ul.container {
@@ -1249,13 +1249,13 @@ nav ul.container {
 .footer_3 {
 	width: 100%;
 	height: 30rem;
-	background-color: var(--text1);
+	background-color:#2C2A29;
 }
 
 .footer_3 li a,
 li,
 p {
-	color: var(--secondary1);
+	color: #F6F5F0;
 }
 
 .footer_info {
@@ -1280,7 +1280,7 @@ p {
 }
 
 .footer_info li.green a {
-	color: var(--pointcolor2);
+	color: #01A862;
 }
 
 .footer_gnb {
@@ -1293,11 +1293,11 @@ p {
 .footer_gnb a {
 	font-family: 'NanumBarunGothic';
 	display: block;
-	color: var(--secondary1);
+	color: #F6F5F0;
 	width: 125px;
 	text-align: center;
 	padding: 1rem 2rem;
-	border: 2.5px solid var(--secondary1);
+	border: 2.5px solid #F6F5F0;
 	border-radius: 0.5rem;
 	font-size: 1.2rem;
 	margin-right: 1rem;
@@ -2660,6 +2660,6 @@ p {
 
 	.footer_3{
 		height: 30rem !important;
-		background-color: var(--text1);
+		background-color: #2C2A29;
 	}
 }
