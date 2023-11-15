@@ -191,7 +191,7 @@ nav ul.container {
 	left: 50%;
 	transform: translateY(-50%) translateX(-50%);
 	border-radius: 10px;
-	backdrop-filter: blur(20px);
+	-webkit-backdrop-filter: blur(20px);
 	box-shadow: 0px 0px 5px #2C2A29;
 }
 
@@ -1978,7 +1978,7 @@ p {
 		text-align: center;
 		padding-top: 4rem;
 		background: rgba(44, 42, 41, 0.5);
-		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
 	}
 
 	.content_2_1 p {
@@ -2496,7 +2496,7 @@ p {
 
 	.content_2 .content_2_1 {
 		background: none;
-		backdrop-filter: blur(0);
+		-webkit-backdrop-filter: blur(0);
 		margin-top: 35rem;
 	}
 

@@ -192,7 +192,7 @@ table {
 /* var : 변수 */
 
 a {
-    color: var(--text1);
+    color: #2C2A29;
 }
 
 a {
